@@ -44,6 +44,7 @@
         const dropdownToggle = document.getElementById('dropdown-toggle');
         const dropdownItem = document.getElementById('dropdown-item');
         
+        // Obsługa otwierania/zamykania głównego menu
         if (hamburger && navMenu) {
             hamburger.addEventListener('click', function(e) {
                 e.stopPropagation();
@@ -59,6 +60,7 @@
             });
         }
 
+        // Obsługa rozwijania listy "Produkty" po kliknięciu
         if (dropdownToggle && dropdownItem) {
             dropdownToggle.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
