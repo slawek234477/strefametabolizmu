@@ -1303,3 +1303,11 @@ img, svg, video {
     object-fit: contain;
     mix-blend-mode: multiply;
 }
+
+.content-image-box img {
+	max-width: 450px;
+    width: 100%;      
+    height: auto;     
+    display: block;
+    margin: 0 auto;
+}
