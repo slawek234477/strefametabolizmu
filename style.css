@@ -1311,3 +1311,17 @@ img, svg, video {
     display: block;
     margin: 0 auto;
 }
+
+.icon-img, .cert-img {
+    width: auto;
+    max-height: 60px; 
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; 
+	}
+.banner-img {
+    width: 100%;
+    max-height: 400px; 
+    object-fit: cover;
+    border-radius: 12px;
+}
