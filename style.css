@@ -1600,3 +1600,22 @@ html, body {
         color: #2ec4b6 !important; 
     }
 }
+
+a.mobile-sublink {
+    color: #ffffff !important;
+    background-color: #052027 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    padding: 14px 20px 14px 35px !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+a.mobile-sublink:hover,
+a.mobile-sublink:active {
+    color: #2ec4b6 !important;
+    background-color: #0a323d !important;
+}
