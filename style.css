@@ -580,7 +580,7 @@ img, svg, video {
 
 .faq-accordion {
     max-width: 800px;
-    margin: 40px auto 0 auto;
+    margin: 30px auto 0;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -593,6 +593,7 @@ img, svg, video {
     overflow: hidden;
     transition: all 0.25s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+	padding: 16px 20px;
 }
 
 .faq-item:hover {
@@ -607,8 +608,8 @@ img, svg, video {
 }
 
 .faq-question {
-    padding: 20px 24px;
-    font-weight: 700;
+	padding: 20px 24px;
+    font-weight: 600;
     font-size: 1.05rem;
     color: var(--primary-dark);
     cursor: pointer;
@@ -634,7 +635,7 @@ img, svg, video {
 }
 
 .faq-answer {
-    padding: 0 24px 20px 24px;
+	padding: 0 24px 20px 24px;
     color: #475569;
     font-size: 0.95rem;
     line-height: 1.6;
@@ -914,21 +915,21 @@ main.container > section {
 
 .whatsapp-float {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
     background-color: #25d366;
-    color: #ffffff;
-    border-radius: 50%;
+    color: #fff !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.25);
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-    z-index: 1000;
     text-decoration: none;
-    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .whatsapp-float:hover {
@@ -1198,4 +1199,87 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
 
 .footer-col p {
     margin-bottom: 10px !important;
+}
+
+img, svg, video {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.comp-table { 
+    width: 100%; 
+    min-width: 650px; 
+    border-collapse: collapse; 
+    font-size: 0.92rem; 
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper { 
+        flex-direction: column; 
+        gap: 15px; 
+        text-align: center; 
+    }
+
+    nav ul { 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 12px; 
+    }
+
+    .dropdown-content { 
+        position: static; 
+        box-shadow: none; 
+        min-width: 100%; 
+        background: rgba(15, 76, 92, 0.08); 
+        border-radius: 8px; 
+        margin-top: 8px; 
+    }
+
+    .dropdown-content a { 
+        color: var(--primary-dark) !important; 
+        padding: 10px 14px; 
+        border-bottom: 1px solid rgba(0,0,0,0.05); 
+    }
+
+    .hero-grid { 
+        grid-template-columns: 1fr !important; 
+        text-align: center; 
+    }
+
+    .hero-btns { 
+        justify-content: center; 
+    }
+
+    .hero h1 { 
+        font-size: 1.8rem; 
+    }
+}
+
+@media (max-width: 576px) {
+    .container { 
+        width: 100%; 
+        padding-left: 16px; 
+        padding-right: 16px; 
+    }
+
+    .grid-4 { 
+        grid-template-columns: 1fr; 
+    }
+
+    .btn-primary, .btn-outline { 
+        width: 100% !important; 
+    }
+
+    .section-header h2 { 
+        font-size: 1.4rem; 
+    }
 }
