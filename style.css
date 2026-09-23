@@ -1341,7 +1341,7 @@ img, svg, video {
     object-fit: contain;
     flex-shrink: 0;
 }
-.img sklad-ignyt {
+.img-sklad-ignyt {
     width: 380px;	
     height: auto; 
     display: block;
