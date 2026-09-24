@@ -1307,23 +1307,23 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         border-bottom: none;
     }
 
+    @media (min-width: 769px) {
     .dropdown:hover .dropdown-content { 
         display: block; 
     }
 }
 
+
+.dropdown-trigger.open + .dropdown-content,
 .dropdown.open .dropdown-content { 
     display: block !important; 
 }
 
-    .dropdown.open .dropdown-trigger i {
-        transform: rotate(180deg);
-    }
-}
 
 .dropdown-trigger {
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 .dropdown-trigger * {
