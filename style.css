@@ -1249,7 +1249,23 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         opacity: 1 !important;
         visibility: visible !important;
     }
-
+	
+nav a.active,
+    .dropdown-trigger.active {
+        color: var(--accent) !important; 
+        font-weight: 700 !important;
+        background-color: rgba(46, 196, 182, 0.12) !important; 
+        border-left: 4px solid var(--accent) !important; 
+        padding-left: 12px !important;
+        border-radius: 4px;
+    }
+	
+	.dropdown-content a.active {
+        color: var(--accent) !important;
+        background-color: rgba(255, 255, 255, 0.08) !important;
+        font-weight: 600 !important;
+    }
+	
     nav ul {
         flex-direction: column !important;
         align-items: flex-start !important;
@@ -1313,7 +1329,6 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         display: block !important; 
     }
 
-    /* Wyłączenie otwierania po najechaniu (:hover)
     .dropdown:hover .dropdown-content {
         display: none !important;
     }
