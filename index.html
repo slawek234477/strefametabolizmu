@@ -294,5 +294,33 @@
    aria-label="Skontaktuj się na WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
+	<script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+    const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
+
+    hamburgerBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        hamburgerBtn.classList.toggle('open');
+        
+        const icon = hamburgerBtn.querySelector('i');
+        if (navMenu.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-xmark');
+        } else {
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                trigger.parentElement.classList.toggle('open');
+            }
+        });
+    });
+</script>
 </body>
 </html>
