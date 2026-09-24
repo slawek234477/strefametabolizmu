@@ -300,7 +300,8 @@
     const dropdown = document.querySelector('.dropdown');
     const dropdownTrigger = document.querySelector('.dropdown-trigger');
 
-    hamburgerBtn.addEventListener('click', () => {
+    function toggleMenu(e) {
+        if (e) e.stopPropagation();
         navMenu.classList.toggle('active');
         
         const icon = hamburgerBtn.querySelector('i');
@@ -311,18 +312,23 @@
             icon.classList.remove('fa-xmark');
             icon.classList.add('fa-bars');
         }
-    });
-
-    if (dropdownTrigger) {
-        dropdownTrigger.addEventListener('click', (e) => {
-            if (window.innerWidth <= 768) {
-                e.preventDefault(); 
-                dropdown.classList.toggle('open');
-            }
-        });
     }
 
-    const navLinks = document.querySelectorAll('nav a:not(.dropdown-trigger)');
+    hamburgerBtn.addEventListener('click', toggleMenu);
+
+    if (dropdownTrigger) {
+        const toggleDropdown = (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdown.classList.toggle('open');
+            }
+        };
+
+        dropdownTrigger.addEventListener('pointerdown', toggleDropdown);
+    }
+
+    const navLinks = document.querySelectorAll('.dropdown-content a, nav ul > li > a:not(.dropdown-trigger)');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
