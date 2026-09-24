@@ -323,13 +323,16 @@
     if (dropdownTrigger && dropdown) {
         dropdownTrigger.addEventListener('click', (e) => {
             e.preventDefault();
-            e.stopPropagation();
+            e.stopPropagation(); 
 
             const isOpen = dropdown.classList.contains('open');
+
             if (isOpen) {
+   
                 dropdown.classList.remove('open');
                 dropdownTrigger.classList.remove('open');
             } else {
+
                 dropdown.classList.add('open');
                 dropdownTrigger.classList.add('open');
             }
@@ -338,8 +341,8 @@
 
     document.addEventListener('click', (e) => {
         if (dropdown && !dropdown.contains(e.target)) {
-            dropdownTrigger?.classList.remove('open');
             dropdown.classList.remove('open');
+            if (dropdownTrigger) dropdownTrigger.classList.remove('open');
         }
     });
 
