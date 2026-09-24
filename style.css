@@ -1207,7 +1207,7 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
     color: var(--primary-dark);
     cursor: pointer;
     padding: 8px;
-    z-index: 1002; 
+    z-index: 1002;
 }
 
 @media (max-width: 768px) {
@@ -1227,12 +1227,12 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%; 
+        width: 70%;
         max-width: 280px;
         height: 100vh;
         background: var(--primary-dark);
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.4);
-        padding: 70px 20px 30px; 
+        padding: 70px 20px 30px;
         transition: right 0.25s ease-out;
         z-index: 1001;
         overflow-y: auto;
@@ -1245,7 +1245,7 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
     nav ul {
         flex-direction: column !important;
         align-items: flex-start !important;
-        gap: 6px !important; 
+        gap: 6px !important;
         width: 100%;
     }
 
@@ -1260,9 +1260,9 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 10px 0;
+        padding: 12px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
     }
 
     nav a::after {
@@ -1281,12 +1281,17 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
     .dropdown-trigger {
         cursor: pointer;
         user-select: none;
-        -webkit-tap-highlight-color: transparent; 
+        -webkit-user-select: none;
+    }
+
+    .dropdown-trigger i {
+        padding: 5px; 
+        transition: transform 0.25s ease;
     }
 
     .dropdown-content {
         position: static;
-        display: none;
+        display: none; 
         background-color: rgba(255, 255, 255, 0.06);
         border-radius: 6px;
         margin: 4px 0 8px 0;
@@ -1306,11 +1311,10 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
     }
 
     .dropdown.open .dropdown-content {
-        display: block;
+        display: block !important;
     }
 
     .dropdown.open .dropdown-trigger i {
         transform: rotate(180deg);
-        transition: transform 0.2s ease;
     }
 }
