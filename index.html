@@ -325,8 +325,8 @@
             e.preventDefault();
             e.stopPropagation();
 
-            const isCurrentlyOpen = dropdown.classList.contains('open');
-            if (isCurrentlyOpen) {
+            const isOpen = dropdown.classList.contains('open');
+            if (isOpen) {
                 dropdown.classList.remove('open');
                 dropdownTrigger.classList.remove('open');
             } else {
