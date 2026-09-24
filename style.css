@@ -1320,3 +1320,12 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         transform: rotate(180deg);
     }
 }
+
+.dropdown-trigger {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dropdown-trigger * {
+    pointer-events: none; 
+}
