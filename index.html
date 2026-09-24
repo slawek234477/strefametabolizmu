@@ -323,16 +323,14 @@
     if (dropdownTrigger && dropdown) {
         dropdownTrigger.addEventListener('click', (e) => {
             e.preventDefault();
-            e.stopPropagation(); 
+            e.stopPropagation();
 
             const isOpen = dropdown.classList.contains('open');
 
             if (isOpen) {
-   
                 dropdown.classList.remove('open');
                 dropdownTrigger.classList.remove('open');
             } else {
-
                 dropdown.classList.add('open');
                 dropdownTrigger.classList.add('open');
             }
@@ -346,19 +344,26 @@
         }
     });
 
-    const allMenuLinks = document.querySelectorAll('#nav-menu a:not(.dropdown-trigger)');
-    allMenuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (window.innerWidth <= 768) {
-                navMenu.classList.remove('active');
-                if (dropdownTrigger) dropdownTrigger.classList.remove('open');
-                if (dropdown) dropdown.classList.remove('open');
-                
-                const icon = hamburgerBtn?.querySelector('i');
-                if (icon) {
-                    icon.classList.remove('fa-xmark');
-                    icon.classList.add('fa-bars');
-                }
+    const allLinks = document.querySelectorAll('#nav-menu a');
+    allLinks.forEach(link => {
+        link.addEventListener('click', function() {
+
+            this.classList.add('clicked');
+
+            if (!this.classList.contains('dropdown-trigger')) {
+                setTimeout(() => {
+                    if (window.innerWidth <= 768) {
+                        navMenu.classList.remove('active');
+                        if (dropdownTrigger) dropdownTrigger.classList.remove('open');
+                        if (dropdown) dropdown.classList.remove('open');
+                        
+                        const icon = hamburgerBtn?.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-xmark');
+                            icon.classList.add('fa-bars');
+                        }
+                    }
+                }, 150);
             }
         });
     });
