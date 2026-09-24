@@ -1212,20 +1212,20 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
 
 @media (max-width: 768px) {
     .hamburger {
-        display: block; 
+        display: block;
     }
 
     nav {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
+        width: 85%;
         max-width: 320px;
         height: 100vh;
-        background: #ffffff;
-        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
-        padding: 90px 25px 30px;
-        transition: right 0.3s ease-in-out;
+        background: var(--primary-dark); 
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.4);
+        padding: 80px 25px 40px;
+        transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 999;
         overflow-y: auto;
     }
@@ -1237,7 +1237,7 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
     nav ul {
         flex-direction: column !important;
         align-items: flex-start !important;
-        gap: 18px !important;
+        gap: 12px !important;
         width: 100%;
     }
 
@@ -1246,10 +1246,23 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
     }
 
     nav a {
-        font-size: 1.1rem;
-        display: block;
+        color: #ffffff !important; 
+        font-size: 1.05rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
-        padding: 8px 0;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    nav a::after {
+        display: none; 
+    }
+
+    nav a.active {
+        color: var(--accent) !important;
+        font-weight: 700;
     }
 
     .dropdown {
@@ -1258,32 +1271,43 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
 
     .dropdown-content {
         position: static;
-        display: none;
-        background-color: #f1f5f9;
+        display: none; 
+        background-color: rgba(255, 255, 255, 0.05);
         box-shadow: none;
         border-radius: 8px;
-        margin-top: 8px;
-        padding: 5px 0;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        padding: 0;
         width: 100%;
+        overflow: hidden;
     }
 
     .dropdown-content a {
-        color: var(--text-dark) !important;
-        padding: 10px 15px;
+        color: #e2e8f0 !important;
+        padding: 12px 18px;
         font-size: 0.95rem;
-        border-bottom: 1px solid var(--border);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .dropdown-content a:last-child {
+        border-bottom: none;
     }
 
     .dropdown-content a:hover {
-        background-color: var(--accent);
-        color: var(--primary-dark) !important;
+        background-color: var(--primary);
+        color: #ffffff !important;
     }
 
     .dropdown.open .dropdown-content {
         display: block;
     }
 
-    .nav-wrapper {
-        position: relative;
+    .dropdown.open .dropdown-trigger i {
+        transform: rotate(180deg);
+        transition: transform 0.2s ease;
+    }
+
+    .hamburger i {
+        transition: transform 0.2s ease;
     }
 }
