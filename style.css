@@ -1281,7 +1281,6 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         pointer-events: none;
     }
 
-    /* Podmenu Produkty */
     .dropdown {
         width: 100%;
     }
@@ -1294,6 +1293,7 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         margin: 4px 0 8px 0;
         padding: 0;
         width: 100%;
+        box-shadow: none;
     }
 
     .dropdown-content a {
