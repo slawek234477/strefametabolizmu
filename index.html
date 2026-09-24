@@ -323,7 +323,7 @@
     if (dropdownTrigger && dropdown) {
         dropdownTrigger.addEventListener('click', (e) => {
             e.preventDefault();
-            e.stopPropagation(); 
+            e.stopPropagation();
 
             const isOpen = dropdown.classList.contains('open');
 
@@ -347,11 +347,10 @@
     const pageLinks = document.querySelectorAll('#nav-menu a:not(.dropdown-trigger)');
     pageLinks.forEach(link => {
         link.addEventListener('click', function() {
-            const currentLink = this;
 
-            document.querySelectorAll('#nav-menu a').forEach(l => l.classList.remove('clicked'));
+            pageLinks.forEach(l => l.classList.remove('clicked'));
 
-            currentLink.classList.add('clicked');
+            this.classList.add('clicked');
 
             setTimeout(() => {
                 if (window.innerWidth <= 768) {
@@ -365,8 +364,8 @@
                         icon.classList.add('fa-bars');
                     }
                 }
-                currentLink.classList.remove('clicked');
-            }, 1200);
+                this.classList.remove('clicked');
+            }, 700);
         });
     });
 </script>
