@@ -346,11 +346,51 @@ img, svg, video {
     .grid-4 { grid-template-columns: repeat(2, 1fr); }
 }
 
+@media (max-width: 768px) {
+    .hero-grid { 
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .hero-grid > div:first-child {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .hero-grid h1 {
+        order: 1 !important;
+    }
+
+    .hero .img-container {
+        order: 2 !important;
+        display: block !important;
+        margin: 20px 0 !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .hero-grid p,
+    .hero-grid .hero-btns {
+        order: 3 !important;
+    }
+
+    .product-grid-hero, .content-with-image { grid-template-columns: 1fr; }
+    .hero-product h1 { font-size: 1.8rem; }
+    .card-block { padding: 25px; }
+}
 
 @media (max-width: 576px) {
     .btn-primary, .btn-outline { width: 100% !important; }
 
-    body, .container, .section {
+    body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+    }
+
+    .container {
         padding-left: 16px !important;
         padding-right: 16px !important;
         width: 100% !important;
@@ -363,7 +403,6 @@ img, svg, video {
     nav ul { flex-direction: column !important; gap: 12px !important; }
     .grid-4 { grid-template-columns: 1fr !important; }
 }
-
 .card-icon, .pillar-card .card-icon {
     display: flex;
     justify-content: center;
