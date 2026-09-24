@@ -320,18 +320,22 @@
         });
     }
 
-    if (dropdownTrigger && dropdown) {
+    if (dropdownTrigger) {
         dropdownTrigger.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            
-            dropdown.classList.toggle('open');
+     
+            const isOpen = dropdownTrigger.classList.toggle('open');
+            if (dropdown) {
+                dropdown.classList.toggle('open', isOpen);
+            }
         });
     }
 
     document.addEventListener('click', (e) => {
-        if (dropdown && !dropdown.contains(e.target)) {
-            dropdown.classList.remove('open');
+        if (dropdownTrigger && !dropdownTrigger.contains(e.target)) {
+            dropdownTrigger.classList.remove('open');
+            if (dropdown) dropdown.classList.remove('open');
         }
     });
 
@@ -340,6 +344,7 @@
         link.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
                 navMenu.classList.remove('active');
+                if (dropdownTrigger) dropdownTrigger.classList.remove('open');
                 if (dropdown) dropdown.classList.remove('open');
                 
                 const icon = hamburgerBtn?.querySelector('i');
