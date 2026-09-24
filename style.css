@@ -1307,9 +1307,14 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         border-bottom: none;
     }
 
-    .dropdown.open .dropdown-content {
-        display: block !important;
+    .dropdown:hover .dropdown-content { 
+        display: block; 
     }
+}
+
+.dropdown.open .dropdown-content { 
+    display: block !important; 
+}
 
     .dropdown.open .dropdown-trigger i {
         transform: rotate(180deg);
