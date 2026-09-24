@@ -1289,7 +1289,7 @@ nav a,
 .dropdown-content a {
     padding: 8px 16px !important;
     border-radius: 8px !important;
-    transition: background-color 0.25s ease, color 0.25s ease !important;
+    transition: background-color 0.5s ease, color 0.5s ease !important;
     text-decoration: none;
 }
 
@@ -1306,7 +1306,7 @@ nav a.clicked,
     background-color: var(--accent) !important; 
     color: var(--primary-dark) !important;     
     font-weight: 600 !important;
-    transform: none !important;              
+    transition: background-color 0.05s ease, color 0.05s ease !important;
 }
 
 @media (max-width: 768px) {
