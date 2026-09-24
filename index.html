@@ -300,36 +300,48 @@
     const dropdown = document.querySelector('.dropdown');
     const dropdownTrigger = document.querySelector('.dropdown-trigger');
 
-    function toggleMenu(e) {
-        if (e) e.stopPropagation();
-        navMenu.classList.toggle('active');
-        
-        const icon = hamburgerBtn.querySelector('i');
-        if (navMenu.classList.contains('active')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-xmark');
-        } else {
-            icon.classList.remove('fa-xmark');
-            icon.classList.add('fa-bars');
-        }
+    if (hamburgerBtn && navMenu) {
+        hamburgerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navMenu.classList.toggle('active');
+            
+            const icon = hamburgerBtn.querySelector('i');
+            if (icon) {
+                if (navMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        });
     }
 
-    hamburgerBtn.addEventListener('click', toggleMenu);
+    if (dropdownTrigger && dropdown) {
+        let isProcessing = false;
 
-    if (dropdownTrigger) {
-        const toggleDropdown = (e) => {
+        const handleDropdownToggle = (e) => {
             if (window.innerWidth <= 768) {
                 e.preventDefault();
                 e.stopPropagation();
+
+                if (isProcessing) return;
+                isProcessing = true;
+
                 dropdown.classList.toggle('open');
+
+                setTimeout(() => {
+                    isProcessing = false;
+                }, 200);
             }
         };
 
-        dropdownTrigger.addEventListener('pointerdown', toggleDropdown);
+        dropdownTrigger.addEventListener('click', handleDropdownToggle);
     }
 
-    const navLinks = document.querySelectorAll('.dropdown-content a, nav ul > li > a:not(.dropdown-trigger)');
-    navLinks.forEach(link => {
+    const subNavLinks = document.querySelectorAll('.dropdown-content a, nav ul > li > a:not(.dropdown-trigger)');
+    subNavLinks.forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
                 navMenu.classList.remove('active');
