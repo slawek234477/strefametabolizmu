@@ -297,58 +297,63 @@
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 	<script>
-        const hamburgerBtn = document.getElementById('hamburger-btn');
-        const navMenu = document.getElementById('nav-menu');
-        const dropdown = document.querySelector('.dropdown');
-        const dropdownTrigger = document.querySelector('.dropdown-trigger');
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownTrigger = document.querySelector('.dropdown-trigger');
 
-        if (hamburgerBtn && navMenu) {
-            hamburgerBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                navMenu.classList.toggle('active');
+    if (hamburgerBtn && navMenu) {
+        hamburgerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navMenu.classList.toggle('active');
+            
+            const icon = hamburgerBtn.querySelector('i');
+            if (icon) {
+                if (navMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        });
+    }
+
+    if (dropdownTrigger && dropdown) {
+        dropdownTrigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation(); 
+
+            if (dropdown.classList.contains('open')) {
+                dropdown.classList.remove('open');
+            } else {
+                dropdown.classList.add('open');
+            }
+        });
+    }
+
+    document.addEventListener('click', (e) => {
+        if (dropdown && !dropdown.contains(e.target)) {
+            dropdown.classList.remove('open');
+        }
+    });
+
+    const subNavLinks = document.querySelectorAll('.dropdown-content a, nav ul > li > a:not(.dropdown-trigger)');
+    subNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                navMenu.classList.remove('active');
+                if (dropdown) dropdown.classList.remove('open');
                 
                 const icon = hamburgerBtn.querySelector('i');
                 if (icon) {
-                    if (navMenu.classList.contains('active')) {
-                        icon.classList.remove('fa-bars');
-                        icon.classList.add('fa-xmark');
-                    } else {
-                        icon.classList.remove('fa-xmark');
-                        icon.classList.add('fa-bars');
-                    }
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
                 }
-            });
-        }
-
-        if (dropdownTrigger && dropdown) {
-            dropdownTrigger.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                dropdown.classList.toggle('open');
-            });
-        }
-
-        document.addEventListener('click', (e) => {
-            if (dropdown && !dropdown.contains(e.target)) {
-                dropdown.classList.remove('open');
             }
         });
-
-        const subNavLinks = document.querySelectorAll('.dropdown-content a, nav ul > li > a:not(.dropdown-trigger)');
-        subNavLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 768) {
-                    navMenu.classList.remove('active');
-                    if (dropdown) dropdown.classList.remove('open');
-                    
-                    const icon = hamburgerBtn.querySelector('i');
-                    if (icon) {
-                        icon.classList.remove('fa-xmark');
-                        icon.classList.add('fa-bars');
-                    }
-                }
-            });
-        });
-    </script>
+    });
+</script>
 </body>
 </html>
