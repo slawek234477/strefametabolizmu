@@ -1494,13 +1494,21 @@ html, body {
         margin: 0 auto !important;
     }
 .hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
         display: flex !important;
-        background: transparent;
-        border: none;
-        font-size: 1.8rem;
-        cursor: pointer;
-        color: var(--primary-dark);
+        grid-column: 3 !important;
+        justify-self: end !important;
     }
+}
 
     nav#nav-menu {
         display: none !important;
