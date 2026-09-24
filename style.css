@@ -1592,32 +1592,78 @@ html, body {
         text-align: left !important;
     }
 
-ul.mobile-sub-list {
-    display: none;
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    background-color: #052027 !important;
-    width: 100% !important;
+.hamburger {
+    display: none !important;
 }
 
-li.dropdown.open ul.mobile-sub-list {
-    display: block !important;
+ul.mobile-sub-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #052027;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+li.dropdown:hover ul.mobile-sub-list {
+    display: block;
 }
 
 a.sub-link-item {
-    display: block !important;
+    display: block;
     color: #ffffff !important;
-    background-color: #052027 !important;
-    padding: 14px 20px 14px 35px !important;
-    font-size: 1rem !important;
-    font-weight: 700 !important;
-    text-decoration: none !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-    box-sizing: border-box !important;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 a.sub-link-item:hover {
+    background-color: rgba(46, 196, 182, 0.2);
     color: #2ec4b6 !important;
-    background-color: rgba(46, 196, 182, 0.15) !important;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex !important;
+    }
+
+    nav#nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0a323d;
+        z-index: 9999;
+    }
+
+    nav#nav-menu.active {
+        display: block !important;
+    }
+
+    ul.mobile-sub-list {
+        display: none !important;
+        position: static !important;
+        width: 100% !important;
+        background-color: #052027 !important;
+        box-shadow: none !important;
+    }
+
+
+    li.dropdown.open ul.mobile-sub-list {
+        display: block !important;
+    }
+
+    a.sub-link-item {
+        padding: 14px 20px 14px 35px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
 }
