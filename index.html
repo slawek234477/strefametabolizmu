@@ -349,6 +349,16 @@
             hamburger.addEventListener('click', function(e) {
                 e.stopPropagation();
                 navMenu.classList.toggle('active');
+                
+                // Zmiana ikony na X i z powrotem
+                const icon = hamburger.querySelector('i');
+                if (icon) {
+                    if (navMenu.classList.contains('active')) {
+                        icon.className = 'fa-solid fa-xmark';
+                    } else {
+                        icon.className = 'fa-solid fa-bars';
+                    }
+                }
             });
         }
 
@@ -356,7 +366,6 @@
             dropdownToggle.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
                     e.preventDefault();
-                    e.stopPropagation();
                     dropdownItem.classList.toggle('open');
                 }
             });
