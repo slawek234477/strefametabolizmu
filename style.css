@@ -1332,6 +1332,12 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         border-bottom: none !important;
     }
 }
+nav a,
+.dropdown-trigger,
+.dropdown-content a {
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease !important;
+}
+
 nav a:active,
 .dropdown-trigger:active,
 .dropdown-content a:active,
@@ -1339,21 +1345,18 @@ nav a.clicked,
 .dropdown-trigger.clicked,
 .dropdown-content a.clicked {
     background-color: var(--accent) !important; 
-    color: var(--primary-dark) !important;    
-    transform: scale(0.97);               
-    transition: all 0.1s ease !important;
+    color: var(--primary-dark) !important;     
+    transform: scale(0.98);                    
+    transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease !important;
 }
 
 @media (max-width: 768px) {
-    nav a:active,
-    .dropdown-trigger:active,
-    .dropdown-content a:active,
     nav a.clicked,
-    .dropdown-trigger.clicked,
     .dropdown-content a.clicked {
-        background-color: var(--accent) !important;
-        color: var(--primary-dark) !important;
+        background-color: rgba(46, 196, 182, 0.25) !important; 
+        color: #ffffff !important;
+        border-left: 4px solid var(--accent) !important;
+        padding-left: 14px !important;
         border-radius: 6px;
-        padding-left: 12px !important;
     }
 }
