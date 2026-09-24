@@ -1253,15 +1253,22 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         width: 100%;
     }
 
-    nav a {
+    nav a, 
+    .dropdown-trigger {
         color: #ffffff !important;
         font-size: 1rem;
+        font-family: inherit;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         padding: 12px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        text-align: left;
+        cursor: pointer;
+        outline: none;
         -webkit-tap-highlight-color: transparent;
     }
 
@@ -1269,24 +1276,14 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         display: none;
     }
 
-    nav a.active {
-        color: var(--accent) !important;
-        font-weight: 700;
+    .dropdown-trigger i {
+        transition: transform 0.25s ease;
+        pointer-events: none;
     }
 
+    /* Podmenu Produkty */
     .dropdown {
         width: 100%;
-    }
-
-    .dropdown-trigger {
-        cursor: pointer;
-        user-select: none;
-        -webkit-user-select: none;
-    }
-
-    .dropdown-trigger i {
-        padding: 5px; 
-        transition: transform 0.25s ease;
     }
 
     .dropdown-content {
