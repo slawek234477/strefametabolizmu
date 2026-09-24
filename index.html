@@ -356,11 +356,12 @@
             dropdownToggle.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
                     e.preventDefault();
+                    e.stopPropagation();
                     dropdownItem.classList.toggle('open');
                 }
             });
         }
     });
-</script>	
+</script>
 </body>
 </html>
