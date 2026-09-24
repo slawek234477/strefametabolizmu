@@ -1281,79 +1281,51 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
     }
 
     nav a::after {
-        display: none !important;
-    }
-
-    .dropdown-trigger i {
-        transition: transform 0.25s ease !important;
-        pointer-events: none !important;
-    }
-
-    .dropdown-trigger.open i {
-        transform: rotate(180deg) !important;
-    }
-
-    .dropdown {
-        width: 100% !important;
-    }
-
-    .dropdown-content {
-        position: static !important;
-        display: none !important; 
-        background-color: rgba(255, 255, 255, 0.06) !important;
-        border-radius: 6px !important;
-        margin: 4px 0 6px 0 !important;
-        padding: 0 !important;
-        width: 100% !important;
-        box-shadow: none !important;
-    }
-
-    .dropdown.open .dropdown-content,
-    .dropdown-trigger.open + .dropdown-content { 
-        display: block !important; 
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: none !important;
-    }
-
-    .dropdown.open:hover .dropdown-content {
-        display: block !important;
-    }
-
-    .dropdown-content a {
-        color: #e2e8f0 !important;
-        padding: 10px 14px !important;
-        font-size: 0.9rem !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
-    }
-
-    .dropdown-content a:last-child {
-        border-bottom: none !important;
-    }
+    display: none !important;
 }
+
 nav a,
+.dropdown-trigger,
 .dropdown-content a {
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease !important;
+    padding: 8px 16px !important;
+    border-radius: 8px !important;
+    transition: background-color 0.25s ease, color 0.25s ease !important;
+    text-decoration: none;
+}
+
+nav a:hover,
+.dropdown-trigger:hover,
+.dropdown-content a:hover {
+    background-color: rgba(46, 196, 182, 0.15) !important;
+    color: var(--primary-dark) !important;
 }
 
 nav a.clicked,
+.dropdown-trigger.clicked,
 .dropdown-content a.clicked {
-    background-color: var(--accent) !important;
+    background-color: var(--accent) !important; 
     color: var(--primary-dark) !important;     
-    border-radius: 6px !important;
-    border-left: none !important;          
-    transform: scale(0.98);                   
-    transition: background-color 0.2s ease, color 0.2s ease !important;
+    font-weight: 600 !important;
+    transform: none !important;              
 }
 
 @media (max-width: 768px) {
+    nav a, 
+    .dropdown-trigger {
+        padding: 12px 14px !important;
+        margin-bottom: 2px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
+
     nav a.clicked,
     .dropdown-content a.clicked {
-        background-color: rgba(46, 196, 182, 0.3) !important;
-        color: #ffffff !important;
-        border-radius: 6px !important;
-        border-left: none !important;          
-        padding-left: 10px !important;
+        background-color: var(--accent) !important;
+        color: var(--primary-dark) !important;
+        padding-left: 14px !important;
+        border-left: none !important;
+    }
+
+    .dropdown-content a {
+        padding: 10px 16px !important;
     }
 }
