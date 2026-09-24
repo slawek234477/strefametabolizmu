@@ -1199,3 +1199,91 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
 .footer-col p {
     margin-bottom: 10px !important;
 }
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: var(--primary-dark);
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; 
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background: #ffffff;
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+        padding: 90px 25px 30px;
+        transition: right 0.3s ease-in-out;
+        z-index: 999;
+        overflow-y: auto;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 18px !important;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: none;
+        background-color: #f1f5f9;
+        box-shadow: none;
+        border-radius: 8px;
+        margin-top: 8px;
+        padding: 5px 0;
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        color: var(--text-dark) !important;
+        padding: 10px 15px;
+        font-size: 0.95rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .dropdown-content a:hover {
+        background-color: var(--accent);
+        color: var(--primary-dark) !important;
+    }
+
+    .dropdown.open .dropdown-content {
+        display: block;
+    }
+
+    .nav-wrapper {
+        position: relative;
+    }
+}
