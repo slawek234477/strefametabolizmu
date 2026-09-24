@@ -323,14 +323,16 @@
     if (dropdownTrigger && dropdown) {
         dropdownTrigger.addEventListener('click', (e) => {
             e.preventDefault();
-            e.stopPropagation();
+            e.stopPropagation(); 
 
             const isOpen = dropdown.classList.contains('open');
 
             if (isOpen) {
+   
                 dropdown.classList.remove('open');
                 dropdownTrigger.classList.remove('open');
             } else {
+
                 dropdown.classList.add('open');
                 dropdownTrigger.classList.add('open');
             }
@@ -344,28 +346,20 @@
         }
     });
 
-    const pageLinks = document.querySelectorAll('#nav-menu a:not(.dropdown-trigger)');
-    pageLinks.forEach(link => {
-        link.addEventListener('click', function() {
-
-            pageLinks.forEach(l => l.classList.remove('clicked'));
-
-            this.classList.add('clicked');
-
-            setTimeout(() => {
-                if (window.innerWidth <= 768) {
-                    navMenu.classList.remove('active');
-                    if (dropdownTrigger) dropdownTrigger.classList.remove('open');
-                    if (dropdown) dropdown.classList.remove('open');
-                    
-                    const icon = hamburgerBtn?.querySelector('i');
-                    if (icon) {
-                        icon.classList.remove('fa-xmark');
-                        icon.classList.add('fa-bars');
-                    }
+    const allMenuLinks = document.querySelectorAll('#nav-menu a:not(.dropdown-trigger)');
+    allMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                navMenu.classList.remove('active');
+                if (dropdownTrigger) dropdownTrigger.classList.remove('open');
+                if (dropdown) dropdown.classList.remove('open');
+                
+                const icon = hamburgerBtn?.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
                 }
-                this.classList.remove('clicked');
-            }, 700);
+            }
         });
     });
 </script>
