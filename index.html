@@ -320,28 +320,35 @@
         });
     }
 
-    if (dropdownTrigger && dropdown) {
-        dropdownTrigger.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation(); 
+    function handleDropdownToggle(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (dropdown) {
+            dropdown.classList.toggle('open');
+        }
+    }
 
-            if (dropdown.classList.contains('open')) {
-                dropdown.classList.remove('open');
-            } else {
-                dropdown.classList.add('open');
+    if (dropdownTrigger) {
+        dropdownTrigger.addEventListener('touchstart', handleDropdownToggle, { passive: false });
+        dropdownTrigger.addEventListener('click', (e) => {
+            if (e.detail !== 0) { 
+                handleDropdownToggle(e);
             }
         });
     }
 
-    document.addEventListener('click', (e) => {
+    const closeDropdownOutside = (e) => {
         if (dropdown && !dropdown.contains(e.target)) {
             dropdown.classList.remove('open');
         }
-    });
+    };
+    document.addEventListener('touchstart', closeDropdownOutside);
+    document.addEventListener('click', closeDropdownOutside);
 
     const subNavLinks = document.querySelectorAll('.dropdown-content a, nav ul > li > a:not(.dropdown-trigger)');
     subNavLinks.forEach(link => {
-        link.addEventListener('click', () => {
+        const closeMenu = () => {
             if (window.innerWidth <= 768) {
                 navMenu.classList.remove('active');
                 if (dropdown) dropdown.classList.remove('open');
@@ -352,7 +359,9 @@
                     icon.classList.add('fa-bars');
                 }
             }
-        });
+        };
+        link.addEventListener('click', closeMenu);
+        link.addEventListener('touchstart', closeMenu);
     });
 </script>
 </body>
