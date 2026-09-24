@@ -324,18 +324,16 @@
         dropdownTrigger.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-     
-            const isOpen = dropdownTrigger.classList.toggle('open');
-            if (dropdown) {
-                dropdown.classList.toggle('open', isOpen);
-            }
+
+            const isOpen = dropdown.classList.toggle('open');
+            dropdownTrigger.classList.toggle('open', isOpen);
         });
     }
 
     document.addEventListener('click', (e) => {
-        if (dropdownTrigger && !dropdownTrigger.contains(e.target)) {
-            dropdownTrigger.classList.remove('open');
-            if (dropdown) dropdown.classList.remove('open');
+        if (dropdown && !dropdown.contains(e.target)) {
+            dropdownTrigger?.classList.remove('open');
+            dropdown.classList.remove('open');
         }
     });
 
