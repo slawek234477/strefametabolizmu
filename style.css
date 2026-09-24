@@ -1280,7 +1280,7 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         -webkit-tap-highlight-color: transparent !important;
     }
 
-    nav a::after {
+   nav a::after {
     display: none !important;
 }
 
@@ -1293,18 +1293,10 @@ nav a,
     text-decoration: none;
 }
 
-nav a:hover,
-.dropdown-trigger:hover,
-.dropdown-content a:hover {
-    background-color: rgba(46, 196, 182, 0.15) !important;
-    color: var(--primary-dark) !important;
-}
-
 nav a.clicked,
-.dropdown-trigger.clicked,
 .dropdown-content a.clicked {
-    background-color: var(--accent) !important; 
-    color: var(--primary-dark) !important;     
+    background-color: var(--accent) !important;
+    color: var(--primary-dark) !important;
     font-weight: 600 !important;
     transition: background-color 0.05s ease, color 0.05s ease !important;
 }
