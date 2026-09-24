@@ -350,14 +350,9 @@
                 e.stopPropagation();
                 navMenu.classList.toggle('active');
                 
-                // Zmiana ikony na X i z powrotem
                 const icon = hamburger.querySelector('i');
                 if (icon) {
-                    if (navMenu.classList.contains('active')) {
-                        icon.className = 'fa-solid fa-xmark';
-                    } else {
-                        icon.className = 'fa-solid fa-bars';
-                    }
+                    icon.className = navMenu.classList.contains('active') ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
                 }
             });
         }
