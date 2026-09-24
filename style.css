@@ -1217,35 +1217,39 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
 
     nav.active ~ .hamburger,
     .nav-wrapper:has(nav.active) .hamburger {
-        position: fixed;
-        right: 20px;
-        top: 18px;
-        color: #ffffff !important;
+        position: relative;
+        z-index: 1002;
     }
 
     nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        max-width: 280px;
-        height: 100vh;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        height: auto; 
         background: var(--primary-dark);
-        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.4);
-        padding: 70px 20px 30px;
-        transition: right 0.25s ease-out;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        padding: 15px 20px 25px 20px; 
+
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
         z-index: 1001;
-        overflow-y: auto;
     }
 
     nav.active {
-        right: 0;
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
     }
 
     nav ul {
         flex-direction: column !important;
         align-items: flex-start !important;
-        gap: 6px !important;
+        gap: 0 !important;
         width: 100%;
     }
 
@@ -1256,7 +1260,7 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
     nav a, 
     .dropdown-trigger {
         color: #ffffff !important;
-        font-size: 1rem;
+        font-size: 0.95rem;
         font-family: inherit;
         background: none;
         border: none;
@@ -1265,7 +1269,7 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 12px 0;
+        padding: 10px 0; 
         text-align: left;
         cursor: pointer;
         outline: none;
@@ -1281,6 +1285,10 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         pointer-events: none;
     }
 
+    .dropdown-trigger.open i {
+        transform: rotate(180deg); 
+    }
+
     .dropdown {
         width: 100%;
     }
@@ -1290,7 +1298,7 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
         display: none; 
         background-color: rgba(255, 255, 255, 0.06);
         border-radius: 6px;
-        margin: 4px 0 8px 0;
+        margin: 4px 0 6px 0;
         padding: 0;
         width: 100%;
         box-shadow: none;
@@ -1298,34 +1306,12 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
 
     .dropdown-content a {
         color: #e2e8f0 !important;
-        padding: 10px 14px;
-        font-size: 0.9rem;
+        padding: 8px 12px;
+        font-size: 0.88rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     }
 
     .dropdown-content a:last-child {
         border-bottom: none;
     }
-
-    @media (min-width: 769px) {
-    .dropdown:hover .dropdown-content { 
-        display: block; 
-    }
-}
-
-
-.dropdown-trigger.open + .dropdown-content,
-.dropdown.open .dropdown-content { 
-    display: block !important; 
-}
-
-
-.dropdown-trigger {
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-    user-select: none;
-}
-
-.dropdown-trigger * {
-    pointer-events: none; 
 }
