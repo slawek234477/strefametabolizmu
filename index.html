@@ -320,13 +320,19 @@
         });
     }
 
-    if (dropdownTrigger) {
+    if (dropdownTrigger && dropdown) {
         dropdownTrigger.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
 
-            const isOpen = dropdown.classList.toggle('open');
-            dropdownTrigger.classList.toggle('open', isOpen);
+            const isCurrentlyOpen = dropdown.classList.contains('open');
+            if (isCurrentlyOpen) {
+                dropdown.classList.remove('open');
+                dropdownTrigger.classList.remove('open');
+            } else {
+                dropdown.classList.add('open');
+                dropdownTrigger.classList.add('open');
+            }
         });
     }
 
