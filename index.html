@@ -362,6 +362,18 @@
             }
         });
     });
+		const touchableLinks = document.querySelectorAll('#nav-menu a');
+
+    touchableLinks.forEach(link => {
+        link.addEventListener('touchstart', function() {
+
+            this.classList.add('clicked');
+
+            setTimeout(() => {
+                this.classList.remove('clicked');
+            }, 200);
+        }, { passive: true });
+    });
 </script>
 </body>
 </html>
