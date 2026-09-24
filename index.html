@@ -338,5 +338,29 @@
    aria-label="Skontaktuj się na WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+        const dropdownToggle = document.getElementById('dropdown-toggle');
+        const dropdownItem = document.getElementById('dropdown-item');
+        
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', function(e) {
+                e.stopPropagation();
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        if (dropdownToggle && dropdownItem) {
+            dropdownToggle.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdownItem.classList.toggle('open');
+                }
+            });
+        }
+    });
+</script>	
 </body>
 </html>
