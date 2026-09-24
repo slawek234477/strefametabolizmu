@@ -1386,34 +1386,3 @@ nav a,
         padding-left: 10px !important;
     }
 }
-.btn-outline-hero {
-    background: transparent !important;
-    color: #ffffff !important;
-    padding: 14px 28px !important;
-    border-radius: 8px !important;
-    text-decoration: none !important;
-    font-weight: 600 !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 10px !important;
-    border: 2px solid var(--accent) !important;
-    transition: all 0.3s ease !important;
-}
-
-.btn-outline-hero:hover {
-    background: var(--accent) !important;
-    color: var(--primary-dark) !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 12px rgba(46, 196, 182, 0.4) !important;
-}
-
-.hero .img-container img {
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 25px rgba(46, 196, 182, 0.15);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.hero .img-container img:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 35px rgba(46, 196, 182, 0.3);
-}
