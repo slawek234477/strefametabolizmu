@@ -320,48 +320,35 @@
         });
     }
 
-    function handleDropdownToggle(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        
-        if (dropdown) {
-            dropdown.classList.toggle('open');
-        }
-    }
-
-    if (dropdownTrigger) {
-        dropdownTrigger.addEventListener('touchstart', handleDropdownToggle, { passive: false });
+    if (dropdownTrigger && dropdown) {
         dropdownTrigger.addEventListener('click', (e) => {
-            if (e.detail !== 0) { 
-                handleDropdownToggle(e);
-            }
+            e.preventDefault(); 
+            e.stopPropagation();
+            
+            dropdown.classList.toggle('open');
         });
     }
 
-    const closeDropdownOutside = (e) => {
+    document.addEventListener('click', (e) => {
         if (dropdown && !dropdown.contains(e.target)) {
             dropdown.classList.remove('open');
         }
-    };
-    document.addEventListener('touchstart', closeDropdownOutside);
-    document.addEventListener('click', closeDropdownOutside);
+    });
 
-    const subNavLinks = document.querySelectorAll('.dropdown-content a, nav ul > li > a:not(.dropdown-trigger)');
-    subNavLinks.forEach(link => {
-        const closeMenu = () => {
+    const allMenuLinks = document.querySelectorAll('#nav-menu a:not(.dropdown-trigger)');
+    allMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
                 navMenu.classList.remove('active');
                 if (dropdown) dropdown.classList.remove('open');
                 
-                const icon = hamburgerBtn.querySelector('i');
+                const icon = hamburgerBtn?.querySelector('i');
                 if (icon) {
                     icon.classList.remove('fa-xmark');
                     icon.classList.add('fa-bars');
                 }
             }
-        };
-        link.addEventListener('click', closeMenu);
-        link.addEventListener('touchstart', closeMenu);
+        });
     });
 </script>
 </body>
