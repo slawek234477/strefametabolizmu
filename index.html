@@ -26,12 +26,14 @@
                 <li><a href="index.html" class="active">Strona główna</a></li>
                 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-trigger">Produkty <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i></a>
-                    <div class="dropdown-content">
-                        <a href="triglp-bioaktywny-peptyd-o-potrojnym-dzialaniu.html">triGLP</a>
-                        <a href="orygn-ignyt.html">IGNYT</a>
-                    </div>
-                </li>
+    <button type="button" class="dropdown-trigger">
+        Produkty <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="triglp-bioaktywny-peptyd-o-potrojnym-dzialaniu.html">triGLP</a>
+        <a href="orygn-ignyt.html">IGNYT</a>
+    </div>
+</li>
 
                 <li><a href="jak-kupic.html">Jak kupić?</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
@@ -319,28 +321,16 @@
     }
 
     if (dropdownTrigger && dropdown) {
-        let isProcessing = false;
+        dropdownTrigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            dropdown.classList.toggle('open');
 
-        const handleDropdownToggle = (e) => {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                e.stopPropagation();
-
-                if (isProcessing) return;
-                isProcessing = true;
-
-                dropdown.classList.toggle('open');
-
-                setTimeout(() => {
-                    isProcessing = false;
-                }, 200);
-            }
-        };
-
-        dropdownTrigger.addEventListener('click', handleDropdownToggle);
+            dropdownTrigger.blur();
+        });
     }
 
-    const subNavLinks = document.querySelectorAll('.dropdown-content a, nav ul > li > a:not(.dropdown-trigger)');
+    const subNavLinks = document.querySelectorAll('.dropdown-content a, nav ul > li > a');
     subNavLinks.forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
