@@ -1653,4 +1653,30 @@ nav#nav-menu a:hover {
         border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
     }
 }
+@media (max-width: 768px) {
+    body header nav#nav-menu #dropdown-item.open .dropdown-content {
+        display: block !important;
+        position: static !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        background-color: #03151a !important;
+        box-shadow: none !important;
+        padding: 8px 0 !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+    }
 
+    body header nav#nav-menu #dropdown-item.open .dropdown-content a {
+        display: block !important;
+        color: #2ec4b6 !important; 
+        background-color: transparent !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        padding: 12px 30px !important;
+        font-size: 0.95rem !important;
+        font-weight: 600 !important;
+        text-align: left !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    }
+}
