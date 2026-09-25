@@ -1421,10 +1421,10 @@ nav a,
     border-color: #ffffff;
 }
 .hero-centered {
-    text-align: center !important;
-    padding: 35px 0 25px 0 !important; 
+     text-align: center !important;
+    padding: 30px 0 15px 0 !important; 
     background: linear-gradient(135deg, rgba(10, 50, 61, 0.90), rgba(15, 76, 92, 0.93)), 
-                url('header.png') center center / contain repeat !important; 
+                url('header.png') center center / contain repeat !important;
 }
 
 .hero-center-wrapper {
@@ -1444,16 +1444,16 @@ nav a,
 .hero-centered p {
     font-size: 0.98rem !important;
     color: #cbd5e1 !important;
-    margin-bottom: 15px !important;
+    margin-bottom: 5px !important; 
 }
 
-
 .hero-cart-container {
-    margin-top: 5px !important;
+    margin-top: -5px !important; 
+    margin-bottom: 0 !important;
 }
 
 .hero-cart-img {
-    max-width: 180px !important; 
+    max-width: 170px !important; 
     height: auto !important;
     filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.35)) 
             drop-shadow(0px 0px 12px rgba(46, 196, 182, 0.3)) !important;
