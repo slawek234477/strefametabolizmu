@@ -1420,3 +1420,23 @@ nav a,
     color: #ffffff;
     border-color: #ffffff;
 }
+.hero-slim {
+    padding: 40px 0 !important; 
+}
+
+.hero-slim h1 {
+    font-size: 1.9rem !important; 
+    margin-bottom: 10px !important;
+}
+
+.hero-slim p {
+    font-size: 0.95rem !important;
+    margin-bottom: 18px !important;
+}
+
+
+.hero-cart-img {
+    max-width: 280px !important; 
+    height: auto;
+    filter: drop-shadow(0px 0px 18px rgba(46, 196, 182, 0.25));
+}
