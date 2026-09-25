@@ -40,34 +40,17 @@
     </div>
 </header>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const hamburger = document.getElementById('hamburger-btn');
-        const navMenu = document.getElementById('nav-menu');
-        
-        if (hamburger && navMenu) {
-            hamburger.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-                const icon = hamburger.querySelector('i');
-                if (navMenu.classList.contains('active')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-xmark');
-                } else {
-                    icon.classList.remove('fa-xmark');
-                    icon.classList.add('fa-bars');
-                }
-            });
-        }
-    });
-</script>
-
-    <div class="page-header">
-    <div class="container">
+    <section class="hero hero-slim">
+    <div class="container hero-grid">
+        <div>
         <h1>Jak zamówić produkty ORYGN?</h1>
         <p>Wszystkie informacje o cenach, płatnościach i dostawie w jednym miejscu.</p>
     </div>
-</div>
-
+<div class="img-container">
+            <img src="koszyk.png" alt="Koszyk sklepowy ORYGN" class="hero-cart-img">
+	</div>
+    </div>
+</section>
     <main>
         <section class="section">
     <div class="container">
