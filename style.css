@@ -1551,16 +1551,18 @@ hero-contact-container {
     color: #ffffff !important;
     box-shadow: 0 0 20px rgba(15, 76, 92, 0.9), 0 0 10px rgba(25, 115, 138, 0.75) !important;
 }
-.study-card .btn-outline { 
-    background: rgba(46, 196, 182, 0.12) !important; 
+.study-card a.btn-outline,
+div.study-card a.btn-outline { 
+    background: rgba(46, 196, 182, 0.15) !important; 
     color: var(--primary-dark) !important; 
     border: 2px solid var(--accent) !important; 
-    transition: all 0.3s ease; 
+    box-shadow: none !important;
 }
 
-.study-card .btn-outline:hover {
-    background: rgba(46, 196, 182, 0.25) !important; 
+.study-card a.btn-outline:hover,
+div.study-card a.btn-outline:hover {
+    background: rgba(46, 196, 182, 0.28) !important; 
     color: var(--primary-dark) !important;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(46, 196, 182, 0.2);
+    box-shadow: 0 4px 12px rgba(46, 196, 182, 0.2) !important;
 }
