@@ -1588,6 +1588,3 @@ a.btn-hero-outline:hover {
     transform: translateY(-2px) !important;
     box-shadow: 0 4px 12px rgba(46, 196, 182, 0.2) !important;
 }
-a.btn-hero-outline i {
-    color: var(--primary-dark) !important;
-}
