@@ -1546,8 +1546,8 @@ hero-contact-container {
 }
 
 .btn-primary.btn-dark:hover {
-    background: var(--primary) !important;
-    border-color: var(--primary) !important;
+    background: var(--primary-dark) !important;
+    border-color: var(--accent) !important;
     color: #ffffff !important;
-    box-shadow: 0 6px 20px rgba(15, 76, 92, 0.4) !important;
+    box-shadow: 0 0 20px rgba(15, 76, 92, 0.9), 0 0 10px rgba(25, 115, 138, 0.75) !important;
 }
