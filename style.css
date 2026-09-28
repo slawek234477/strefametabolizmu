@@ -1448,7 +1448,7 @@ nav a,
 }
 
 .hero-cart-container {
-    margin-top: -5px !important; 
+    margin-top: 0px !important; 
     margin-bottom: 0 !important;
 }
 
@@ -1500,7 +1500,7 @@ hero-contact-container {
 .cta-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 25px;
     max-width: 1150px;
     margin: 40px auto 60px auto;
     padding: 0 15px;
