@@ -472,11 +472,11 @@ img, svg, video {
 .cert-img[src*="woda dejonizowana"] { --scale-base: 1.55; }
 .cert-img[src*="cytryna"] { --scale-base: 1.05; }
 .cert-img[src*="imbir"] { --scale-base: 1.35; }
-.cert-img[src*="hbc"] { --scale-base: 1.9; }
-.cert-img[src*="proszek z buraka"] { --scale-base: 1.4; }
-.cert-img[src*="kwas cytrynowy"] { --scale-base: 1.5; }
+.cert-img[src*="hbc"] { --scale-base: 1.4; }
+.cert-img[src*="proszek z buraka"] { --scale-base: 1.1; }
+.cert-img[src*="kwas cytrynowy"] { --scale-base: 0.9; }
 .cert-img[src*="cranapple"] { --scale-base: 1.7; }
-.cert-img[src*="rebaudiozyd a"] { --scale-base: 1.6; }
+.cert-img[src*="rebaudiozyd a"] { --scale-base: 1.2; }
 
 .card:hover .cert-img,
 .pillar-card:hover .cert-img {
