@@ -1596,15 +1596,17 @@ a.btn-hero-outline:hover {
             drop-shadow(0px 0px 12px rgba(46, 196, 182, 0.3)) !important;
 }
 .product-img-container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px; /* Stała wysokość kontenera, dzięki czemu zdjęcia będą w tej samej linii */
     margin-bottom: 20px;
     overflow: hidden;
 }
 
 .product-img {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
+    max-height: 160px; /* Kontroluje maksymalną wysokość obu grafik */
+    width: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
     filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.15));
