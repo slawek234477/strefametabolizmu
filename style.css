@@ -1634,3 +1634,12 @@ a.btn-hero-outline:hover {
     width: 100%;
     height: auto;
 }
+.highlight-list .cert-img {
+    --scale-base: 1 !important;
+    transform: none !important;
+    max-width: 45px !important;
+    max-height: 45px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
