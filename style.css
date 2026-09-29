@@ -475,7 +475,7 @@ img, svg, video {
 .cert-img[src*="hbc"] { --scale-base: 1.9; }
 .cert-img[src*="proszek z buraka"] { --scale-base: 1.4; }
 .cert-img[src*="kwas cytrynowy"] { --scale-base: 1.5; }
-.cert-img[src*="cranapple"] { --scale-base: 2.7; }
+.cert-img[src*="cranapple"] { --scale-base: 1.7; }
 .cert-img[src*="rebaudiozyd a"] { --scale-base: 1.6; }
 
 .card:hover .cert-img,
@@ -877,7 +877,6 @@ main.container > section {
     filter: brightness(108%) contrast(120%);
 }
 
-/* Cennik / Pakiety */
 .pricing-section-title {
     text-align: center;
     font-size: 1.3rem;
