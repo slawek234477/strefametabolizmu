@@ -1634,18 +1634,12 @@ a.btn-hero-outline:hover {
     width: 100%;
     height: auto;
 }
-.highlight-list li {
-    display: flex !important;
-    align-items: center !important;
-    gap: 12px !important;
-  }
+.highlight-list .cert-img {
+    max-width: none !important;
+    max-height: 35px !important; 
+    width: auto !important;
+}
 
-  .highlight-list .cert-img {
-    width: 32px !important;
-    height: 32px !important;
-    min-width: 32px !important;
-    min-height: 32px !important;
-    object-fit: contain !important; 
-    transform: none !important;
-    margin: 0 !important;
-  }
+.highlight-list li {
+    align-items: center !important; 
+}
