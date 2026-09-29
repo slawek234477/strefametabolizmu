@@ -1611,7 +1611,7 @@ a.btn-hero-outline:hover {
 }
 
 .product-card:nth-child(2) .product-img {
-    max-height: 235px; 
+    max-height: 275px; 
 }
 
 .product-card:nth-child(1):hover .product-img {
