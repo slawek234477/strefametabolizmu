@@ -1633,12 +1633,3 @@ a.btn-hero-outline:hover {
     width: 100%;
     height: auto;
 }
-.highlight-list .cert-img {
-    max-width: none !important;
-    max-height: 35px !important; 
-    width: auto !important;
-}
-
-.highlight-list li {
-    align-items: center !important; 
-}
