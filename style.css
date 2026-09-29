@@ -1599,7 +1599,7 @@ a.btn-hero-outline:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 220px;
     margin-bottom: 20px;
     overflow: hidden;
 }
@@ -1622,5 +1622,5 @@ a.btn-hero-outline:hover {
 
 
 .product-card:nth-child(1):hover .product-img {
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
