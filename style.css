@@ -1616,7 +1616,7 @@ a.btn-hero-outline:hover {
 .product-card:nth-child(2) .product-img {
     width: 250px;       
     max-width: none;
-    transform: scale(1.15); 
+    transform: scale(1.35); 
 }
 
 .product-card:nth-child(1):hover .product-img {
