@@ -534,7 +534,10 @@ img, svg, video {
     justify-content: space-between;
     text-align: left;
 }
-
+.product-card .product-img img {
+    margin: 0 auto !important;
+    display: block !important;
+}
 
 .product-badge {
     align-self: flex-start;
