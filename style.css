@@ -1596,33 +1596,20 @@ a.btn-hero-outline:hover {
             drop-shadow(0px 0px 12px rgba(46, 196, 182, 0.3)) !important;
 }
 .product-img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 220px;
+    text-align: center;
     margin-bottom: 20px;
     overflow: hidden;
 }
 
 .product-img {
-    max-height: 200px;
-    max-width: 100%;
-    width: auto;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
     filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.15));
 }
 
-.product-card:nth-child(2) .product-img {
-    width: 250px;       
-    max-width: none;
-    transform: scale(1.35); 
-}
-
-.product-card:nth-child(1):hover .product-img {
+.product-card:hover .product-img {
     transform: scale(1.05);
-}
-
-.product-card:nth-child(2):hover .product-img {
-    transform: scale(1.22); 
 }
