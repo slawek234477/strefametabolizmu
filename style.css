@@ -1599,13 +1599,14 @@ a.btn-hero-outline:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 180px; /* Stała wysokość kontenera, dzięki czemu zdjęcia będą w tej samej linii */
+    height: 220px; 
     margin-bottom: 20px;
     overflow: hidden;
 }
 
 .product-img {
-    max-height: 160px; /* Kontroluje maksymalną wysokość obu grafik */
+    max-height: 210px; 
+    max-width: 100%;
     width: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
