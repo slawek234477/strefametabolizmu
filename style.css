@@ -1618,11 +1618,11 @@ a.btn-hero-outline:hover {
 }
 
 .product-card:nth-child(2) .product-img {
-    max-height: 395px; 
-    width: 280px;     
-    max-width: none;  
+    width: 280px;       
+    max-width: none;      
+    transform: scale(1.15); 
 }
 
 .product-card:nth-child(2):hover .product-img {
-    transform: scale(1.04);
+    transform: scale(1.20);
 }
