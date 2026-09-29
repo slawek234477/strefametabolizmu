@@ -1614,11 +1614,11 @@ a.btn-hero-outline:hover {
 }
 
 .product-card:nth-child(2) .product-img {
-    transform: scale(1.60); 
+    transform: scale(1.66); 
 }
 
 .product-card:nth-child(2):hover .product-img {
-    transform: scale(1.675); 
+    transform: scale(1.735); 
 }
 
 .product-card:nth-child(1):hover .product-img {
