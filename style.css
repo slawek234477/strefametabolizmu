@@ -1090,7 +1090,7 @@ main.container > section {
 }
 
 p {
-    margin-bottom: 1rem !important; 
+    margin-bottom: 1rem; 
     line-height: 1.6;               
 }
 
@@ -1423,7 +1423,7 @@ nav a,
 }
 .hero-centered {
      text-align: center !important;
-    padding: 30px 0 15px 0 !important; 
+    padding: 50px 0 40px 0 !important; 
     background: linear-gradient(135deg, rgba(10, 50, 61, 0.90), rgba(15, 76, 92, 0.93)), 
                 url('header.png') center center / contain repeat !important;
 }
@@ -1459,7 +1459,7 @@ nav a,
     filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.35)) 
             drop-shadow(0px 0px 12px rgba(46, 196, 182, 0.3)) !important;
 }
-hero-contact-container {
+.hero-contact-container {
     margin-top: 20px !important;
     margin-bottom: 0 !important;
 }
@@ -1479,11 +1479,6 @@ hero-contact-container {
     color: #cbd5e1 !important;
     margin-bottom: 2px !important; 
     line-height: 1.5 !important;
-}
-
-.hero-contact-container {
-    margin-top: 0px !important; 
-    margin-bottom: 0 !important;
 }
 
 .hero-contact-img {
