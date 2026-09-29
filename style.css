@@ -35,7 +35,7 @@ body {
             border-bottom: none !important; 
             box-shadow: none !important; 
         }
-        .container { width: 97%; max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+        .container { width: 98%; max-width: 1400px; margin: 0 auto; padding: 0 20px; }
         .nav-wrapper { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
         .logo { font-size: 1.4rem; font-weight: 700; color: var(--primary-dark); text-decoration: none; }
         .logo span { color: var(--accent); }
