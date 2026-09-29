@@ -1634,3 +1634,13 @@ a.btn-hero-outline:hover {
     width: 100%;
     height: auto;
 }
+.ingredients-list .ingredient-icon,
+.ingredients-list .cert-img {
+    width: 48px !important;        
+    height: 48px !important;      
+    max-width: 48px !important;
+    max-height: 48px !important;
+    object-fit: contain;          
+    flex-shrink: 0;                
+    transform: none !important;    
+}
