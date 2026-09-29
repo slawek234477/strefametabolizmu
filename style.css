@@ -159,8 +159,9 @@ body {
     border: none; 
 }
 .content-image-box img { 
-    max-width: 100%; 
-    height: auto; 
+    max-width: 350px !important;
+    width: 100%;
+	height: auto;
     border-radius: 12px; 
 }
         .image-caption { font-size: 0.82rem; color: var(--text-muted); margin-top: 10px; font-style: italic; }
@@ -1614,4 +1615,22 @@ a.btn-hero-outline:hover {
 
 .product-card:hover .product-img {
     transform: scale(1.05);
+}
+
+.img-feature-ignyt {
+    max-width: 450px !important;
+    width: 100%;
+    height: auto;
+}
+
+.img-for-who {
+    max-width: 380px !important;
+    width: 100%;
+    height: auto;
+}
+
+.img-sklad-ignyt {
+    max-width: 320px !important;
+    width: 100%;
+    height: auto;
 }
