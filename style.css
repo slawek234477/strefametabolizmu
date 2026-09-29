@@ -299,8 +299,8 @@ nav a.active::after {
 }
 
 .btn-primary, .btn-outline { 
-    background: var(--accent) !important; 
-    color: var(--primary-dark) !important; 
+    background: transparent !important; 
+    color: #ffffff !important;
     padding: 14px 28px !important; 
     border-radius: 8px !important; 
     text-decoration: none !important; 
@@ -309,7 +309,7 @@ nav a.active::after {
     align-items: center !important; 
     justify-content: center !important; 
     gap: 10px !important; 
-    border: 2px solid var(--accent) !important; 
+    border: 2px solid var(--accent) !important;
     transition: all 0.3s ease !important; 
     box-shadow: 0 4px 12px rgba(46, 196, 182, 0.3) !important;
 }
@@ -402,7 +402,14 @@ img, svg, video {
 
 @media (max-width: 576px) {
     .btn-primary, .btn-outline { width: 100% !important; }
-
+.whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 26px;
+    }
+}
     body {
         padding-left: 0 !important;
         padding-right: 0 !important;
