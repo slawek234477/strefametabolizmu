@@ -1736,3 +1736,51 @@ a.btn-hero-outline:hover {
         margin-right: auto !important;
     }
 }
+@media screen and (max-width: 768px) {
+    html body .pricing-grid .price-card,
+    html body .price-card {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        padding: 20px 15px !important;
+    }
+
+    html body .price-card .btn-primary,
+    html body .price-card .btn-outline,
+    html body .price-card a.btn-primary,
+    html body .price-card button.btn-primary,
+    html body .pricing-grid .btn-primary {
+        width: 100% !important;
+        max-width: 160px !important;    
+        padding: 8px 12px !important;    
+        font-size: 0.85rem !important;   
+        margin: 15px auto 0 auto !important; 
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        float: none !important;
+        position: static !important;
+    }
+
+    html body .price-card .price,
+    html body .price-card .pln-price,
+    html body .price-card .currency-note {
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 5px !important;
+    }
+
+    html body .cta-wrapper a.btn-primary,
+    html body .cta-box a.btn-primary,
+    html body a.btn-primary,
+    html body .btn-primary {
+        width: calc(100% - 32px) !important;
+        max-width: 360px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 10px 16px !important;
+        font-size: 0.9rem !important;
+    }
+}
