@@ -1767,22 +1767,18 @@ a.btn-hero-outline:hover {
         align-items: center !important;
         text-align: center !important;
     }
-
     .hero-grid > div:first-child {
         display: flex !important;
         flex-direction: column !important;
         width: 100% !important;
     }
-
     .hero-grid h1 {
         order: 1 !important;
     }
-
     .hero-grid p {
         order: 2 !important;
-        margin-bottom: 20px !important;
-    }
-
+        margin-bottom: 20px !important;   
+	}
     .hero .img-container,
     .hero-image,
     .hero-img {
@@ -1792,7 +1788,6 @@ a.btn-hero-outline:hover {
         text-align: center !important;
         width: 100% !important;
     }
-
     .hero .img-container img,
     .hero-banner-img {
         display: inline-block !important;
@@ -1841,4 +1836,33 @@ a.btn-hero-outline:hover {
         max-width: 65px !important;
         height: auto !important;
     }
+table {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        white-space: normal !important;
+    }
+    table th, table td {
+        padding: 8px 6px !important;
+        font-size: 12px !important;
+        word-break: break-word !important;
+    }
+    .triglp-usage-img, 
+    .usage-img,
+    img[src*="triglp"] {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 12px !important;
+    }
+}
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+img {
+    max-width: 100% !important;
+    height: auto !important;
 }
