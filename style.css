@@ -402,14 +402,17 @@ img, svg, video {
 }
 
 @media (max-width: 576px) {
-   .btn-primary, 
+   @media (max-width: 576px) {
+    .btn-primary, 
     .btn-outline, 
     .btn-cta, 
     .btn-secondary,
     .btn-large,
     a.btn-hero-outline {
-        width: 100% !important;
-        max-width: 100% !important;
+        width: calc(100% - 32px) !important;
+        max-width: 340px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
         padding: 10px 16px !important;
         font-size: 0.9rem !important;
         white-space: normal !important;
@@ -417,23 +420,29 @@ img, svg, video {
         box-sizing: border-box !important;
     }
 
+    .price-card {
+        padding: 20px 15px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .price-card .price,
+    .price-card .pln-price {
+        margin-bottom: 5px !important;
+    }
+
     .price-card .btn-primary,
     .price-card .btn-outline,
     .price-card .btn-cta,
     .price-card a {
-        width: auto !important;          
-        display: inline-flex !important; 
-        padding: 6px 16px !important;    
-        font-size: 0.82rem !important;   
-        margin-top: 8px !important;      
-        align-self: center !important;  
-    }
-
-    .price-card {
-        padding: 18px 15px !important;
+        width: 100% !important;          
+        max-width: 150px !important;
+        padding: 6px 12px !important;    
+        font-size: 0.85rem !important;   
+        margin-top: 12px !important;      
         display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
+        justify-content: center !important;
     }
 .whatsapp-float {
         width: 50px;
@@ -1685,102 +1694,4 @@ a.btn-hero-outline:hover {
     max-width: 320px !important;
     width: 100%;
     height: auto;
-}
-@media (max-width: 768px) {
-    .pricing-grid .price-card,
-    .price-card {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-        padding: 20px 15px !important;
-    }
-
-    .price-card a,
-    .price-card button,
-    .price-card .btn-primary,
-    .price-card .btn-outline,
-    .price-card .btn-cta,
-    .pricing-grid .btn-primary,
-    .pricing-grid a {
-        width: 100% !important;
-        max-width: 160px !important; 
-        min-width: 0 !important;
-        padding: 8px 12px !important;  
-        font-size: 0.85rem !important; 
-        margin: 15px auto 0 auto !important; 
-        display: inline-flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        float: none !important;
-        position: static !important;
-    }
-
-    .price-card .price,
-    .price-card .pln-price,
-    .price-card .currency-note,
-    .price-card div {
-        width: 100% !important;
-        text-align: center !important;
-    }
-
-    .cta-wrapper a,
-    .cta-box a,
-    .cta-container a,
-    a.btn-primary,
-    a.btn-cta {
-        width: calc(100% - 32px) !important;
-        max-width: 360px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-}
-@media screen and (max-width: 768px) {
-    html body .pricing-grid .price-card,
-    html body .price-card {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-        padding: 20px 15px !important;
-    }
-
-    html body .price-card .btn-primary,
-    html body .price-card .btn-outline,
-    html body .price-card a.btn-primary,
-    html body .price-card button.btn-primary,
-    html body .pricing-grid .btn-primary {
-        width: 100% !important;
-        max-width: 160px !important;    
-        padding: 8px 12px !important;    
-        font-size: 0.85rem !important;   
-        margin: 15px auto 0 auto !important; 
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        float: none !important;
-        position: static !important;
-    }
-
-    html body .price-card .price,
-    html body .price-card .pln-price,
-    html body .price-card .currency-note {
-        width: 100% !important;
-        text-align: center !important;
-        margin-bottom: 5px !important;
-    }
-
-    html body .cta-wrapper a.btn-primary,
-    html body .cta-box a.btn-primary,
-    html body a.btn-primary,
-    html body .btn-primary {
-        width: calc(100% - 32px) !important;
-        max-width: 360px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        padding: 10px 16px !important;
-        font-size: 0.9rem !important;
-    }
 }
