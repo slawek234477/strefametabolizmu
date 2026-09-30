@@ -1856,6 +1856,39 @@ table {
         height: auto !important;
         border-radius: 12px !important;
     }
+.img-sklad-ignyt,
+    .img-feature-ignyt,
+    .img-for-who,
+    img[src*="ignyt"],
+    img[src*="IGNYT"] {
+        max-width: 90% !important;
+        width: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+        border-radius: 12px !important;
+    }
+
+    .comp-table, 
+    table {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap !important; 
+    }
+
+    .comp-table th, .comp-table td,
+    table th, table td {
+        white-space: normal !important; 
+        min-width: 110px !important;    
+        padding: 10px 8px !important;
+        font-size: 13px !important;
+    }
+
+    .comp-table th:first-child, 
+    .comp-table td:first-child {
+        min-width: 90px !important;
+    }
 }
 html, body {
     overflow-x: hidden !important;
