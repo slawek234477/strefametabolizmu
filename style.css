@@ -449,6 +449,19 @@ img, svg, video {
         white-space: nowrap !important;
         flex-shrink: 0 !important;
     }
+	.hero-grid,
+    .hero .container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .hero-image,
+    .hero-img {
+        order: -1 !important; 
+        margin: 15px auto !important;
+        max-height: 220px !important;
+        width: auto !important;
+    }
 .whatsapp-float {
         width: 50px;
         height: 50px;
