@@ -532,11 +532,7 @@ img, svg, video {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: left;
-}
-.product-card .product-img img {
-    margin: 0 auto !important;
-    display: block !important;
+    text-align: center;
 }
 
 .product-badge {
