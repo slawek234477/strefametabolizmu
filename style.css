@@ -385,7 +385,6 @@ img, svg, video {
 
     .hero .img-container {
         order: 2 !important;
-        display: block !important;
         margin: 20px 0 !important;
         text-align: center !important;
         width: 100% !important;
@@ -1754,5 +1753,14 @@ a.btn-hero-outline:hover {
     .price-card .pln-price {
         font-size: 0.75rem !important;
         margin: 0 !important;
+    }
+}
+@media (max-width: 991px) {
+    .hero .img-container,
+    .hero .img-container img,
+    .hero .banner-img,
+    .hero-image,
+    .hero-img {
+        display: none !important;
     }
 }
