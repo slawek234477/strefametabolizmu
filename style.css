@@ -1686,3 +1686,55 @@ a.btn-hero-outline:hover {
     width: 100%;
     height: auto;
 }
+@media (max-width: 768px) {
+
+    .cta-wrapper a,
+    .cta-box a,
+    .cta-container a,
+    .hero-btns a,
+    .btn-primary,
+    .btn-cta,
+    .btn-outline,
+    a.btn-hero-outline {
+        width: calc(100% - 32px) !important;
+        max-width: 360px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 10px 18px !important;
+        font-size: 0.9rem !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .price-card .btn-primary,
+    .price-card .btn-outline,
+    .price-card .btn-cta,
+    .price-card a {
+        width: 100% !important;
+        max-width: 180px !important;
+        padding: 8px 14px !important;
+        font-size: 0.85rem !important;
+        margin: 12px auto 0 auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        position: static !important;
+        float: none !important;
+    }
+
+    .price-card {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 20px 15px !important;
+    }
+
+    .price-card .price,
+    .price-card .pln-price,
+    .price-card .currency-note {
+        text-align: center !important;
+        width: 100% !important;
+    }
+}
