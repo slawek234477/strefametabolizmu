@@ -532,7 +532,7 @@ img, svg, video {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
+    text-align: left;
 }
 
 .product-badge {
