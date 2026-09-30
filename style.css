@@ -1727,6 +1727,27 @@ a.btn-hero-outline:hover {
     }
 }
 @media screen and (max-width: 768px) {
+    .price-card .btn-primary,
+    .price-card .btn-outline,
+    .price-card a.btn-primary,
+    .price-card a {
+        position: static !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        transform: none !important;
+        float: none !important;
+        display: inline-flex !important;
+        width: auto !important;
+        max-width: 105px !important;    
+        padding: 5px 8px !important;   
+        font-size: 0.75rem !important;  
+        gap: 4px !important;
+        margin: 0 0 0 15px !important;  
+        flex-shrink: 0 !important;
+        white-space: nowrap !important;
+    }
     .price-card > div:last-child,
     .price-card div[style*="flex"],
     .price-card .price-wrapper {
@@ -1734,35 +1755,15 @@ a.btn-hero-outline:hover {
         flex-direction: row !important;
         align-items: center !important;
         justify-content: space-between !important;
-        gap: 8px !important;
         width: 100% !important;
         box-sizing: border-box !important;
     }
     .price-card .price {
-        font-size: 1.25rem !important;
+        font-size: 1.15rem !important;
         margin: 0 !important;
-        line-height: 1.2 !important;
     }
-
-    .price-card .pln-price,
-    .price-card .currency-note {
-        font-size: 0.78rem !important;
+    .price-card .pln-price {
+        font-size: 0.75rem !important;
         margin: 0 !important;
-        white-space: nowrap !important;
-    }
-
-    .price-card .btn-primary,
-    .price-card .btn-outline,
-    .price-card a.btn-primary,
-    .price-card a {
-        display: inline-flex !important;
-        width: auto !important;
-        max-width: 120px !important;  
-        padding: 6px 10px !important;   
-        font-size: 0.78rem !important; 
-        gap: 5px !important;          
-        margin: 0 !important;
-        flex-shrink: 0 !important;     
-        white-space: nowrap !important;
     }
 }
