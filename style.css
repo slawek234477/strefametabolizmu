@@ -1734,28 +1734,35 @@ a.btn-hero-outline:hover {
         flex-direction: row !important;
         align-items: center !important;
         justify-content: space-between !important;
-        gap: 15px !important;          
+        gap: 8px !important;
         width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .price-card .price {
+        font-size: 1.25rem !important;
+        margin: 0 !important;
+        line-height: 1.2 !important;
+    }
+
+    .price-card .pln-price,
+    .price-card .currency-note {
+        font-size: 0.78rem !important;
+        margin: 0 !important;
+        white-space: nowrap !important;
     }
 
     .price-card .btn-primary,
     .price-card .btn-outline,
     .price-card a.btn-primary,
-    .price-card button,
     .price-card a {
         display: inline-flex !important;
         width: auto !important;
-        padding: 6px 12px !important; 
-        font-size: 0.82rem !important; 
+        max-width: 120px !important;  
+        padding: 6px 10px !important;   
+        font-size: 0.78rem !important; 
+        gap: 5px !important;          
         margin: 0 !important;
-        margin-left: 10px !important;  
-        white-space: nowrap !important; 
-        flex-shrink: 0 !important;      
-    }
-
-    .price-card .price,
-    .price-card .pln-price {
-        text-align: left !important;
+        flex-shrink: 0 !important;     
         white-space: nowrap !important;
     }
 }
