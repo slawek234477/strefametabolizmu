@@ -1886,6 +1886,27 @@ table,
         margin: 0 auto !important;
         display: block !important;
     }
+.content-image-box, 
+    .card-block .content-image-box,
+    .content-with-image .content-image-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 15px 0 !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .content-image-box img,
+    .content-with-image img,
+    .card-block img {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
 }
 html, body {
     overflow-x: hidden !important;
