@@ -1633,20 +1633,32 @@ a.btn-hero-outline:hover {
     width: 100%;
     height: auto;
 }
-.product-img, 
-.content-image-box,
-.img-container {
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-card > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-img {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
-    text-align: center !important;
+    margin: 0 auto !important;
 }
 
-.product-img img,
-.content-image-box img,
-.img-container img {
+.product-img img {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    max-width: 100% !important; 
+    width: auto !important;    
 }
