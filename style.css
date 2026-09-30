@@ -1722,7 +1722,20 @@ a.btn-hero-outline:hover {
     }
 }
 @media (max-width: 991px) {
-    .hero-grid { 
+    .d-mobile-only {
+        display: block !important;
+    }
+    .d-desktop-only {
+        display: none !important;
+    }
+
+    .hero-grid h1,
+    .hero-grid p,
+    .hero-grid .hero-btns {
+        order: initial !important;
+    }
+}
+	.hero-grid { 
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -1768,4 +1781,16 @@ a.btn-hero-outline:hover {
 .product-grid-hero, .content-with-image { grid-template-columns: 1fr; }
     .hero-product h1 { font-size: 1.8rem; }
     .card-block { padding: 25px; }
+}
+.hero-mobile-img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 320px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.d-mobile-only {
+    display: none !important;
 }
