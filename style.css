@@ -331,7 +331,9 @@ nav a.active::after {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
-
+.product-desc, .product-features {
+    text-align: left !important;
+}
 .card:hover, .pricing-card:hover, .feature-box:hover, .pillar-card:hover, .product-card:hover, .price-card:hover {
     border-color: var(--accent); /* Zmienia się tylko kolor */
     transform: translateY(-5px);
@@ -609,14 +611,20 @@ img, svg, video {
     padding: 0;
     margin: 0 0 25px 0;
 }
-
 .product-features li {
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: flex-start !important;
+    text-align: left !important;
     gap: 10px;
     color: #334155;
     margin-bottom: 8px;
     font-size: 0.95rem;
+}
+
+.product-features li i {
+    color: #10b981;
+    flex-shrink: 0 !important;
+    margin-top: 4px;
 }
 
 .product-features i {
