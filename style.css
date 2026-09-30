@@ -1808,14 +1808,26 @@ a.btn-hero-outline:hover {
     .hero-product h1 { font-size: 1.8rem; }
     .card-block { padding: 25px; }
 }
-.hero-centered .hero-cart-img,
-    .hero-centered .hero-contact-img,
-    .hero-centered .hero-privacy-img,
-    .hero-centered .img-container img {
-        max-width: 120px !important;
-        width: 120px !important;
+.hero-centered .img-container {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-height: 110px !important; 
+        margin-top: 15px !important;
+    }
+    .hero-centered .hero-cart-img {
+        width: 130px !important;
         height: auto !important;
-        margin: 15px auto 0 auto !important;
-        display: block !important;
+        max-width: none !important;
+    }
+    .hero-centered .hero-contact-img {
+        width: 170px !important;
+        height: auto !important;
+        max-width: none !important;
+    }
+    .hero-centered .hero-privacy-img {
+        height: 85px !important;
+        width: auto !important;
+        max-width: none !important;
     }
 }
