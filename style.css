@@ -402,7 +402,6 @@ img, svg, video {
 }
 
 @media (max-width: 576px) {
-   @media (max-width: 576px) {
     .btn-primary, 
     .btn-outline, 
     .btn-cta, 
@@ -432,17 +431,20 @@ img, svg, video {
         margin-bottom: 5px !important;
     }
 
+    .product-card .btn-primary,
     .price-card .btn-primary,
     .price-card .btn-outline,
     .price-card .btn-cta,
     .price-card a {
-        width: 100% !important;          
-        max-width: 150px !important;
+        width: auto !important;          
+        max-width: none !important;
         padding: 6px 12px !important;    
-        font-size: 0.85rem !important;   
-        margin-top: 12px !important;      
-        display: flex !important;
+        font-size: 0.8rem !important;   
+        margin-top: 0 !important;      
+        display: inline-flex !important;
         justify-content: center !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
     }
 .whatsapp-float {
         width: 50px;
