@@ -1633,3 +1633,20 @@ a.btn-hero-outline:hover {
     width: 100%;
     height: auto;
 }
+.product-img, 
+.content-image-box,
+.img-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.product-img img,
+.content-image-box img,
+.img-container img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
