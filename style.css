@@ -1695,3 +1695,34 @@ a.btn-hero-outline:hover {
     width: 100%;
     height: auto;
 }
+@media (max-width: 768px) {
+    .price-card .btn-primary,
+    .price-card a,
+    .pricing-grid .btn-primary,
+    .pricing-grid a.btn-primary {
+        display: flex !important;
+        float: none !important;
+        clear: both !important;
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        
+        width: 100% !important;
+        max-width: 150px !important;  
+        padding: 8px 14px !important; 
+        font-size: 0.85rem !important;  
+        
+        margin-top: 15px !important;  
+        margin-left: auto !important;  
+        margin-right: auto !important;
+    }
+
+    .price-card .price,
+    .price-card .pln-price,
+    .price-card div:has(.btn-primary) {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        float: none !important;
+    }
+}
