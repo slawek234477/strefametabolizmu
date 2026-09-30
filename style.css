@@ -527,20 +527,7 @@ img, svg, video {
     gap: 30px;
     margin-top: 40px;
 }
-.product-card .product-img {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 100% !important;
-}
 
-.product-card .product-img img {
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    max-width: 100% !important;
-    height: auto !important;
-}
 .product-card {
     display: flex;
     flex-direction: column;
