@@ -1811,7 +1811,7 @@ a.btn-hero-outline:hover {
 .hero-cart-img,
     .hero-contact-img,
     .hero-privacy-img {
-        max-width: 100px !important; 
+        max-width: 50px !important; 
         width: 100% !important;
         height: auto !important;
         margin: 15px auto 0 auto !important;
