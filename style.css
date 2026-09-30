@@ -1836,58 +1836,55 @@ a.btn-hero-outline:hover {
         max-width: 65px !important;
         height: auto !important;
     }
-table {
+table, 
+    .comp-table {
         display: block !important;
         width: 100% !important;
+        max-width: 100% !important;
         overflow-x: auto !important;
-        -webkit-overflow-scrolling: touch;
-        white-space: normal !important;
+        -webkit-overflow-scrolling: touch !important;
+        margin: 20px 0 !important;
+        border-collapse: collapse !important;
     }
-    table th, table td {
-        padding: 8px 6px !important;
+
+    table th, 
+    table td,
+    .comp-table th, 
+    .comp-table td {
+        white-space: nowrap !important; 
+        padding: 10px 12px !important;
         font-size: 12px !important;
-        word-break: break-word !important;
+        min-width: 120px !important;   
     }
-    .triglp-usage-img, 
-    .usage-img,
-    img[src*="triglp"] {
+
+    table th:first-child, 
+    table td:first-child,
+    .comp-table th:first-child, 
+    .comp-table td:first-child {
+        min-width: 100px !important;
+        white-space: normal !important;  
+    }
+    .content-image-box,
+    .img-container,
+    .hero-image {
+        width: 100% !important;
+        padding: 0 15px !important;     
+        box-sizing: border-box !important;
+    }
+
+    .img-sklad-ignyt,
+    .img-feature-ignyt,
+    .img-for-who,
+    .content-image-box img,
+    img[src*="ignyt"],
+    img[src*="IGNYT"] {
         max-width: 100% !important;
         width: 100% !important;
         height: auto !important;
+        object-fit: contain !important;
         border-radius: 12px !important;
-    }
-.img-sklad-ignyt,
-    .img-feature-ignyt,
-    .img-for-who,
-    img[src*="ignyt"],
-    img[src*="IGNYT"] {
-        max-width: 90% !important;
-        width: auto !important;
         margin: 0 auto !important;
         display: block !important;
-        border-radius: 12px !important;
-    }
-
-    .comp-table, 
-    table {
-        display: block !important;
-        width: 100% !important;
-        overflow-x: auto !important;
-        -webkit-overflow-scrolling: touch;
-        white-space: nowrap !important; 
-    }
-
-    .comp-table th, .comp-table td,
-    table th, table td {
-        white-space: normal !important; 
-        min-width: 110px !important;    
-        padding: 10px 8px !important;
-        font-size: 13px !important;
-    }
-
-    .comp-table th:first-child, 
-    .comp-table td:first-child {
-        min-width: 90px !important;
     }
 }
 html, body {
