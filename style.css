@@ -1727,49 +1727,35 @@ a.btn-hero-outline:hover {
     }
 }
 @media screen and (max-width: 768px) {
-    .pricing-grid > div,
-    .products-grid > div,
-    .price-card,
-    .pricing-card,
-    .product-card,
-    .card {
+    .price-card > div:last-child,
+    .price-card div[style*="flex"],
+    .price-card .price-wrapper {
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: row !important;
         align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-    }
-
-    .price-card *,
-    .pricing-card *,
-    .product-card * {
-        float: none !important;
+        justify-content: space-between !important;
+        gap: 15px !important;          
+        width: 100% !important;
     }
 
     .price-card .btn-primary,
     .price-card .btn-outline,
-    .price-card .btn-cta,
-    .price-card a,
-    .pricing-card a,
-    .product-card a,
-    .pricing-grid a {
-        display: flex !important;
-        width: 100% !important;
-        max-width: 150px !important; 
-        padding: 8px 12px !important;    
-        font-size: 0.85rem !important; 
-        margin: 15px auto 0 auto !important; 
-        justify-content: center !important;
-        align-items: center !important;
-        clear: both !important;
+    .price-card a.btn-primary,
+    .price-card button,
+    .price-card a {
+        display: inline-flex !important;
+        width: auto !important;
+        padding: 6px 12px !important; 
+        font-size: 0.82rem !important; 
+        margin: 0 !important;
+        margin-left: 10px !important;  
+        white-space: nowrap !important; 
+        flex-shrink: 0 !important;      
     }
 
-    .price,
-    .pln-price,
-    .currency-note {
-        display: block !important;
-        width: 100% !important;
-        text-align: center !important;
-        margin-bottom: 4px !important;
+    .price-card .price,
+    .price-card .pln-price {
+        text-align: left !important;
+        white-space: nowrap !important;
     }
 }
