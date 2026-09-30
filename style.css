@@ -1914,6 +1914,21 @@ table,
     width: auto !important;
     height: auto !important;
   }
+img,
+  .banner-img,
+  .img-feature-ignyt,
+  .img-for-who,
+  .img-sklad-ignyt {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+  
+  .img-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
 html, body {
     overflow-x: hidden !important;
