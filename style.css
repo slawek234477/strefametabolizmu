@@ -402,21 +402,24 @@ img, svg, video {
 }
 
 @media (max-width: 576px) {
-    .btn-primary, 
-    .btn-outline, 
-    .btn-cta, 
+	.btn-primary,
+    .btn-outline,
+    .btn-cta,
     .btn-secondary,
     .btn-large,
     a.btn-hero-outline {
-        width: calc(100% - 32px) !important;
-        max-width: 340px !important;
+        width: auto !important;
+        max-width: 280px !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        padding: 10px 16px !important;
-        font-size: 0.9rem !important;
-        white-space: normal !important;
+        padding: 8px 18px !important;
+        font-size: 0.85rem !important;
+        white-space: nowrap !important;
         text-align: center !important;
         box-sizing: border-box !important;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
     }
 
     .price-card {
