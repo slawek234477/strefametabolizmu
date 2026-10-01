@@ -1969,7 +1969,7 @@ img {
 
   .highlight-list {
    padding-left: 14px !important; 
-  padding-right: 14px !important; 
+  padding-right: 0px !important; 
     width: 100% !important;
   }
 
