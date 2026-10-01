@@ -2035,20 +2035,17 @@ img,
   .orygn-main-img-wrapper {
         width: 100% !important;
         max-width: 100% !important;
-        height: auto !important;
-        max-height: none !important;
         margin: 20px 0 !important;
         padding: 0 !important;
     }
 
     .orygn-main-img {
         width: 100% !important;
-        max-width: 260px !important;
-        height: auto !important; 
-        max-height: none !important; 
-        min-height: initial !important;
-        aspect-ratio: auto !important; 
-        object-fit: cover !important; 
+        height: auto !important;
+        max-height: none !important;
+        aspect-ratio: 16 / 10 !important; 
+        object-fit: cover !important;
+        object-position: center !important; 
         display: block !important;
         border-radius: 16px !important;
     }
