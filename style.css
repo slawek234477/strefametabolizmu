@@ -475,11 +475,18 @@ img, svg, video {
         width: 100% !important;
     }
 .logo img {
-        width: 130px !important; 
-        max-width: 60vw !important;
-        height: auto !important;
-    }
-    
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 38px !important; 
+    width: auto !important;
+    object-fit: contain !important;
+}
+    .logo {
+    display: flex;
+    align-items: center;
+    max-width: calc(100% - 60px);
+    overflow: hidden;
+}
     .nav-wrapper {
         display: flex !important;
         align-items: center !important;
