@@ -2113,36 +2113,47 @@ img,
         margin-bottom: 15px !important;
     }
 
-    .content-image-box, 
-    .img-container,
-    .hero .img-container {
-        margin-top: 5px !important;
-        margin-bottom: 10px !important;
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
-    .content-image-box img,
+    .content-image-box,
     .content-with-image img,
-    .img-container img,
-    .hero .img-container img {
+    .img-sklad-ignyt,
+    .img-feature-ignyt,
+    .img-for-who {
         margin-top: 0 !important;
-        margin-bottom: 8px !important;
-    }
-    .content-with-image h2,
-    .content-with-image h3,
-    .card-block h2 {
-        margin-bottom: 10px !important;
-    }
-    .hero-grid p {
-        margin-bottom: 10px !important;
-    }
-    
-    .hero .img-container {
-        margin: 10px 0 15px 0 !important;
+        margin-bottom: 24px !important; 
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 
-    .highlight-list li {
-        margin: 8px 0 !important;
+    ul.highlight-list {
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    ul.highlight-list li {
+        display: flex !important;
+        align-items: flex-start !important; 
+        gap: 12px !important;
+        margin-bottom: 14px !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    /* Wyrównanie ikony – likwiduje wychodzenie za lewy margines */
+    ul.highlight-list li img.cert-img,
+    ul.highlight-list li img {
+        width: 28px !important;
+        height: 28px !important;
+        min-width: 28px !important; 
+        flex-shrink: 0 !important; 
+        margin: 0 !important; 
+    }
+
+    ul.highlight-list li span,
+    ul.highlight-list li div {
+        line-height: 1.4 !important;
+        padding-top: 2px !important; 
     }
 }
 .orygn-main-img-wrapper {
