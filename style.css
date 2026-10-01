@@ -2023,6 +2023,24 @@ img {
         max-width: 100% !important;
         border-radius: 0 !important; 
     }
+img, 
+    .img-container img, 
+    .orygn-main-img, 
+    .content-image-box img, 
+    .price-card img,
+    .hero img {
+        border-radius: 16px !important;
+        overflow: hidden !important;
+    }
+    .orygn-main-img-wrapper {
+        padding: 0 5px !important;
+        margin: 15px 0 !important;
+        width: 100% !important;
+    }
+    .orygn-main-img {
+        width: 100% !important;
+        height: auto !important;
+    }
 }
 .orygn-main-img-wrapper {
     width: 100% !important;
@@ -2042,4 +2060,5 @@ img {
     border-radius: 16px !important; 
     mix-blend-mode: multiply;
     filter: brightness(108%) contrast(120%);
+}
 }
