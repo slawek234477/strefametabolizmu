@@ -469,7 +469,7 @@ img, svg, video {
 		overflow-x: hidden !important;
     }
 
-    .container {
+    .nav-wrapper {
         padding-left: 16px !important;
         padding-right: 16px !important;
         width: 100% !important;
@@ -1352,7 +1352,7 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
     z-index: 1002;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     header {
         position: relative !important;
     }
@@ -2043,7 +2043,7 @@ img,
         width: 100% !important;
         height: auto !important;
         max-height: none !important;
-        aspect-ratio: 42 / 36 !important; 
+        aspect-ratio: 42 / 50 !important; 
         object-fit: cover !important;
         object-position: center !important; 
         display: block !important;
