@@ -1974,7 +1974,7 @@ img {
   }
 
   .highlight-list {
-   padding-left: 2px !important; 
+   padding-left: 1px !important; 
   padding-right: 0px !important; 
     width: 100% !important;
   }
@@ -2043,7 +2043,7 @@ img,
         width: 100% !important;
         height: auto !important;
         max-height: none !important;
-        aspect-ratio: 20 / 14 !important; 
+        aspect-ratio: 28 / 22 !important; 
         object-fit: cover !important;
         object-position: center !important; 
         display: block !important;
