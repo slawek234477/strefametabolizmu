@@ -1977,7 +1977,7 @@ img {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    text-align: center !important;
+    text-align: left !important;
   }
 
   .content-image-box,
@@ -1988,7 +1988,7 @@ img {
 
   .content-image-box img,
   .content-with-image img {
-    margin: 0 auto 20px auto !important;
+    margin: 0 auto 10px auto !important;
     max-width: 280px !important;
     height: auto !important;
   }
@@ -2063,7 +2063,7 @@ img,
         width: 100% !important;
         height: auto !important;
         max-height: none !important;
-        aspect-ratio: 44 / 38 !important; 
+        aspect-ratio: 48 / 42 !important; 
         object-fit: cover !important;
         object-position: center !important; 
         display: block !important;
