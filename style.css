@@ -1976,11 +1976,11 @@ img {
  display: flex !important;
   flex-direction: row !important;
   align-items: center !important; 
-  justify-content: center !important;
+  justify-content: flex-start !important;
   text-align: left !important;
-  gap: 20px !important;
+  gap: 18px !important;
   width: 100% !important;
-  margin: 0 auto 16px auto !important;
+  margin: 16px !important;
 }
   .highlight-list li img.cert-img {
    flex-shrink: 0 !important;
