@@ -1962,29 +1962,29 @@ img {
 }
 @media (max-width: 991px) {
     .section {
-    padding: 20px 0 !important;
+    padding: 25px 0 !important;
   }
 
   .section-header {
-    margin-bottom: 12px !important;
+    margin-bottom: 15px !important;
   }
 
   .section-header h2 {
-    margin-bottom: 6px !important;
+    margin-bottom: 8px !important;
   }
 
   .card-block {
-    padding: 18px 15px !important;
-    margin-bottom: 15px !important;
+    padding: 20px 15px !important;
+    margin-bottom: 20px !important;
   }
 
   .content-with-image {
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
+    align-items: stretch !important;
     text-align: left !important;
-    gap: 10px !important; 
-    margin-bottom: 15px !important;
+    gap: 0 !important; 
+    margin-bottom: 20px !important;
   }
 
   .content-image-box,
@@ -1997,46 +1997,33 @@ img {
     width: 100% !important;
     max-width: 100% !important;
     padding: 0 !important;
-    margin: 0 0 10px 0 !important; 
-  }
-
-  .hero .img-container {
-    margin: 10px 0 12px 0 !important;
+    margin: 0 0 16px 0 !important; 
   }
 
   img,
   .img-container img,
   .content-image-box img,
   .content-with-image img,
-  .price-card img,
-  .hero img,
   .about-section img,
   .img-sklad-ignyt,
-  .img-feature-ignyt {
-    width: 100% !important;
-    max-width: 260px !important; 
-    height: auto !important;
-    margin: 0 auto 6px auto !important; 
-    display: block !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
-  }
-
+  .img-feature-ignyt,
   img.img-for-who,
   .content-image-box img.img-for-who,
   .card-block img.img-for-who,
   .content-with-image img.img-for-who,
   div:has(> .img-for-who) img {
-    max-width: 280px !important;
-    margin: 0 auto 8px auto !important;
+    width: 100% !important;
+    max-width: 100% !important; 
+    height: auto !important;
+    display: block !important;
+    margin: 0 0 16px 0 !important;
+    border-radius: 16px !important; 
+    object-fit: cover !important;
   }
 
-  .orygn-main-img {
+  .hero .img-container img {
     max-width: 100% !important;
-    aspect-ratio: 48 / 42 !important;
-    object-fit: cover !important;
-    border-radius: 12px !important;
-    filter: brightness(108%) contrast(120%);
+    margin: 10px auto 15px auto !important;
   }
 
   .highlight-list {
@@ -2052,10 +2039,10 @@ img {
     align-items: center !important;
     justify-content: flex-start !important;
     text-align: left !important;
-    gap: 14px !important; 
+    gap: 14px !important;
     width: 100% !important;
     margin: 16px 0 !important; 
-    min-height: 40px !important; 
+    min-height: 36px !important;
   }
 
   .highlight-list li img.cert-img {
@@ -2066,7 +2053,7 @@ img {
     align-self: center !important;
     margin: 0 !important;
     padding: 0 !important;
-    border-radius: 0 !important;
+    border-radius: 0 !important; 
   }
 
   .highlight-list li span,
@@ -2079,7 +2066,7 @@ img {
   }
 
   .hero-grid p {
-    margin-bottom: 10px !important;
+    margin-bottom: 12px !important;
   }
 }
 .orygn-main-img-wrapper {
