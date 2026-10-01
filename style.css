@@ -2032,24 +2032,25 @@ img,
         border-radius: 16px !important;
         overflow: hidden !important;
     }
-   .orygn-main-img-wrapper {
-        width: 100% !important;
-        max-width: 100% !important;
-        min-width: 0 !important;
-        margin: 15px 0 !important;
-        padding: 0 15px !important;
-        box-sizing: border-box !important;
-        display: block !important;
-    }
-    .orygn-main-img {
+  .orygn-main-img-wrapper {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
-        min-height: 1px !important;
+        max-height: none !important;
+        margin: 20px 0 !important;
+        padding: 0 !important;
+    }
+
+    .orygn-main-img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important; 
+        max-height: none !important; 
+        min-height: initial !important;
+        aspect-ratio: auto !important; 
+        object-fit: unset !important; 
         display: block !important;
-        margin: 0 auto !important;
         border-radius: 16px !important;
-        object-fit: contain !important;
     }
 .about-section .img-container,
     .about-section .content-image-box,
