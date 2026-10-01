@@ -1942,7 +1942,7 @@ img {
     .card-block img.img-for-who,
     .content-with-image img.img-for-who,
     div:has(> .img-for-who) img {
-        max-width: 240px !important;
+        max-width: 350px !important;
         width: 100% !important;
         height: auto !important;
         margin: 0 auto !important;
