@@ -1803,39 +1803,35 @@ a.btn-hero-outline:hover {
 .product-grid-hero, .content-with-image { grid-template-columns: 1fr; }
     .hero-product h1 { font-size: 1.8rem; }
     .card-block { padding: 25px; }
-.hero-centered .img-container {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        min-height: 110px !important; 
-        margin-top: 15px !important;
-    }
-   .hero-centered .img-container {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        min-height: 100px !important;
-        margin-top: 15px !important;
-    }
-    .hero-centered img.hero-cart-img,
-    .hero-centered img[src*="koszyk"] {
-        width: 120px !important;
-        max-width: 120px !important;
-        height: auto !important;
-    }
-    .hero-centered img.hero-contact-img,
-    .hero-centered img[src*="kontakt"] {
-        width: 150px !important;
-        max-width: 150px !important;
-        height: auto !important;
-    }
-    .hero-centered img.hero-privacy-img,
-    .hero-centered img[src*="klodka"],
-    img.hero-privacy-img {
-        width: 65px !important;
-        max-width: 65px !important;
-        height: auto !important;
-    }
+img.hero-privacy-img,
+.hero-centered img.hero-privacy-img,
+.hero-centered img[src*="klodka"] {
+    width: 65px !important;
+    max-width: 65px !important;
+    height: auto !important;
+    margin: 10px auto 0 auto !important;
+    display: block !important;
+}
+
+img.hero-cart-img,
+.hero-centered img.hero-cart-img,
+.hero-centered img[src*="koszyk"] {
+    width: 120px !important;
+    max-width: 120px !important;
+    height: auto !important;
+    margin: 10px auto 0 auto !important;
+    display: block !important;
+}
+
+img.hero-contact-img,
+.hero-centered img.hero-contact-img,
+.hero-centered img[src*="kontakt"] {
+    width: 160px !important;
+    max-width: 160px !important;
+    height: auto !important;
+    margin: 15px auto 0 auto !important;
+    display: block !important;
+}
 table, 
     .comp-table {
         display: block !important;
