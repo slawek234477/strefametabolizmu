@@ -2035,17 +2035,18 @@ img,
     .orygn-main-img-wrapper {
         width: 100% !important;
         max-width: 100% !important;
-        padding: 0 !important;
-        margin: 15px 0 25px 0 !important;
+        margin: 15px auto !important;
+        padding: 0 15px !important; 
+        box-sizing: border-box !important;
     }
+
     .orygn-main-img {
         width: 100% !important;
-        max-width: 100% !important;
         height: auto !important;
         display: block !important;
         margin: 0 auto !important;
-        object-fit: contain !important;
         border-radius: 16px !important; 
+        object-fit: contain !important;
     }
 .about-section .img-container,
     .about-section .content-image-box,
@@ -2079,22 +2080,20 @@ img,
     }
 }
 .orygn-main-img-wrapper {
-    width: 100% !important;
-    max-width: 1150px !important; 
-    margin: 20px auto !important;
-    padding: 0 15px !important;  
-    box-sizing: border-box !important;
+    width: 100%;
+    max-width: 1150px; 
+    margin: 20px auto;
+    padding: 0 15px;  
+    box-sizing: border-box;
 }
 
 .orygn-main-img {
-    width: 100% !important;
-    height: auto !important;      
-    max-height: none !important;
-    display: block !important;
-    margin: 0 auto !important;
-    object-fit: contain !important;
-    border-radius: 16px !important; 
+    width: 100%;
+    height: auto;      
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 16px !important;
     mix-blend-mode: multiply;
     filter: brightness(108%) contrast(120%);
-}
 }
