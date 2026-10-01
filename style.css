@@ -475,13 +475,16 @@ img, svg, video {
         width: 100% !important;
     }
 .logo img {
-        max-width: 110px !important; 
-        width: 100% !important;
+        width: 130px !important; 
+        max-width: 60vw !important;
         height: auto !important;
     }
     
     .nav-wrapper {
-        padding: 10px 0 !important; 
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 12px 0 !important;
     }
     h1 { font-size: 1.75rem !important; line-height: 1.2; }
     h2 { font-size: 1.35rem !important; line-height: 1.3; }
