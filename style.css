@@ -1947,28 +1947,52 @@ img {
         display: block !important;
         object-fit: contain !important;
     }
-.ingredient-item,
-  .skladnik-item,
-  .ingredient-row {
-    display: grid !important;
-    grid-template-columns: 80px 1fr !important; 
+.content-with-image {
+    display: flex !important;
+    flex-direction: column !important;
     align-items: center !important;
-    gap: 15px !important;
-    margin-bottom: 20px !important;
+    text-align: center !important;
   }
 
-  .ingredient-item img,
-  .skladnik-item img,
-  .ingredient-row img {
+  .content-image-box,
+  .content-with-image > div {
+    width: 100% !important;
     max-width: 100% !important;
-    height: auto !important;
-    justify-self: center !important;
   }
 
-  .ingredient-item p,
-  .skladnik-item p,
-  .ingredient-row div {
+  .content-image-box img,
+  .content-with-image img {
+    margin: 0 auto 20px auto !important;
+    max-width: 280px !important;
+    height: auto !important;
+  }
+
+  .highlight-list {
+    padding-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .highlight-list li {
+    display: flex !important;
+    flex-direction: row !important; 
+    align-items: center !important;
+    justify-content: flex-start !important;
     text-align: left !important;
-    width: auto !important;
+    gap: 15px !important;
+    width: 100% !important;
+    margin-bottom: 14px !important;
+  }
+
+  .highlight-list li img.cert-img {
+    flex-shrink: 0 !important;
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: contain !important;
+  }
+
+  .highlight-list li span {
+    flex: 1 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
   }
 }
