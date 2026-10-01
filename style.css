@@ -2032,20 +2032,23 @@ img,
         border-radius: 16px !important;
         overflow: hidden !important;
     }
-    .orygn-main-img-wrapper {
+   .orygn-main-img-wrapper {
         width: 100% !important;
         max-width: 100% !important;
-        margin: 15px auto !important;
-        padding: 0 15px !important; 
+        min-width: 0 !important;
+        margin: 15px 0 !important;
+        padding: 0 15px !important;
         box-sizing: border-box !important;
+        display: block !important;
     }
-
     .orygn-main-img {
         width: 100% !important;
+        max-width: 100% !important;
         height: auto !important;
+        min-height: 1px !important;
         display: block !important;
         margin: 0 auto !important;
-        border-radius: 16px !important; 
+        border-radius: 16px !important;
         object-fit: contain !important;
     }
 .about-section .img-container,
