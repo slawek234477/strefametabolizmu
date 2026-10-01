@@ -2043,12 +2043,12 @@ img,
 
     .orygn-main-img {
         width: 100% !important;
-        max-width: 100% !important;
+        max-width: 260px !important;
         height: auto !important; 
         max-height: none !important; 
         min-height: initial !important;
         aspect-ratio: auto !important; 
-        object-fit: unset !important; 
+        object-fit: cover !important; 
         display: block !important;
         border-radius: 16px !important;
     }
