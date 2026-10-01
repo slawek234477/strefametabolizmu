@@ -2108,61 +2108,45 @@ img,
         padding: 20px 15px !important;
         margin-bottom: 20px !important;
     }
+
     .content-with-image {
-        display: flex !important;
-        flex-direction: column !important;
-        padding-left: 15px !important; 
-        padding-right: 15px !important;
-        box-sizing: border-box !important;
+        gap: 12px !important;
+        margin-bottom: 15px !important;
     }
 
-    .content-image-box,
+    .content-image-box, 
+    .img-container,
+    .hero .img-container {
+        margin-top: 5px !important;
+        margin-bottom: 10px !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .content-image-box img,
     .content-with-image img,
-    .img-sklad-ignyt,
-    .img-feature-ignyt,
-    .img-for-who {
+    .img-container img,
+    .hero .img-container img {
         margin-top: 0 !important;
-        margin-bottom: 25px !important;
-        max-width: 100% !important;
-        height: auto !important;
-        display: block !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        margin-bottom: 8px !important;
     }
 
-    ul.highlight-list {
-        padding-left: 0 !important;
-        margin-left: 0 !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
+    .content-with-image h2,
+    .content-with-image h3,
+    .card-block h2 {
+        margin-bottom: 10px !important;
     }
 
-    ul.highlight-list li {
-        display: flex !important;
-        align-items: flex-start !important; 
-        gap: 14px !important; 
-        margin-bottom: 16px !important; 
-        padding-left: 0 !important;
-        margin-left: 0 !important;
+    .hero-grid p {
+        margin-bottom: 10px !important;
+    }
+    
+    .hero .img-container {
+        margin: 10px 0 15px 0 !important;
     }
 
-    ul.highlight-list li img.cert-img,
-    ul.highlight-list li img,
-    ul.highlight-list li i {
-        width: 28px !important;
-        min-width: 28px !important; 
-        height: 28px !important;
-        object-fit: contain !important;
-        flex-shrink: 0 !important;
-        margin: 0 !important;
-    }
-
-    ul.highlight-list li span,
-    ul.highlight-list li div {
-        font-size: 0.95rem !important;
-        line-height: 1.4 !important;
-        margin: 0 !important;
-        padding-top: 2px !important; 
+    .highlight-list li {
+        margin: 8px 0 !important;
     }
 }
 .orygn-main-img-wrapper {
