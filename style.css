@@ -1969,43 +1969,39 @@ img {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    gap: 12px !important; 
     margin-bottom: 15px !important;
   }
 
   .content-image-box,
   .img-container {
     width: 100% !important;
-    margin: 0 0 8px 0 !important;
+    margin: 0 0 16px 0 !important;
     padding: 0 !important;
   }
 
   .content-image-box img,
   .content-with-image img,
   .img-feature-ignyt,
-  .img-sklad-ignyt {
-    width: 100% !important;
-    max-width: 340px !important; 
-    height: auto !important;
-    margin: 0 auto 8px auto !important;
-    display: block !important;
-  }
-
+  .img-sklad-ignyt,
   img.img-for-who,
   .content-image-box img.img-for-who,
   .card-block img.img-for-who,
-  .content-with-image img.img-for-who,
   div:has(> .img-for-who) img {
-    max-width: 280px !important;
-    margin: 0 auto 8px auto !important;
+    width: 100% !important;
+    max-width: 100% !important; 
+    height: auto !important;
+    margin: 0 0 16px 0 !important; 
+    display: block !important;
   }
 
   .orygn-main-img {
+    width: 100% !important;
     max-width: 100% !important;
     aspect-ratio: 48 / 42 !important;
     object-fit: cover !important;
     border-radius: 12px !important;
     filter: brightness(108%) contrast(120%);
+    margin-bottom: 16px !important;
   }
 
   .highlight-list {
@@ -2020,22 +2016,25 @@ img {
     justify-content: flex-start !important;
     gap: 16px !important; 
     width: 100% !important;
-    margin-bottom: 14px !important;
-    padding: 4px 0 !important;
+    margin-bottom: 16px !important;
+    padding: 0 !important;
   }
 
   .highlight-list li img.cert-img,
   .highlight-list li img {
     flex-shrink: 0 !important;
-    width: 40px !important;  
-    height: 40px !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
     object-fit: contain !important;
+    object-position: center !important;
     margin: 0 !important;
     padding: 0 !important;
     transform: none !important; 
   }
 
-  .highlight-list li span {
+  .highlight-list li span,
+  .highlight-list li div {
     flex: 1 !important;
     line-height: 1.4 !important;
     font-size: 0.95rem !important;
