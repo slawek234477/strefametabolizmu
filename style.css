@@ -1707,10 +1707,11 @@ a.btn-hero-outline:hover {
 }
 
 .img-for-who {
-    max-width: 380px !important;
-    width: 100%;
-    height: auto;
-}
+        max-width: 280px !important; 
+        width: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
 
 .img-sklad-ignyt {
     max-width: 320px !important;
