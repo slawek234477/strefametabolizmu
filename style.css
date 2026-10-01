@@ -1973,25 +1973,26 @@ img {
   }
 
   .highlight-list li {
-    display: flex !important;
-  flex-direction: row !important; 
-  align-items: flex-start !important; 
-  justify-content: flex-start !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important; 
+  justify-content: flex-start !important; 
   text-align: left !important;
-  gap: 15px !important;
+  gap: 12px !important; 
   width: 100% !important;
   margin-bottom: 14px !important;
 }
   .highlight-list li img.cert-img {
     flex-shrink: 0 !important;
-  width: 32px !important;
-  height: 32px !important;
+  width: 28px !important;
+  height: 28px !important;
   object-fit: contain !important;
-  margin-top: 2px !important; 
+  margin: 0 !important;
 }
 
   .highlight-list li span {
-    display: block !important;
-    line-height: 1.35 !important;
+   display: inline-block !important;
+   width: auto !important;
+   text-align: left !important;
 }
 }
