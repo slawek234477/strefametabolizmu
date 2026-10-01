@@ -371,7 +371,6 @@ nav a.active::after {
     color: #0f4c5c !important;
 }
 
-/* 2. Opisy w kartach cenowych */
 .pricing-card p {
     color: #334155 !important;
 }
@@ -2024,4 +2023,23 @@ img {
         max-width: 100% !important;
         border-radius: 0 !important; 
     }
+}
+.orygn-main-img-wrapper {
+    width: 100% !important;
+    max-width: 1000px !important; 
+    margin: 20px auto !important;
+    padding: 0 15px !important;  
+    box-sizing: border-box !important;
+}
+
+.orygn-main-img {
+    width: 100% !important;
+    height: auto !important;      
+    max-height: none !important;
+    display: block !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
+    border-radius: 16px !important; 
+    mix-blend-mode: multiply;
+    filter: brightness(108%) contrast(120%);
 }
