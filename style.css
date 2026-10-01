@@ -2041,6 +2041,36 @@ img,
         width: 100% !important;
         height: auto !important;
     }
+.about-section .img-container,
+    .about-section .content-image-box,
+    .about-section .col-lg-6 {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .about-section img,
+    .about-section .img-container img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        margin: 0 auto !important;
+        object-fit: cover !important;
+        border-radius: 16px !important; 
+    }
+
+    .content-image-box img,
+    .content-with-image img,
+    .img-container img,
+    .img-sklad-ignyt,
+    .img-feature-ignyt {
+        border-radius: 16px !important; 
+        overflow: hidden !important;
+    }
 }
 .orygn-main-img-wrapper {
     width: 100% !important;
