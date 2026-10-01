@@ -1803,7 +1803,6 @@ a.btn-hero-outline:hover {
 .product-grid-hero, .content-with-image { grid-template-columns: 1fr; }
     .hero-product h1 { font-size: 1.8rem; }
     .card-block { padding: 25px; }
-}
 .hero-centered .img-container {
         display: flex !important;
         justify-content: center !important;
@@ -1920,22 +1919,20 @@ img,
   .img-for-who,
   .img-sklad-ignyt {
     max-width: 100% !important;
-    width: 100% !important;
     height: auto !important;
-    object-fit: contain !important;
   }
   
   .img-container {
     width: 100% !important;
     max-width: 100% !important;
   }
-}
+  }
 html, body {
-    overflow-x: hidden !important;
-    max-width: 100% !important;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 img {
-    max-width: 100% !important;
-    height: auto !important;
+    max-width: 100%;
+    height: auto;
 }
