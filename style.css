@@ -469,7 +469,7 @@ img, svg, video {
 		overflow-x: hidden !important;
     }
 
-    .nav-wrapper {
+   .container {
         padding-left: 16px !important;
         padding-right: 16px !important;
         width: 100% !important;
