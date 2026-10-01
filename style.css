@@ -1803,29 +1803,34 @@ a.btn-hero-outline:hover {
 .product-grid-hero, .content-with-image { grid-template-columns: 1fr; }
     .hero-product h1 { font-size: 1.8rem; }
     .card-block { padding: 25px; }
-img.hero-privacy-img,
-    .hero-centered img.hero-privacy-img,
-    .hero-centered img[src*="klodka"] {
+html body .hero-centered img.hero-privacy-img,
+    html body img.hero-privacy-img,
+    html body .hero-centered img[src*="klodka"] {
         width: 65px !important;
         max-width: 65px !important;
+        min-width: 0 !important;
         height: auto !important;
         margin: 10px auto !important;
         display: block !important;
     }
-    img.hero-cart-img,
-    .hero-centered img.hero-cart-img,
-    .hero-centered img[src*="koszyk"] {
+
+    html body .hero-centered img.hero-cart-img,
+    html body img.hero-cart-img,
+    html body .hero-centered img[src*="koszyk"] {
         width: 110px !important;
         max-width: 110px !important;
+        min-width: 0 !important;
         height: auto !important;
         margin: 10px auto !important;
         display: block !important;
     }
-    img.hero-contact-img,
-    .hero-centered img.hero-contact-img,
-    .hero-centered img[src*="kontakt"] {
+
+    html body .hero-centered img.hero-contact-img,
+    html body img.hero-contact-img,
+    html body .hero-centered img[src*="kontakt"] {
         width: 160px !important;
         max-width: 160px !important;
+        min-width: 0 !important;
         height: auto !important;
         margin: 15px auto !important;
         display: block !important;
