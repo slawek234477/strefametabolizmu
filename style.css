@@ -1936,3 +1936,17 @@ img {
     max-width: 100%;
     height: auto;
 }
+@media (max-width: 991px) {
+    img.img-for-who,
+    .content-image-box img.img-for-who,
+    .card-block img.img-for-who,
+    .content-with-image img.img-for-who,
+    div:has(> .img-for-who) img {
+        max-width: 240px !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        display: block !important;
+        object-fit: contain !important;
+    }
+}
