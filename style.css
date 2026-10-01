@@ -1803,45 +1803,33 @@ a.btn-hero-outline:hover {
 .product-grid-hero, .content-with-image { grid-template-columns: 1fr; }
     .hero-product h1 { font-size: 1.8rem; }
     .card-block { padding: 25px; }
-.hero-centered .img-container,
-.hero .img-container {
-    width: auto !important;
-    max-width: 100% !important;
-    text-align: center !important;
-}
-
-.hero-centered img[src*="klodka"],
-.hero-centered img.hero-privacy-img,
-img.hero-privacy-img {
-    width: 65px !important;
-    max-width: 65px !important;
-    min-width: 0 !important;
-    height: auto !important;
-    margin: 10px auto 0 auto !important;
-    display: inline-block !important;
-}
-
-.hero-centered img[src*="koszyk"],
-.hero-centered img.hero-cart-img,
-img.hero-cart-img {
-    width: 120px !important;
-    max-width: 120px !important;
-    min-width: 0 !important;
-    height: auto !important;
-    margin: 10px auto 0 auto !important;
-    display: inline-block !important;
-}
-
-.hero-centered img[src*="kontakt"],
-.hero-centered img.hero-contact-img,
-img.hero-contact-img {
-    width: 160px !important;
-    max-width: 160px !important;
-    min-width: 0 !important;
-    height: auto !important;
-    margin: 15px auto 0 auto !important;
-    display: inline-block !important;
-}
+img.hero-privacy-img,
+    .hero-centered img.hero-privacy-img,
+    .hero-centered img[src*="klodka"] {
+        width: 65px !important;
+        max-width: 65px !important;
+        height: auto !important;
+        margin: 10px auto !important;
+        display: block !important;
+    }
+    img.hero-cart-img,
+    .hero-centered img.hero-cart-img,
+    .hero-centered img[src*="koszyk"] {
+        width: 110px !important;
+        max-width: 110px !important;
+        height: auto !important;
+        margin: 10px auto !important;
+        display: block !important;
+    }
+    img.hero-contact-img,
+    .hero-centered img.hero-contact-img,
+    .hero-centered img[src*="kontakt"] {
+        width: 160px !important;
+        max-width: 160px !important;
+        height: auto !important;
+        margin: 15px auto !important;
+        display: block !important;
+    }
 table, 
     .comp-table {
         display: block !important;
@@ -1852,7 +1840,6 @@ table,
         margin: 20px 0 !important;
         border-collapse: collapse !important;
     }
-
     table th, 
     table td,
     .comp-table th, 
