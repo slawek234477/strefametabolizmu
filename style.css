@@ -1962,70 +1962,35 @@ img {
 }
 @media (max-width: 991px) {
    .section {
-    padding: 20px 0 !important;
+    padding: 15px 0 !important;
   }
 
-  .section-header {
-    margin-bottom: 12px !important;
-  }
-
-  .section-header h2 {
-    margin-bottom: 6px !important;
-  }
-
-  .card-block {
-    padding: 18px 15px !important;
-    margin-bottom: 15px !important;
-  }
-
-  /* 2. SPÓJNE ODSTĘPY GRAFIKA -> TEKST */
   .content-with-image {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    text-align: left !important;
-    gap: 10px !important; /* Mniejszy, spójny odstęp pod grafiką */
+    gap: 12px !important; 
     margin-bottom: 15px !important;
   }
 
-  /* Wyczyszczenie nadmiernych marginesów w kontenerach ze zdjęciami */
   .content-image-box,
-  .img-container,
-  .orygn-main-img-wrapper,
-  .about-section .img-container,
-  .about-section .content-image-box,
-  .about-section .col-lg-6,
-  .content-with-image > div {
+  .img-container {
     width: 100% !important;
-    max-width: 100% !important;
+    margin: 0 0 8px 0 !important;
     padding: 0 !important;
-    margin: 0 0 10px 0 !important; /* Zmniejszony margines pod boksem zdjęcia */
   }
 
-  .hero .img-container {
-    margin: 10px 0 12px 0 !important;
-  }
-
-  /* 3. ROZMIARY ZDJĘĆ W SEKJACH */
-  img,
-  .img-container img,
   .content-image-box img,
   .content-with-image img,
-  .price-card img,
-  .hero img,
-  .about-section img,
-  .img-sklad-ignyt,
-  .img-feature-ignyt {
+  .img-feature-ignyt,
+  .img-sklad-ignyt {
     width: 100% !important;
-    max-width: 260px !important; /* Dedykowany, estetyczny rozmiar grafik */
+    max-width: 340px !important; 
     height: auto !important;
-    margin: 0 auto 6px auto !important; /* Precyzyjna odległość obrazu od tekstu poniżej */
+    margin: 0 auto 8px auto !important;
     display: block !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
   }
 
-  /* Wyjątek: Zdjęcie sekcji "Dla kogo" */
   img.img-for-who,
   .content-image-box img.img-for-who,
   .card-block img.img-for-who,
@@ -2035,7 +2000,6 @@ img {
     margin: 0 auto 8px auto !important;
   }
 
-  /* Wyjątek: Zdjęcie główne ORYGN */
   .orygn-main-img {
     max-width: 100% !important;
     aspect-ratio: 48 / 42 !important;
@@ -2044,48 +2008,37 @@ img {
     filter: brightness(108%) contrast(120%);
   }
 
-  /* 4. NAPRAWA ŚCIŚNIĘTYCH IKON W PODSTRONIE IGNYT */
   .highlight-list {
     padding-left: 0 !important;
-    padding-right: 0 !important;
     width: 100% !important;
     margin-top: 10px !important;
   }
 
   .highlight-list li {
     display: flex !important;
-    flex-direction: row !important;
     align-items: center !important;
     justify-content: flex-start !important;
-    text-align: left !important;
-    gap: 14px !important; /* Właściwy odstęp poziomy od tekstu */
+    gap: 16px !important; 
     width: 100% !important;
-    margin: 16px 0 !important; /* ROZSZERZENIE: Większy odstęp pionowy między wierszami ikon */
-    min-height: 40px !important; /* Zabezpieczenie miejsca dla wyskalowanych grafik */
+    margin-bottom: 14px !important;
+    padding: 4px 0 !important;
   }
 
-  .highlight-list li img.cert-img {
+  .highlight-list li img.cert-img,
+  .highlight-list li img {
     flex-shrink: 0 !important;
-    width: 32px !important;
-    height: 32px !important;
+    width: 40px !important;  
+    height: 40px !important;
     object-fit: contain !important;
-    align-self: center !important;
     margin: 0 !important;
     padding: 0 !important;
-    border-radius: 0 !important;
+    transform: none !important; 
   }
 
-  .highlight-list li span,
-  .highlight-list li strong {
+  .highlight-list li span {
     flex: 1 !important;
-    display: block !important;
-    text-align: left !important;
-    line-height: 1.35 !important;
-    margin: 0 !important;
-  }
-
-  .hero-grid p {
-    margin-bottom: 10px !important;
+    line-height: 1.4 !important;
+    font-size: 0.95rem !important;
   }
 }
 .orygn-main-img-wrapper {
