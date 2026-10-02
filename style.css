@@ -1990,7 +1990,7 @@ img {
     flex-direction: column !important;
     align-items: center !important;
     text-align: left !important;
-    gap: 16px !important; /* Jednolity, estetyczny odstęp pod obrazkiem */
+    gap: 8px !important; /* Jednolity, estetyczny odstęp pod obrazkiem */
     margin-bottom: 20px !important;
   }
 
@@ -2020,7 +2020,7 @@ img {
     width: 100% !important;
     max-width: 280px !important; /* Spójny, optymalny rozmiar grafik */
     height: auto !important;
-    margin: 0 auto 12px auto !important; /* Jednakowy odstęp obrazu od tekstu poniżej */
+    margin: 0 auto 6px auto !important; /* Jednakowy odstęp obrazu od tekstu poniżej */
     display: block !important;
     border-radius: 12px !important;
     overflow: hidden !important;
