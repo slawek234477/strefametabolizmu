@@ -1477,7 +1477,6 @@ img {
     mix-blend-mode: multiply;
     filter: brightness(108%) contrast(120%);
 }
-  }
 @media (max-width: 992px) {
    .section {
     padding: 20px 0 !important;
