@@ -2005,27 +2005,25 @@ img {
     width: 100% !important;
     max-width: 100% !important;
     padding: 0 !important;
-    margin: 0 0 10px 0 !important; /* Zmniejszony margines pod boksem zdjęcia */
+    margin: 0 !important;
   }
 
   .hero .img-container {
     margin: 10px 0 12px 0 !important;
   }
 
-  /* 3. ROZMIARY ZDJĘĆ W SEKJACH */
   img,
   .img-container img,
   .content-image-box img,
   .content-with-image img,
-  .price-card img,
   .hero img,
   .about-section img,
   .img-sklad-ignyt,
   .img-feature-ignyt {
     width: 100% !important;
-    max-width: 260px !important; /* Dedykowany, estetyczny rozmiar grafik */
+    max-width: 100% !important; /* Pozwala grafice zająć pełną szerokość ekranu */
     height: auto !important;
-    margin: 0 auto 6px auto !important; /* Precyzyjna odległość obrazu od tekstu poniżej */
+    margin: 0 auto 10px auto !important; /* Mały, estetyczny odstęp od tekstu poniżej */
     display: block !important;
     border-radius: 12px !important;
     overflow: hidden !important;
