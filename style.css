@@ -1999,7 +1999,6 @@ img {
   .orygn-main-img-wrapper,
   .about-section .img-container,
   .about-section .content-image-box,
-  .about-section .col-lg-6,
   .content-with-image > div {
     width: 100% !important;
     max-width: 100% !important;
@@ -2007,10 +2006,7 @@ img {
     margin: 0 !important;
   }
 
-  .hero .img-container {
-    margin: 0 !important;
-  }
-
+  /* 2. SAM OBRAZEK - CAŁKOWITE USUNIĘCIE DOLNEGO MARGINESU */
   img,
   .img-container img,
   .content-image-box img,
@@ -2022,21 +2018,28 @@ img {
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    margin: 0 0 12px 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important; /* Usuwamy margines zdjęcia, odstęp obsłuży gap/margin tekstu */
     display: block !important;
     border-radius: 12px !important;
     overflow: hidden !important;
   }
 
-  /* Usunięcie górnych marginesów z tekstu tuż pod zdjęciami na podstronach */
-  .content-image-box + p,
-  .img-container + p,
-  .content-with-image p,
-  .content-with-image h2,
-  .content-with-image h3,
-  .content-with-image h4,
-  .content-with-image > div + * {
-    margin-top: 0 !important;
+  /* 3. RESET I UJEDNOLICENIE ODSTĘPU DLA TEKSTU POD ZDJĘCIEM */
+  .content-with-image {
+    gap: 0 !important; /* Wyłączenie odstępu flex, aby nie dublować marginesów */
+  }
+
+  /* Wymuszenie stałego górnego marginesu (np. 12px) dla pierwszego tekstu pod zdjęciem */
+  .content-with-image > div:nth-child(2) > *:first-child,
+  .content-with-image > div:last-child > *:first-child,
+  .content-image-box + div > *:first-child,
+  .img-container + div > *:first-child,
+  .content-with-image p:first-of-type,
+  .content-with-image h2:first-of-type,
+  .content-with-image h3:first-of-type,
+  .content-with-image h4:first-of-type {
+    margin-top: 12px !important;
     padding-top: 0 !important;
   }
 
