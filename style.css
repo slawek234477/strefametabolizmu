@@ -1968,7 +1968,114 @@ img {
 }
 }
 @media (max-width: 991px) {
-   .content-with-image img, 
+   .section {
+    padding: 20px 0 !important;
+  }
+
+  .section-header {
+    margin-bottom: 12px !important;
+  }
+
+  .section-header h2 {
+    margin-bottom: 6px !important;
+  }
+
+  .card-block {
+    padding: 18px 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* 1. Kasujemy ukryty odstęp w układach flex na podstronach */
+  .content-with-image {
+    gap: 0 !important;
+  }
+
+  /* 2. Jednolity, sztywny margines dolny dla samych zdjęć opisowych */
+  .content-image-box img,
+  .content-with-image img,
+  .about-section img,
+  .img-sklad-ignyt,
+  .img-feature-ignyt {
+    margin-top: 0 !important;
+    margin-bottom: 12px !important; /* DOKŁADNIE TAKI SAM ODSTĘP JAK NA STRONIE GŁÓWNEJ */
+  }
+
+  /* 3. Kasujemy górne marginesy z tekstu (p, h2, h3, h4) stojącego pod zdjęciem */
+  .content-image-box + p,
+  .content-image-box + h2,
+  .content-image-box + h3,
+  .content-image-box + h4,
+  .content-with-image p:first-of-type,
+  .content-with-image h2:first-of-type,
+  .content-with-image h3:first-of-type,
+  .content-with-image h4:first-of-type {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Wyjątek: Zdjęcie sekcji "Dla kogo" */
+  img.img-for-who,
+  .content-image-box img.img-for-who,
+  .card-block img.img-for-who,
+  .content-with-image img.img-for-who,
+  div:has(> .img-for-who) img {
+    max-width: 280px !important;
+    margin: 0 auto 8px auto !important;
+  }
+
+  /* Wyjątek: Zdjęcie główne ORYGN */
+  .orygn-main-img {
+    max-width: 100% !important;
+    aspect-ratio: 48 / 42 !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    filter: brightness(108%) contrast(120%);
+  }
+
+  /* 4. NAPRAWA ŚCIŚNIĘTYCH IKON W PODSTRONIE IGNYT */
+  .highlight-list {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+
+  .highlight-list li {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    gap: 14px !important; /* Właściwy odstęp poziomy od tekstu */
+    width: 100% !important;
+    margin: 16px 0 !important; /* ROZSZERZENIE: Większy odstęp pionowy między wierszami ikon */
+    min-height: 40px !important; /* Zabezpieczenie miejsca dla wyskalowanych grafik */
+  }
+
+  .highlight-list li img.cert-img {
+    flex-shrink: 0 !important;
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: contain !important;
+    align-self: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .highlight-list li span,
+  .highlight-list li strong {
+    flex: 1 !important;
+    display: block !important;
+    text-align: left !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+  }
+
+  .hero-grid p {
+    margin-bottom: 10px !important;
+  }
+	.content-with-image img, 
     .section img, 
     article img {
         width: 100% !important;
