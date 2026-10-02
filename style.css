@@ -1721,7 +1721,13 @@ a.btn-hero-outline:hover {
     width: 100%;
     height: auto;
 }
-
+.banner-img {
+	max-width: 300px;
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
 .img-for-who {
     max-width: 380px;
     width: 100%;
