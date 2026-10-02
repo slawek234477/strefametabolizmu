@@ -1961,7 +1961,7 @@ img {
     height: auto;
 }
 @media (max-width: 991px) {
-   .section {
+  .section {
     padding: 20px 0 !important;
   }
 
@@ -1974,17 +1974,22 @@ img {
   }
 
   .card-block {
-    padding: 18px 15px !important;
+    padding: 16px 14px !important;
     margin-bottom: 15px !important;
   }
 
+  .hero-grid p {
+    margin-bottom: 10px !important;
+  }
+
+  /* 2. UKŁADY TEKST + GRAFIKA (EDYCJA ODSTĘPÓW) */
   .content-with-image {
     display: flex !important;
     flex-direction: column !important;
     align-items: stretch !important;
     text-align: left !important;
-    gap: 15px !important; 
-    margin-bottom: 20px !important;
+    gap: 12px !important; /* Zmniejszony gap, aby usunąć dziury na podstronach */
+    margin-bottom: 15px !important;
   }
 
   .content-image-box,
@@ -1996,44 +2001,37 @@ img {
   }
 
   .hero .img-container {
-    margin: 10px 0 12px 0 !important;
+    margin: 8px 0 10px 0 !important;
   }
 
+  /* 3. PELNA SZEROKOŚĆ DLA WSZYSTKICH GRAFIK (NAPRAWA ZWĘŻENIA) */
   .content-image-box img,
   .content-with-image img,
   .img-sklad-ignyt,
   .img-feature-ignyt,
-  .img-for-who {
+  .img-for-who,
+  img.img-for-who,
+  .orygn-main-img {
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: 100% !important; /* Brak ściskania do 280px */
     height: auto !important;
     margin: 0 auto !important;
     display: block !important;
     border-radius: 12px !important;
   }
 
-  img.img-for-who,
-  .content-image-box img.img-for-who,
-  .card-block img.img-for-who,
-  .content-with-image img.img-for-who,
-  div:has(> .img-for-who) img {
-    max-width: 280px !important;
-    margin: 0 auto 8px auto !important;
-  }
-
   .orygn-main-img {
-    max-width: 100% !important;
     aspect-ratio: 48 / 42 !important;
     object-fit: cover !important;
-    border-radius: 12px !important;
     filter: brightness(108%) contrast(120%);
   }
 
+  /* 4. LISTY I IKONY (UJEDNOLICENIE ODSTĘPÓW NA PODSTRONACH) */
   .highlight-list {
     padding-left: 0 !important;
     padding-right: 0 !important;
     width: 100% !important;
-    margin-top: 10px !important;
+    margin: 10px 0 0 0 !important;
   }
 
   .highlight-list li {
@@ -2042,10 +2040,10 @@ img {
     align-items: center !important;
     justify-content: flex-start !important;
     text-align: left !important;
-    gap: 14px !important; 
+    gap: 12px !important; 
     width: 100% !important;
-    margin: 16px 0 !important; 
-    min-height: 40px !important; 
+    margin: 8px 0 !important; /* Zmniejszono z 16px na 8px, usuwając puste dziury */
+    min-height: auto !important;
   }
 
   .highlight-list li img.cert-img {
@@ -2066,10 +2064,6 @@ img {
     text-align: left !important;
     line-height: 1.35 !important;
     margin: 0 !important;
-  }
-
-  .hero-grid p {
-    margin-bottom: 10px !important;
   }
 }
 .orygn-main-img-wrapper {
