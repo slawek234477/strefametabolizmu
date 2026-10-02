@@ -2074,46 +2074,7 @@ img {
   .hero-grid p {
     margin-bottom: 10px !important;
   }
-@media screen and (max-width: 991px) {
-
-  /* 1. Ujednolicenie marginesów pod nagłówkami h2 / h3 na telefonie */
-  h2, h3, .section-title {
-    margin-top: 24px !important;
-    margin-bottom: 20px !important;
-    padding-bottom: 0 !important;
-  }
-
-  /* 2. Jednolity odstęp GÓRA i DÓŁ dla wszystkich kontenerów z obrazkami */
-  .content-image-box,
-  .content-with-image,
-  .img-container,
-  .orygn-main-img {
-    margin-top: 0 !important;
-    margin-bottom: 24px !important;
-    padding: 0 !important;
-  }
-
-  /* 3. Wymuszenie marginesu pod samymi plikami graficznymi (zapobiega przyklejaniu tekstu) */
-  img, 
-  .content-image-box img,
-  .content-with-image img,
-  .img-container img {
-    display: block !important;
-    margin-top: 0 !important;
-    margin-bottom: 20px !important; /* Wyraźna przerwa między obrazkiem a tekstem pod spodem */
-  }
-
-  /* 4. Odstęp dla paragrafów tekstowych pod obrazkami */
-  p {
-    margin-bottom: 16px !important;
-  }
-
-  /* 5. Bezpieczny margines boczny, żeby elementy nie dotykały krawędzi ekranu */
-  .container, .section {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
-}
+	 }
 .orygn-main-img-wrapper {
     width: 100%;
     max-width: 1300px; 
