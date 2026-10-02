@@ -1994,7 +1994,6 @@ img {
     margin-bottom: 15px !important;
   }
 
-  /* Wyczyszczenie nadmiernych marginesów w kontenerach ze zdjęciami */
   .content-image-box,
   .img-container,
   .orygn-main-img-wrapper,
@@ -2009,7 +2008,7 @@ img {
   }
 
   .hero .img-container {
-    margin: 10px 0 12px 0 !important;
+    margin: 0 !important;
   }
 
   img,
@@ -2021,12 +2020,24 @@ img {
   .img-sklad-ignyt,
   .img-feature-ignyt {
     width: 100% !important;
-    max-width: 100% !important; /* Pozwala grafice zająć pełną szerokość ekranu */
+    max-width: 100% !important;
     height: auto !important;
-    margin: 0 auto 10px auto !important; /* Mały, estetyczny odstęp od tekstu poniżej */
+    margin: 0 0 12px 0 !important;
     display: block !important;
     border-radius: 12px !important;
     overflow: hidden !important;
+  }
+
+  /* Usunięcie górnych marginesów z tekstu tuż pod zdjęciami na podstronach */
+  .content-image-box + p,
+  .img-container + p,
+  .content-with-image p,
+  .content-with-image h2,
+  .content-with-image h3,
+  .content-with-image h4,
+  .content-with-image > div + * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
   /* Wyjątek: Zdjęcie sekcji "Dla kogo" */
