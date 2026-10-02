@@ -2074,38 +2074,44 @@ img {
   .hero-grid p {
     margin-bottom: 10px !important;
   }
-.content-image-box,
-  .content-with-image .img-container,
-  .content-with-image img {
+@media screen and (max-width: 991px) {
+
+  /* 1. Ujednolicenie marginesów pod nagłówkami h2 / h3 na telefonie */
+  h2, h3, .section-title {
+    margin-top: 24px !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* 2. Jednolity odstęp GÓRA i DÓŁ dla wszystkich kontenerów z obrazkami */
+  .content-image-box,
+  .content-with-image,
+  .img-container,
+  .orygn-main-img {
     margin-top: 0 !important;
-    margin-bottom: 16px !important; /* Jednolity odstęp pod grafiką */
+    margin-bottom: 24px !important;
+    padding: 0 !important;
   }
 
-  /* 2. Dedykowane marginesy dla tekstu następującego bezpośrednio po obrazku */
-  .content-image-box + p,
-  .content-image-box + h2,
-  .content-image-box + h3,
-  .content-image-box + h4 {
+  /* 3. Wymuszenie marginesu pod samymi plikami graficznymi (zapobiega przyklejaniu tekstu) */
+  img, 
+  .content-image-box img,
+  .content-with-image img,
+  .img-container img {
+    display: block !important;
     margin-top: 0 !important;
-    padding-top: 0 !important;
+    margin-bottom: 20px !important; /* Wyraźna przerwa między obrazkiem a tekstem pod spodem */
   }
 
-  /* 3. Marginesy przycisków na telefonach (zapobiega sklejaniu się dwóch przycisków w pionie) */
-  .hero-btns {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 12px !important;
-    margin-top: 15px !important;
-    margin-bottom: 15px !important;
-  }
-
-  /* 4. Sekcja Hero – czysty układ przestrzenny */
-  .hero-grid p {
+  /* 4. Odstęp dla paragrafów tekstowych pod obrazkami */
+  p {
     margin-bottom: 16px !important;
   }
 
-  .hero .img-container {
-    margin: 10px auto 20px auto !important;
+  /* 5. Bezpieczny margines boczny, żeby elementy nie dotykały krawędzi ekranu */
+  .container, .section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 }
 .orygn-main-img-wrapper {
