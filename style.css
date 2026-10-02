@@ -2074,6 +2074,39 @@ img {
   .hero-grid p {
     margin-bottom: 10px !important;
   }
+.content-image-box,
+  .content-with-image .img-container,
+  .content-with-image img {
+    margin-top: 0 !important;
+    margin-bottom: 16px !important; /* Jednolity odstęp pod grafiką */
+  }
+
+  /* 2. Dedykowane marginesy dla tekstu następującego bezpośrednio po obrazku */
+  .content-image-box + p,
+  .content-image-box + h2,
+  .content-image-box + h3,
+  .content-image-box + h4 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* 3. Marginesy przycisków na telefonach (zapobiega sklejaniu się dwóch przycisków w pionie) */
+  .hero-btns {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* 4. Sekcja Hero – czysty układ przestrzenny */
+  .hero-grid p {
+    margin-bottom: 16px !important;
+  }
+
+  .hero .img-container {
+    margin: 10px auto 20px auto !important;
+  }
 }
 .orygn-main-img-wrapper {
     width: 100%;
