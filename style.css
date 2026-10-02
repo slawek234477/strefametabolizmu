@@ -1990,7 +1990,7 @@ img {
     flex-direction: column !important;
     align-items: center !important;
     text-align: left !important;
-    gap: 4px !important; /* Jednolity, estetyczny odstęp pod obrazkiem */
+    gap: 0px !important; /* Jednolity, estetyczny odstęp pod obrazkiem */
     margin-bottom: 20px !important;
   }
 
