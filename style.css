@@ -1678,25 +1678,40 @@ img {
     h2 { font-size: 1.35rem !important; line-height: 1.3; }
     h3 { font-size: 1.15rem !important; }
 
-    nav ul { flex-direction: column !important; gap: 12px !important; }
-    .grid-4 { grid-template-columns: 1fr !important; }
-}
-    .grid-4 { grid-template-columns: repeat(2, 1fr); }
-}
-.hero-grid { 
+   nav ul { 
+        flex-direction: column !important; 
+        gap: 12px !important; 
+    }
+
+    .grid-4 { 
+        grid-template-columns: 1fr !important; 
+    }
+
+    .hero-grid { 
         display: grid !important;
         grid-template-columns: 1fr !important; 
     }
-		.hero .img-container {
+
+    .hero .img-container {
         display: block !important;
         margin-top: 20px !important;
         text-align: center;
-}
-	    .product-grid-hero, .content-with-image { grid-template-columns: 1fr; }
-            .hero-product h1 { font-size: 1.8rem; }
-            .card-block { padding: 25px; }
-        }
-.content-with-image {
+    }
+
+    .product-grid-hero, 
+    .content-with-image { 
+        grid-template-columns: 1fr; 
+    }
+
+    .hero-product h1 { 
+        font-size: 1.8rem; 
+    }
+
+    .card-block { 
+        padding: 25px; 
+    }
+
+    .content-with-image {
         grid-template-columns: 1fr; 
     }
 .footer-tiktok-icon {
