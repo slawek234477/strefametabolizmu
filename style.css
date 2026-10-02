@@ -1984,45 +1984,30 @@ img {
     margin-bottom: 15px !important;
   }
 
-  /* 2. SPÓJNE ODSTĘPY GRAFIKA -> TEKST */
+  /* 1. Kasujemy ukryty odstęp w układach flex na podstronach */
   .content-with-image {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: left !important;
-    gap: 10px !important; /* Mniejszy, spójny odstęp pod grafiką */
-    margin-bottom: 15px !important;
+    gap: 0 !important;
   }
 
-  /* 1. Reset kontenerów ze zdjęciami TYLKO w sekcjach opisowych podstron */
-  .content-image-box,
-  .about-section .img-container,
-  .about-section .content-image-box {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  /* 2. Margines dolny grafiki NA PODSTRONACH (omija Hero i stronę główną) */
+  /* 2. Jednolity, sztywny margines dolny dla samych zdjęć opisowych */
   .content-image-box img,
+  .content-with-image img,
   .about-section img,
   .img-sklad-ignyt,
   .img-feature-ignyt {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    margin: 0 0 10px 0 !important; /* Sztywny, równy odstęp od tekstu u dołu */
-    display: block !important;
-    border-radius: 12px !important;
+    margin-top: 0 !important;
+    margin-bottom: 12px !important; /* DOKŁADNIE TAKI SAM ODSTĘP JAK NA STRONIE GŁÓWNEJ */
   }
 
-  /* 3. Zerowanie górnego marginesu TYLKO dla tekstów pod zdjęciem (omija przyciski i linki) */
+  /* 3. Kasujemy górne marginesy z tekstu (p, h2, h3, h4) stojącego pod zdjęciem */
   .content-image-box + p,
   .content-image-box + h2,
   .content-image-box + h3,
   .content-image-box + h4,
-  .content-image-box + div p {
+  .content-with-image p:first-of-type,
+  .content-with-image h2:first-of-type,
+  .content-with-image h3:first-of-type,
+  .content-with-image h4:first-of-type {
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
