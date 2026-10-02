@@ -2090,6 +2090,43 @@ img {
   .hero-grid p {
     margin-bottom: 12px !important;
   }
+.content-with-image p,
+  .content-with-image h3,
+  .card-block p,
+  .img-container + p,
+  .img-container + div {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Zeruje dolne odstępy pod samą grafiką */
+  .content-with-image img,
+  .img-container img,
+  .content-image-box img {
+    margin-bottom: 0 !important;
+  }
+  
+  /* Zmniejsza wymuszony odstęp z kontenera flex */
+  .content-with-image {
+    gap: 4px !important;
+  }
+	.navbar-brand,
+  .logo,
+  header .logo img,
+  .navbar-brand img {
+    margin-left: 0 !important;
+    padding-left: 10px !important; /* Daje bezpieczny odstęp od krawędzi ekranu */
+    max-width: 180px !important;   /* Dopasowuje szerokość, by nie rozpychała paska */
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  /* Zabezpieczenie kontenera paska nawigacji */
+  header .container,
+  .navbar .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
 }
 .orygn-main-img-wrapper {
     width: 100%;
