@@ -1972,7 +1972,7 @@ img {
   }
 
   .section-header {
-    margin-bottom: 12px !important;
+    margin-bottom: 25px !important;
   }
 
   .section-header h2 {
@@ -2073,8 +2073,20 @@ img {
 
   .hero-grid p {
     margin-bottom: 10px !important;
-  }
-	 }
+ }
+	  .content-with-image {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Równy odstęp między grafiką a tekstem */
+        text-align: center; /* Wyśśrodkowanie elementów na telefonie */
+    }
+
+    .content-with-image img {
+        margin: 0 auto;
+        max-width: 100% !important;
+        height: auto;
+    }
+}
 .orygn-main-img-wrapper {
     width: 100%;
     max-width: 1300px; 
