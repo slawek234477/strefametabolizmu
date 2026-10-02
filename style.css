@@ -1990,7 +1990,7 @@ img {
     flex-direction: column !important;
     align-items: center !important;
     text-align: left !important;
-    gap: 0px !important; /* Jednolity, estetyczny odstęp pod obrazkiem */
+    gap: 16px !important; /* Jednolity, estetyczny odstęp pod obrazkiem */
     margin-bottom: 20px !important;
   }
 
@@ -2020,7 +2020,7 @@ img {
     width: 100% !important;
     max-width: 280px !important; /* Spójny, optymalny rozmiar grafik */
     height: auto !important;
-    margin: 0 auto 6px auto !important; /* Jednakowy odstęp obrazu od tekstu poniżej */
+    margin: 0 auto 12px auto !important; /* Jednakowy odstęp obrazu od tekstu poniżej */
     display: block !important;
     border-radius: 12px !important;
     overflow: hidden !important;
@@ -2089,43 +2089,6 @@ img {
 
   .hero-grid p {
     margin-bottom: 12px !important;
-  }
-.content-with-image p,
-  .content-with-image h3,
-  .card-block p,
-  .img-container + p,
-  .img-container + div {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  /* Zeruje dolne odstępy pod samą grafiką */
-  .content-with-image img,
-  .img-container img,
-  .content-image-box img {
-    margin-bottom: 0 !important;
-  }
-  
-  /* Zmniejsza wymuszony odstęp z kontenera flex */
-  .content-with-image {
-    gap: 4px !important;
-  }
-	.navbar-brand,
-  .logo,
-  header .logo img,
-  .navbar-brand img {
-    margin-left: 0 !important;
-    padding-left: 10px !important; /* Daje bezpieczny odstęp od krawędzi ekranu */
-    max-width: 180px !important;   /* Dopasowuje szerokość, by nie rozpychała paska */
-    height: auto !important;
-    object-fit: contain !important;
-  }
-
-  /* Zabezpieczenie kontenera paska nawigacji */
-  header .container,
-  .navbar .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
   }
 }
 .orygn-main-img-wrapper {
