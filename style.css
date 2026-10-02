@@ -1735,15 +1735,8 @@ a.btn-hero-outline:hover {
     display: block;
     margin: 0 auto;
 }
-
-@media (max-width: 991px) {
-    .img-for-who {
-        max-width: 280px !important;
-        width: auto !important;
-    }
 }
-
-@media screen and (max-width: 768px) {
+@media (max-width: 992px) {
     .price-card .btn-primary,
     .price-card .btn-outline,
     .price-card a.btn-primary,
@@ -1784,8 +1777,6 @@ a.btn-hero-outline:hover {
         font-size: 0.75rem !important;
         margin: 0 !important;
     }
-}
-@media (max-width: 991px) {
 	.hero-grid { 
         display: flex !important;
         flex-direction: column !important;
@@ -1966,9 +1957,11 @@ img {
     max-width: 100%;
     height: auto;
 }
-}
-@media (max-width: 991px) {
-   .section {
+   .img-for-who {
+        max-width: 280px !important;
+        width: auto !important;
+    }
+	.section {
     padding: 20px 0 !important;
   }
 
