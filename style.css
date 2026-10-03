@@ -3119,7 +3119,7 @@ table td:first-child,
        ----------------------------------------------------- */
 
     .img-feature-ignyt,
-    .img-sklad-ignyt,
+    .img-sklad-ignyt {
         display: block !important;
 
         width: 100% !important;
