@@ -2525,7 +2525,7 @@ table td:first-child,
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 12px;
     width: 100%;
 }
 
