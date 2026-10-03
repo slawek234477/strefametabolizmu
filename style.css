@@ -2521,36 +2521,31 @@ table td:first-child,
 }
 .ignyt-for-who {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    width: 100%;
+    justify-content: center;
 }
 
 .ignyt-for-who-text {
-    flex: 1 1 auto;
-    min-width: 0;
+    flex: 1;
+    min-width: 280px;
     max-width: 520px;
 }
 
 .ignyt-for-who-image {
-    flex: 0 1 380px;
-    width: 380px;
-    max-width: 100%;
+    flex: 0 0 auto;
     text-align: center;
 }
 
 .img-for-who {
     display: block;
-    width: 100%;
+    width: auto;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
     border-radius: 12px;
 }
-
 /* =========================================================
    39. MOBILE
    ========================================================= */
@@ -3667,11 +3662,9 @@ table td:first-child,
     .orygn-main-img-wrapper:last-child {
         margin-bottom: 0 !important;
     }
- .ignyt-for-who {
+.ignyt-for-who {
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: stretch;
-        justify-content: flex-start;
         gap: 12px;
         width: 100%;
     }
@@ -3683,13 +3676,13 @@ table td:first-child,
     }
 
     .ignyt-for-who-image {
-        flex: none;
         width: 100%;
-        max-width: 100%;
+        flex: none;
         text-align: center;
     }
 
     .img-for-who {
+        display: block;
         width: 100%;
         max-width: 100%;
         height: auto;
