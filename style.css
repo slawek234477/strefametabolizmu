@@ -3078,7 +3078,7 @@ table td:first-child,
     .content-image-box + h2,
     .content-image-box + h3,
     .content-image-box + h4 {
-        margin-top: 16px !important;
+        margin-top: 10px !important;
 
         padding-top: 0 !important;
     }
