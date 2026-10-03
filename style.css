@@ -3647,11 +3647,19 @@ table td:first-child,
         margin-bottom: 0 !important;
     }
 .img-for-who {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        box-sizing: border-box;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box !important;
         border-radius: 12px;
+    }
+   .img-for-who + * {
+        max-width: 100%;
+    }
+
+    .img-for-who {
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 .disclaimer-text {
         margin-top: 5px;
