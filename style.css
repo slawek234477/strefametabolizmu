@@ -2449,6 +2449,9 @@ table td:first-child,
 .comp-table td:first-child {
     font-weight: 600;
 }
+
+.table-responsive { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 25px 0; } 
+.comp-table { width: 100%; border-collapse: separate; border-spacing: 0; overflow: hidden; border-radius: 12px; background: #ffffff; border: 1px solid var(--border); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06); color: var(--text-dark); } /* Nagłówek tabeli */ .comp-table thead th { background: var(--primary-dark); color: #ffffff; font-weight: 700; text-align: center; padding: 16px 14px; border-bottom: 2px solid var(--accent); vertical-align: middle; } /* Pierwsza kolumna */ .comp-table tbody td:first-child { background: rgba(46, 196, 182, 0.08); font-weight: 600; color: var(--primary-dark); } /* Komórki */ .comp-table tbody td { padding: 14px; border-bottom: 1px solid var(--border); vertical-align: middle; line-height: 1.5; } /* Naprzemienne kolory wierszy */ .comp-table tbody tr:nth-child(even) td { background: #f8fbfb; } .comp-table tbody tr:nth-child(even) td:first-child { background: rgba(46, 196, 182, 0.12); } /* Ostatni wiersz bez dolnej kreski */ .comp-table tbody tr:last-child td { border-bottom: none; } /* Efekt hover */ .comp-table tbody tr:hover td { background: rgba(46, 196, 182, 0.08); } .comp-table tbody tr:hover td:first-child { background: rgba(46, 196, 182, 0.15); } /* Pozytywne informacje */ .check-green { display: inline-block; color: #168c62; font-weight: 600; } /* Negatywne informacje */ .cross-red { display: inline-block; color: #d64545; font-weight: 600; } /* Ikony / symbole pozytywne */ .check-green::before { content: "✓"; display: inline-block; margin-right: 6px; font-weight: 800; color: #20a56f; } /* Ikony / symbole negatywne */ .cross-red::before { content: "✕"; display: inline-block; margin-right: 6px; font-weight: 800; color: #d64545; }
 /* =========================================================
    37. MOBILE
    ========================================================= */
@@ -3327,20 +3330,10 @@ table td:last-child,
 .comp-table td:last-child {
     white-space: normal !important;
 }
-   .table-responsive {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    margin: 20px 0;
-}
+   .table-responsive { margin-left: -5px; margin-right: -5px; width: calc(100% + 10px); } 
+   .comp-table { min-width: 700px; font-size: 0.88rem; } .comp-table thead th { padding: 13px 10px; } .comp-table tbody td { padding: 12px 10px; } }
 
-.table-responsive table {
-    width: 100%;
-    min-width: 650px;
-    margin: 0;
-}
+   
     /* -----------------------------------------------------
        WHATSAPP
        ----------------------------------------------------- */
