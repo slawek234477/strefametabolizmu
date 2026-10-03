@@ -3069,7 +3069,7 @@ table td:first-child,
     .card-block p + img,
     .card-box-step p + img,
     .card-box-step p + .content-image-box {
-        margin-top: 16px !important;
+        margin-top: 10px !important;
     }
 
     /* Grafika przed tekstem */
