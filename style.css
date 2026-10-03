@@ -3524,6 +3524,128 @@ table td:first-child,
     .footer-social-col {
         text-align: center;
     }
+/* -----------------------------------------
+       1. WSZYSTKIE GRAFIKI TREŚCI
+       ----------------------------------------- */
+
+    .card-block .content-image-box,
+    .card-block > img,
+    .card-block p + img,
+    .card-block p + .content-image-box,
+    .card-box-step img,
+    .content-with-image img,
+    .img-feature-ignyt,
+    .img-sklad-ignyt,
+    .img-for-who,
+    .orygn-main-img-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+
+    /* -----------------------------------------
+       2. SAME OBRAZY
+       ----------------------------------------- */
+
+    .card-block .content-image-box img,
+    .card-block > img,
+    .card-block p + img,
+    .card-box-step img,
+    .content-with-image img,
+    .img-feature-ignyt,
+    .img-sklad-ignyt,
+    .img-for-who,
+    .orygn-main-img {
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        height: auto !important;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+        border-radius: 12px !important;
+
+        object-fit: contain !important;
+    }
+
+
+    /* -----------------------------------------
+       3. WRAPPER GRAFIKI
+       ----------------------------------------- */
+
+    .card-block .content-image-box,
+    .orygn-main-img-wrapper {
+        padding: 0 !important;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+        text-align: center !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* -----------------------------------------
+       4. JEDEN STAŁY ODSTĘP:
+          GRAFIKA → TEKST
+       ----------------------------------------- */
+
+    .content-image-box + p,
+    .content-image-box + h2,
+    .content-image-box + h3,
+    .content-image-box + h4,
+    .card-block > img + p,
+    .card-block > img + h2,
+    .card-block > img + h3,
+    .card-block > img + h4 {
+        margin-top: 12px !important;
+        padding-top: 0 !important;
+    }
+
+
+    /* -----------------------------------------
+       5. JEDEN STAŁY ODSTĘP:
+          TEKST → GRAFIKA
+       ----------------------------------------- */
+
+    .card-block p + .content-image-box,
+    .card-block p + img,
+    .card-box-step p + img,
+    .card-box-step p + .content-image-box {
+        margin-top: 12px !important;
+    }
+
+
+    /* -----------------------------------------
+       6. USUWAMY DODATKOWE MARGINESY
+          WRAPPERÓW
+       ----------------------------------------- */
+
+    .card-block .content-image-box {
+        margin-bottom: 0 !important;
+    }
+
+    .orygn-main-img-wrapper {
+        margin-top: 12px !important;
+        margin-bottom: 0 !important;
+    }
+
+
+    /* -----------------------------------------
+       7. OSTATNI ELEMENT NIE DODAJE
+          NIEPOTRZEBNEJ PRZERWY
+       ----------------------------------------- */
+
+    .card-block .content-image-box:last-child,
+    .card-block > img:last-child,
+    .orygn-main-img-wrapper:last-child {
+        margin-bottom: 0 !important;
+    }
 }
 
 
