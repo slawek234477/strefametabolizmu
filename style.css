@@ -2379,7 +2379,76 @@ div.study-card a.btn-outline:hover {
 
     box-sizing: border-box;
 }
+/* =========================================================
+   36A. TABELE - WERSJA DESKTOP + GLOBALNA
+   ========================================================= */
 
+table,
+.comp-table {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 25px 0;
+
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    background: #ffffff;
+
+    border: 1px solid var(--border);
+
+    color: var(--text-dark);
+}
+
+table th,
+table td,
+.comp-table th,
+.comp-table td {
+    border: 1px solid var(--border);
+
+    padding: 12px 15px;
+
+    vertical-align: middle;
+
+    text-align: left;
+
+    line-height: 1.5;
+}
+
+table th,
+.comp-table th {
+    background: #f8fafc;
+
+    color: var(--primary-dark);
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+table td,
+.comp-table td {
+    background: #ffffff;
+
+    color: var(--text-dark);
+}
+
+table tr:nth-child(even) td,
+.comp-table tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+table tr:hover td,
+.comp-table tr:hover td {
+    background: #f0fdfa;
+}
+
+table th:first-child,
+table td:first-child,
+.comp-table th:first-child,
+.comp-table td:first-child {
+    font-weight: 600;
+}
 
 /* =========================================================
    37. MOBILE
@@ -3170,7 +3239,7 @@ div.study-card a.btn-outline:hover {
        TABLE
        ----------------------------------------------------- */
 
-    table,
+   table,
 .comp-table {
     width: 100% !important;
     max-width: 100% !important;
@@ -3182,9 +3251,7 @@ div.study-card a.btn-outline:hover {
 
     border: 1px solid var(--border) !important;
 
-    overflow-x: auto !important;
-
-    -webkit-overflow-scrolling: touch !important;
+    background: #ffffff !important;
 }
 
 table th,
@@ -3197,9 +3264,9 @@ table td,
 
     font-size: 12px !important;
 
-    white-space: nowrap !important;
-
     vertical-align: middle !important;
+
+    color: var(--text-dark) !important;
 }
 
 table th,
@@ -3209,11 +3276,20 @@ table th,
     color: var(--primary-dark) !important;
 
     font-weight: 700 !important;
+
+    text-align: center !important;
 }
 
 table td,
 .comp-table td {
-    color: var(--text-dark) !important;
+    background: #ffffff !important;
+
+    text-align: left !important;
+}
+
+table tr:nth-child(even) td,
+.comp-table tr:nth-child(even) td {
+    background: #f8fafc !important;
 }
 
 table th:first-child,
@@ -3224,7 +3300,6 @@ table td:first-child,
 
     white-space: normal !important;
 }
-
     /* -----------------------------------------------------
        WHATSAPP
        ----------------------------------------------------- */
