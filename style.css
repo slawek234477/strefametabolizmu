@@ -2334,6 +2334,7 @@ div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
 .study-card .section-header-left p {
     text-align: left !important;
 }
+
 .study-card a.btn-outline,
 div.study-card a.btn-outline {
     background: rgba(46, 196, 182, 0.15) !important;
@@ -2379,8 +2380,10 @@ div.study-card a.btn-outline:hover {
 
     box-sizing: border-box;
 }
+
+
 /* =========================================================
-   36A. TABELE - WERSJA DESKTOP + GLOBALNA
+   37. TABELE - GLOBAL
    ========================================================= */
 
 table,
@@ -2388,7 +2391,7 @@ table,
     width: 100%;
     max-width: 100%;
 
-    margin: 25px 0;
+    margin: 8px 0 25px;
 
     border-collapse: collapse;
     border-spacing: 0;
@@ -2450,17 +2453,76 @@ table td:first-child,
     font-weight: 600;
 }
 
-.table-responsive { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 25px 0; 
-} 
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 
-.comp-table { width: 100%; border-collapse: collapse; margin-top: 25px; font-size: 0.92rem; }
-        .comp-table th, .comp-table td { padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--border); }
-        .comp-table th { background: var(--primary-dark); color: white; }
-        .comp-table tr:nth-child(even) { background: var(--bg-light); }
-        .check-green { color: var(--cta-green); font-weight: 700; }
-        .cross-red { color: #e63946; font-weight: 700; }
+    margin: 8px 0 25px;
+}
+
+.comp-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    margin-top: 0;
+
+    font-size: 0.92rem;
+}
+
+.comp-table th,
+.comp-table td {
+    padding: 14px 16px;
+    text-align: left;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.comp-table th {
+    background: var(--primary-dark);
+    color: white;
+}
+
+.comp-table tr:nth-child(even) {
+    background: var(--bg-light);
+}
+
+.check-green {
+    color: var(--cta-green);
+    font-weight: 700;
+}
+
+.cross-red {
+    color: #e63946;
+    font-weight: 700;
+}
+
+
 /* =========================================================
-   37. MOBILE
+   38. ODSTĘP TEKST → TABELA
+   ========================================================= */
+
+/*
+   Zmniejszamy tylko odstęp bezpośrednio przed tabelą.
+   Dzięki temu tabela nie jest zbyt daleko od tekstu,
+   ale pozostałe sekcje zachowują swoje odstępy.
+*/
+
+.card-block p + table,
+.card-block p + .table-responsive,
+.study-card p + table,
+.study-card p + .table-responsive {
+    margin-top: 5px !important;
+}
+
+.card-block .table-responsive + p,
+.study-card .table-responsive + p {
+    margin-top: 12px;
+}
+
+
+/* =========================================================
+   39. MOBILE
    ========================================================= */
 
 @media (max-width: 992px) {
@@ -2920,129 +2982,173 @@ table td:first-child,
 
 
     /* -----------------------------------------------------
+       NAGŁÓWKI - TYLKO MOBILE
+       ----------------------------------------------------- */
+
+    /*
+       Na komputerze nagłówki zachowują swoje dotychczasowe
+       wyrównanie.
+
+       Na telefonie nagłówki głównych sekcji kart są
+       wyśrodkowane.
+    */
+
+    .card-block h2,
+    .section-title {
+        text-align: center !important;
+    }
+
+    .card-block h2::after {
+        left: 50% !important;
+
+        transform: translateX(-50%) !important;
+    }
+
+
+    /* -----------------------------------------------------
        GRAFIKA → TEKST
        ----------------------------------------------------- */
 
-   .content-image-box,
-.card-block .content-image-box,
-.content-with-image .content-image-box {
-    width: 100% !important;
-    max-width: 100% !important;
+    .content-image-box,
+    .card-block .content-image-box,
+    .content-with-image .content-image-box {
+        width: 100% !important;
+        max-width: 100% !important;
 
-    padding: 0 !important;
+        padding: 0 !important;
 
-    margin: 14px 0 !important;
+        margin: 14px 0 !important;
 
-    overflow: visible !important;
+        overflow: visible !important;
 
-    text-align: center !important;
-}
+        text-align: center !important;
+    }
 
-.content-image-box img,
-.content-with-image img {
-    display: block !important;
+    .content-image-box img,
+    .content-with-image img {
+        display: block !important;
 
-    width: 100% !important;
-    max-width: 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
 
-    height: auto !important;
+        height: auto !important;
 
-    margin: 0 auto !important;
+        margin: 0 auto !important;
 
-    object-fit: contain !important;
+        object-fit: contain !important;
 
-    border-radius: 12px !important;
-}
+        border-radius: 12px !important;
+    }
 
-/* Każda grafika w głównej treści kart */
-.card-block > img,
-.card-block p + img,
-.card-block .content-image-box + img {
-    display: block !important;
+    /*
+       Każda grafika bezpośrednio w głównej treści karty.
+       Zaokrąglenie wymuszone także wtedy, gdy HTML
+       nie ma osobnego wrappera.
+    */
 
-    width: 100% !important;
-    max-width: 100% !important;
+    .card-block > img,
+    .card-block p + img,
+    .card-block .content-image-box + img {
+        display: block !important;
 
-    height: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
 
-    margin: 14px 0 !important;
+        height: auto !important;
 
-    border-radius: 12px !important;
-}
+        margin: 14px 0 !important;
 
-/* Grafika znajdująca się bezpośrednio po tekście */
-.card-block p + .content-image-box,
-.card-block p + img,
-.card-box-step p + img,
-.card-box-step p + .content-image-box {
-    margin-top: 16px !important;
-}
+        border-radius: 12px !important;
 
-/* Grafika znajdująca się przed tekstem */
-.content-image-box + p,
-.content-image-box + h2,
-.content-image-box + h3,
-.content-image-box + h4 {
-    margin-top: 16px !important;
+        overflow: hidden !important;
+    }
 
-    padding-top: 0 !important;
-}
+    /* Grafika po tekście */
+
+    .card-block p + .content-image-box,
+    .card-block p + img,
+    .card-box-step p + img,
+    .card-box-step p + .content-image-box {
+        margin-top: 16px !important;
+    }
+
+    /* Grafika przed tekstem */
+
+    .content-image-box + p,
+    .content-image-box + h2,
+    .content-image-box + h3,
+    .content-image-box + h4 {
+        margin-top: 16px !important;
+
+        padding-top: 0 !important;
+    }
+
 
     /* -----------------------------------------------------
-       IGNYT / ORYGN
+       DODATKOWE ZAOKRĄGLENIE GRAFIK IGNYT / ORYGN
        ----------------------------------------------------- */
 
     .img-feature-ignyt,
-.img-sklad-ignyt {
-    display: block !important;
+    .img-sklad-ignyt,
+    .img-for-who {
+        display: block !important;
 
-    width: 100% !important;
-    max-width: 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
 
-    height: auto !important;
+        height: auto !important;
 
-    object-fit: contain !important;
+        object-fit: contain !important;
 
-    margin: 14px 0 !important;
+        margin: 14px auto !important;
 
-    border-radius: 12px !important;
-}
+        border-radius: 12px !important;
 
-.orygn-main-img-wrapper {
-    width: 100% !important;
-
-    max-width: 100% !important;
-
-    padding: 0 !important;
-
-    margin: 14px 0 !important;
-}
-
-.orygn-main-img {
-    display: block !important;
-
-    width: 100% !important;
-    max-width: 100% !important;
-
-    height: auto !important;
-
-    aspect-ratio: auto !important;
-
-    object-fit: contain !important;
-
-    margin: 0 !important;
-
-    border-radius: 12px !important;
-}
+        overflow: hidden !important;
+    }
 
     .img-for-who {
         width: auto !important;
 
         max-width: 280px !important;
 
+        margin: 0 auto 8px !important;
+    }
+
+
+    /* -----------------------------------------------------
+       ORYGN
+       ----------------------------------------------------- */
+
+    .orygn-main-img-wrapper {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        padding: 0 !important;
+
+        margin: 14px 0 !important;
+
+        overflow: hidden !important;
+
+        border-radius: 12px !important;
+    }
+
+    .orygn-main-img {
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
         height: auto !important;
 
-        margin: 0 auto 8px !important;
+        aspect-ratio: auto !important;
+
+        object-fit: contain !important;
+
+        margin: 0 !important;
+
+        border-radius: 12px !important;
     }
 
 
@@ -3086,27 +3192,28 @@ table td:first-child,
         box-sizing: border-box !important;
     }
 
-   .highlight-list li img.cert-img {
-    flex: 0 0 50px !important;
+    .highlight-list li img.cert-img {
+        flex: 0 0 50px !important;
 
-    width: 50px !important;
-    height: 50px !important;
+        width: 50px !important;
+        height: 50px !important;
 
-    min-width: 50px !important;
-    max-width: 50px !important;
+        min-width: 50px !important;
+        max-width: 50px !important;
 
-    min-height: 50px !important;
-    max-height: 50px !important;
+        min-height: 50px !important;
+        max-height: 50px !important;
 
-    object-fit: contain !important;
+        object-fit: contain !important;
 
-    transform: none !important;
+        transform: none !important;
 
-    margin: 0 !important;
-    padding: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
 
-    border-radius: 0 !important;
-}
+        border-radius: 0 !important;
+    }
+
     .highlight-list li span,
     .highlight-list li strong {
         flex: 1 1 auto !important;
@@ -3245,106 +3352,136 @@ table td:first-child,
 
 
     /* -----------------------------------------------------
-       TABLE
+       TABLE - MOBILE
        ----------------------------------------------------- */
 
- table,
-.comp-table {
-    width: 100% !important;
-    max-width: 100% !important;
+    table,
+    .comp-table {
+        width: 100% !important;
 
-    margin: 20px 0 !important;
+        max-width: 100% !important;
 
-    border-collapse: collapse !important;
-    border-spacing: 0 !important;
+        margin: 5px 0 20px !important;
 
-    border: 1px solid var(--border) !important;
+        border-collapse: collapse !important;
 
-    background: #ffffff !important;
+        border-spacing: 0 !important;
 
-    table-layout: auto !important;
-}
+        border: 1px solid var(--border) !important;
 
-table th,
-table td,
-.comp-table th,
-.comp-table td {
-    border: 1px solid var(--border) !important;
+        background: #ffffff !important;
 
-    padding: 9px 10px !important;
+        table-layout: auto !important;
+    }
 
-    font-size: 12px !important;
+    table th,
+    table td,
+    .comp-table th,
+    .comp-table td {
+        border: 1px solid var(--border) !important;
 
-    line-height: 1.45 !important;
+        padding: 9px 10px !important;
 
-    vertical-align: middle !important;
+        font-size: 12px !important;
 
-    color: var(--text-dark) !important;
+        line-height: 1.45 !important;
 
-    word-break: normal !important;
+        vertical-align: middle !important;
 
-    overflow-wrap: break-word !important;
-}
+        color: var(--text-dark) !important;
 
-table th,
-.comp-table th {
-    background: #f8fafc !important;
+        word-break: normal !important;
 
-    color: var(--primary-dark) !important;
+        overflow-wrap: break-word !important;
+    }
 
-    font-weight: 700 !important;
+    table th,
+    .comp-table th {
+        background: #f8fafc !important;
 
-    text-align: center !important;
+        color: var(--primary-dark) !important;
 
-    white-space: normal !important;
-}
+        font-weight: 700 !important;
 
-table td,
-.comp-table td {
-    background: #ffffff !important;
+        text-align: center !important;
 
-    text-align: left !important;
+        white-space: normal !important;
+    }
 
-    white-space: normal !important;
-}
+    table td,
+    .comp-table td {
+        background: #ffffff !important;
 
-table tr:nth-child(even) td,
-.comp-table tr:nth-child(even) td {
-    background: #f8fafc !important;
-}
+        text-align: left !important;
 
-table tr:hover td,
-.comp-table tr:hover td {
-    background: #f0fdfa !important;
-}
+        white-space: normal !important;
+    }
 
-/* Pierwsza kolumna */
-table th:first-child,
-table td:first-child,
-.comp-table th:first-child,
-.comp-table td:first-child {
-    min-width: 90px !important;
+    table tr:nth-child(even) td,
+    .comp-table tr:nth-child(even) td {
+        background: #f8fafc !important;
+    }
 
-    font-weight: 600 !important;
+    table tr:hover td,
+    .comp-table tr:hover td {
+        background: #f0fdfa !important;
+    }
 
-    white-space: normal !important;
-}
+    table th:first-child,
+    table td:first-child,
+    .comp-table th:first-child,
+    .comp-table td:first-child {
+        min-width: 90px !important;
 
-/* Ostatnia kolumna */
-table th:last-child,
-table td:last-child,
-.comp-table th:last-child,
-.comp-table td:last-child {
-    white-space: normal !important;
-}
-   .table-responsive { margin-left: -5px; margin-right: -5px; width: calc(100% + 10px); 
-   }
-   
-   .comp-table { min-width: 700px; font-size: 0.88rem; } 
-   .comp-table thead th { padding: 13px 10px; } 
-   .comp-table tbody td { padding: 12px 10px; } 
+        font-weight: 600 !important;
 
-   
+        white-space: normal !important;
+    }
+
+    table th:last-child,
+    table td:last-child,
+    .comp-table th:last-child,
+    .comp-table td:last-child {
+        white-space: normal !important;
+    }
+
+    .table-responsive {
+        margin-left: -5px !important;
+        margin-right: -5px !important;
+
+        width: calc(100% + 10px) !important;
+
+        margin-top: 5px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .comp-table {
+        min-width: 700px;
+
+        font-size: 0.88rem;
+    }
+
+    .comp-table thead th {
+        padding: 13px 10px;
+    }
+
+    .comp-table tbody td {
+        padding: 12px 10px;
+    }
+
+
+    /* -----------------------------------------------------
+       ODSTĘP TEKST → TABELA - MOBILE
+       ----------------------------------------------------- */
+
+    .card-block p + table,
+    .card-block p + .table-responsive,
+    .study-card p + table,
+    .study-card p + .table-responsive {
+        margin-top: 3px !important;
+    }
+
+
     /* -----------------------------------------------------
        WHATSAPP
        ----------------------------------------------------- */
