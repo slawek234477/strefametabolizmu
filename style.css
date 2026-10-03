@@ -3108,12 +3108,9 @@ table td:first-child,
     }
 
     .img-for-who {
-        width: auto !important;
-
-        max-width: 280px !important;
-
-        margin: 0 auto 8px !important;
-    }
+    width: 100% !important;
+    max-width: 100% !important;
+}
 
 
     /* -----------------------------------------------------
