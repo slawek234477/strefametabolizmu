@@ -2519,6 +2519,34 @@ table td:first-child,
 .study-card .table-responsive + p {
     margin-top: 12px;
 }
+.ignyt-for-who {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ignyt-for-who-text {
+    flex: 1 1 280px;
+    max-width: 520px;
+}
+
+.ignyt-for-who-image {
+    flex: 0 1 auto;
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.img-for-who {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
 
 
 /* =========================================================
@@ -3090,7 +3118,6 @@ table td:first-child,
 
     .img-feature-ignyt,
     .img-sklad-ignyt,
-    .img-for-who {
         display: block !important;
 
         width: 100% !important;
@@ -3637,6 +3664,35 @@ table td:first-child,
     .card-block > img:last-child,
     .orygn-main-img-wrapper:last-child {
         margin-bottom: 0 !important;
+    }
+ .ignyt-for-who {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .ignyt-for-who-text {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+    }
+
+    .ignyt-for-who-image {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+        text-align: center;
+    }
+
+    .img-for-who {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        border-radius: 12px;
+        box-sizing: border-box;
     }
 }
 
