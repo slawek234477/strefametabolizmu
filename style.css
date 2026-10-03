@@ -2449,7 +2449,6 @@ table td:first-child,
 .comp-table td:first-child {
     font-weight: 600;
 }
-
 /* =========================================================
    37. MOBILE
    ========================================================= */
@@ -3239,7 +3238,7 @@ table td:first-child,
        TABLE
        ----------------------------------------------------- */
 
-   table,
+ table,
 .comp-table {
     width: 100% !important;
     max-width: 100% !important;
@@ -3252,6 +3251,8 @@ table td:first-child,
     border: 1px solid var(--border) !important;
 
     background: #ffffff !important;
+
+    table-layout: auto !important;
 }
 
 table th,
@@ -3260,13 +3261,19 @@ table td,
 .comp-table td {
     border: 1px solid var(--border) !important;
 
-    padding: 10px 12px !important;
+    padding: 9px 10px !important;
 
     font-size: 12px !important;
+
+    line-height: 1.45 !important;
 
     vertical-align: middle !important;
 
     color: var(--text-dark) !important;
+
+    word-break: normal !important;
+
+    overflow-wrap: break-word !important;
 }
 
 table th,
@@ -3278,6 +3285,8 @@ table th,
     font-weight: 700 !important;
 
     text-align: center !important;
+
+    white-space: normal !important;
 }
 
 table td,
@@ -3285,6 +3294,8 @@ table td,
     background: #ffffff !important;
 
     text-align: left !important;
+
+    white-space: normal !important;
 }
 
 table tr:nth-child(even) td,
@@ -3292,13 +3303,43 @@ table tr:nth-child(even) td,
     background: #f8fafc !important;
 }
 
+table tr:hover td,
+.comp-table tr:hover td {
+    background: #f0fdfa !important;
+}
+
+/* Pierwsza kolumna */
 table th:first-child,
 table td:first-child,
 .comp-table th:first-child,
 .comp-table td:first-child {
-    min-width: 100px !important;
+    min-width: 90px !important;
+
+    font-weight: 600 !important;
 
     white-space: normal !important;
+}
+
+/* Ostatnia kolumna */
+table th:last-child,
+table td:last-child,
+.comp-table th:last-child,
+.comp-table td:last-child {
+    white-space: normal !important;
+}
+   .table-responsive {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    margin: 20px 0;
+}
+
+.table-responsive table {
+    width: 100%;
+    min-width: 650px;
+    margin: 0;
 }
     /* -----------------------------------------------------
        WHATSAPP
