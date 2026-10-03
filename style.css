@@ -2521,33 +2521,35 @@ table td:first-child,
 }
 .ignyt-for-who {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
 }
 
 .ignyt-for-who-text {
-    flex: 1 1 280px;
+    flex: 1 1 auto;
+    min-width: 0;
     max-width: 520px;
 }
 
 .ignyt-for-who-image {
-    flex: 0 1 auto;
-    width: auto;
+    flex: 0 1 380px;
+    width: 380px;
     max-width: 100%;
     text-align: center;
 }
 
 .img-for-who {
     display: block;
-    width: auto;
+    width: 100%;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
     border-radius: 12px;
 }
-
 
 /* =========================================================
    39. MOBILE
@@ -3668,34 +3670,34 @@ table td:first-child,
  .ignyt-for-who {
         flex-direction: column;
         flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: flex-start;
         gap: 12px;
         width: 100%;
     }
 
     .ignyt-for-who-text {
+        flex: none;
         width: 100%;
         max-width: 100%;
-        flex: none;
     }
 
     .ignyt-for-who-image {
+        flex: none;
         width: 100%;
         max-width: 100%;
-        flex: none;
         text-align: center;
     }
 
     .img-for-who {
-        display: block;
         width: 100%;
         max-width: 100%;
         height: auto;
         margin: 0;
-        border-radius: 12px;
         box-sizing: border-box;
+        border-radius: 12px;
     }
 }
-
 
 /* =========================================================
    KONIEC STYLE.CSS
