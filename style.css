@@ -3653,8 +3653,10 @@ table td:first-child,
         box-sizing: border-box;
         border-radius: 12px;
     }
+.disclaimer-text {
+        margin-top: 20px;
+    }
 }
-
 /* =========================================================
    KONIEC STYLE.CSS
    ========================================================= */
