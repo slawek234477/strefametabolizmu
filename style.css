@@ -2519,29 +2519,10 @@ table td:first-child,
 .study-card .table-responsive + p {
     margin-top: 12px;
 }
-.ignyt-for-who {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-}
-
-.ignyt-for-who-text {
-    flex: 1;
-    min-width: 280px;
-    max-width: 520px;
-}
-
-.ignyt-for-who-image {
-    flex: 0 0 auto;
-    text-align: center;
-}
-
 .img-for-who {
     display: block;
     width: auto;
-    max-width: 100%;
+    max-width: 280px;
     height: auto;
     margin: 0 auto;
     border-radius: 12px;
