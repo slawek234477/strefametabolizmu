@@ -2528,7 +2528,7 @@ table td:first-child,
     border-radius: 12px;
 }
 .disclaimer-text {
-    margin-top: 25px;
+    margin-top: 15px;
 }
 /* =========================================================
    39. MOBILE
@@ -3654,7 +3654,7 @@ table td:first-child,
         border-radius: 12px;
     }
 .disclaimer-text {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
 /* =========================================================
