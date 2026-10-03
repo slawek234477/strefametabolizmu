@@ -2522,7 +2522,7 @@ table td:first-child,
 .img-for-who {
     display: block;
     width: auto;
-    max-width: 280px;
+    max-width: 300px;
     height: auto;
     margin: 0;
     border-radius: 12px;
