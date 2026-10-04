@@ -2185,19 +2185,33 @@ table td:first-child,
     display: block;
     margin: 0 auto;
 }
-.section .container > div[style*="margin-bottom: 30px"] {
-    margin-bottom: 15px !important;
+.payment-methods-header {
+    text-align: center;
+    margin-bottom: 0px;
 }
 
-.section .container > div[style*="margin-bottom: 30px"] h2 {
-    margin-bottom: 5px !important;
+.payment-methods-header h2 {
+    font-size: 1.8rem;
+    color: var(--primary-dark);
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
-.section .container > div[style*="margin: 25px 0 35px 0"] {
-    margin-top: 5px !important;
-    margin-bottom: 20px !important;
+.payment-methods-image {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 20px;
 }
 
+.payment-methods-image img {
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    mix-blend-mode: multiply;
+    clip-path: inset(3px 0 3px 0);
+    filter: brightness(108%) contrast(120%);
+}
 /* =========================================================
    40. MOBILE
    ========================================================= */
