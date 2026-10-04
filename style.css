@@ -2274,6 +2274,23 @@ table td:first-child,
     line-height: 1.5;
     margin: 0 !important;
 }
+.price-info-note {
+    margin-top: 20px;
+    background: #f8fafc;
+    border-left: 4px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    text-align: left;
+}
+
+.price-info-note i {
+    color: var(--accent);
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
 /* =========================================================
    40. MOBILE
    ========================================================= */
