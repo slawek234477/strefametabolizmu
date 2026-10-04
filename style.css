@@ -1038,8 +1038,8 @@ a.btn-hero-outline:hover {
     display: grid;
     grid-template-columns:
     repeat(auto-fit, minmax(320px, 1fr));
-    column-gap: 30px;
-    row-gap: 30px;
+    gap: 30px;
+    margin-top: 40px;
     margin-top: 40px;
 }
 
@@ -2305,6 +2305,9 @@ table td:first-child,
 }
 .products-grid {
     margin-top: 0 !important;
+}
+#wybierz.products-grid {
+    row-gap: 50px !important;
 }
 /* =========================================================
    40. MOBILE
