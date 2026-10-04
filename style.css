@@ -2212,13 +2212,27 @@ table td:first-child,
     clip-path: inset(3px 0 3px 0);
     filter: brightness(108%) contrast(120%);
 }
+.payment-info {
+    margin-top: 40px;
+    background: #f8fafc;
+    border-left: 4px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    text-align: left;
+}
+.payment-info i {
+    color: var(--accent);
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
 /* =========================================================
    40. MOBILE
    ========================================================= */
 
 @media (max-width: 992px) {
-
-
     /* =====================================================
        GLOBAL
        ===================================================== */
