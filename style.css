@@ -3400,7 +3400,7 @@ table td:first-child,
 
     .safe-delivery-grid {
         margin-top: 5px;
-        gap: 5px;
+        gap: 0;
     }
 
     .safe-delivery-item {
