@@ -2229,7 +2229,7 @@ table td:first-child,
     font-size: 1.1rem;
 }
 .safe-delivery-section {
-    padding-bottom: 5px !important;
+    padding-bottom: 8px !important;
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
@@ -2248,7 +2248,7 @@ table td:first-child,
     margin-bottom: 0;
 }
 .cta-section {
-    padding-top: 5px !important;
+    padding-top: 8px !important;
 }
 .safe-delivery-grid {
     display: flex;
