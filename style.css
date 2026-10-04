@@ -2228,6 +2228,52 @@ table td:first-child,
     margin-right: 8px;
     font-size: 1.1rem;
 }
+.safe-delivery-section {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.safe-delivery-section > .container {
+    background: transparent !important;
+}
+.safe-delivery-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.safe-delivery-header h2 {
+    font-size: 1.6rem;
+    color: var(--primary-dark);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.safe-delivery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 10px;
+}
+.safe-delivery-item {
+    flex: 1 1 200px;
+    max-width: 250px;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 10px;
+    text-align: center;
+}
+.safe-delivery-item h4 {
+    margin-bottom: 8px;
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+.safe-delivery-item p {
+    font-size: 0.85rem;
+    color: var(--text-dark);
+    line-height: 1.5;
+    margin: 0 !important;
+}
 /* =========================================================
    40. MOBILE
    ========================================================= */
