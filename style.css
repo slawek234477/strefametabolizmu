@@ -2529,7 +2529,7 @@ table td:first-child,
     }
 
     .section-header {
-        margin-bottom: 10px !important;
+        margin-bottom: 15px !important;
     }
 
     .section-header h2 {
@@ -3038,7 +3038,7 @@ table td:first-child,
     .card-block p + .table-responsive,
     .study-card p + table,
     .study-card p + .table-responsive {
-        margin-top: 0 !important;
+        margin-top: -5px !important;
     }
 
 
