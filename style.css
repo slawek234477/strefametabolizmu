@@ -3278,12 +3278,6 @@ table td:first-child,
     /* =====================================================
        CONTENT WITH IMAGE
        ===================================================== */
-
-    .content-with-image {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 20px !important;
-    }
 .content-with-image {
         display: flex !important;
         flex-direction: column !important;
@@ -3302,7 +3296,11 @@ table td:first-child,
         overflow: hidden !important;
         border-radius: 12px !important;
     }
-
+.content-with-image > div[style*="text-align: left"] {
+        order: 2 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
     /* Upewniamy się, że obrazek i tekst są w pełni widoczne i poprawnie ułożone */
     .content-with-image .content-image-box img.img-sklad-ignyt {
         display: block !important;
