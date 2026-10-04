@@ -2232,6 +2232,7 @@ table td:first-child,
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
+    margin-top: -10px;
 }
 .safe-delivery-section > .container {
     background: transparent !important;
