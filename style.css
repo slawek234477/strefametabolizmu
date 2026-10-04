@@ -1295,7 +1295,9 @@ a.btn-hero-outline:hover {
     margin: 0 auto 30px;
     font-size: 1.05rem;
 }
-
+.cta-section {
+    margin-bottom: 30px !important;
+}
 
 /* =========================================================
    26. FAQ
