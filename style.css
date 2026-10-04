@@ -2735,8 +2735,8 @@ table td:first-child,
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
-        aspect-ratio: 16 / 9 !important;
-        object-fit: cover !important;
+        aspect-ratio: 27 / 20 !important;
+        object-fit: contain !important;
         margin: 0 auto !important;
         border-radius: 12px !important;
     }
