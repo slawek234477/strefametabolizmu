@@ -2721,34 +2721,25 @@ table td:first-child,
        ORYGN
        ===================================================== */
 
-    .orygn-main-img-wrapper {
+   .orygn-main-img-wrapper {
         width: 100% !important;
         max-width: 100% !important;
-
         padding: 0 !important;
-        margin: 14px 0 !important;
-
+        margin: 20px 0 !important; 
         overflow: hidden !important;
-
         border-radius: 12px !important;
+        box-sizing: border-box !important;
     }
-
     .orygn-main-img {
         display: block !important;
-
         width: 100% !important;
         max-width: 100% !important;
-
         height: auto !important;
         aspect-ratio: auto !important;
-
         object-fit: contain !important;
-
-        margin: 0 !important;
-
+        margin: 0 auto !important;
         border-radius: 12px !important;
     }
-
 
     /* =====================================================
        IKONY W LISTACH
@@ -3301,7 +3292,6 @@ table td:first-child,
         width: 100% !important;
         max-width: 100% !important;
     }
-    /* Upewniamy się, że obrazek i tekst są w pełni widoczne i poprawnie ułożone */
     .content-with-image .content-image-box img.img-sklad-ignyt {
         display: block !important;
         width: 100% !important;
@@ -3313,9 +3303,10 @@ table td:first-child,
     }
 
     .content-with-image > div[style*="text-align: left"] {
-        order: 2 !important;
+        grid-row: 2 !important;
         width: 100% !important;
         max-width: 100% !important;
+        margin: 0 !important;
     }
 
     /* =====================================================
