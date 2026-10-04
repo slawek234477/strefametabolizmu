@@ -2733,10 +2733,10 @@ table td:first-child,
     .orygn-main-img {
         display: block !important;
         width: 100% !important;
-        max-width: 140% !important;
+        max-width: 100% !important;
         height: auto !important;
-        aspect-ratio: auto !important;
-        object-fit: contain !important;
+        aspect-ratio: 16 / 9 !important;
+        object-fit: cover !important;
         margin: 0 auto !important;
         border-radius: 12px !important;
     }
