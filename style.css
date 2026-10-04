@@ -2963,29 +2963,21 @@ table td:first-child,
 
         overflow-wrap: break-word !important;
     }
-
     table th,
     .comp-table th {
-        background: #f8fafc !important;
-
-        color: var(--primary-dark) !important;
-
+        background: var(--primary-dark) !important;
+        color: white !important;
+        padding: 13px 10px;
         font-weight: 700 !important;
-
         text-align: center !important;
-
         white-space: normal !important;
     }
-
     table td,
     .comp-table td {
         background: #ffffff !important;
-
         text-align: left !important;
-
         white-space: normal !important;
     }
-
     table tr:nth-child(even) td,
     .comp-table tr:nth-child(even) td {
         background: #f8fafc !important;
