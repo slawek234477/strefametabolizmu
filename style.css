@@ -3391,7 +3391,7 @@ table td:first-child,
     margin-top: 15px !important;
 }
  .safe-delivery-header {
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
 
     .safe-delivery-header h2 {
@@ -3400,7 +3400,7 @@ table td:first-child,
 
     .safe-delivery-grid {
         margin-top: 5px;
-        gap: 0;
+        gap: 15px;
     }
 
     .safe-delivery-item {
