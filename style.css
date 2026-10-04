@@ -2548,6 +2548,16 @@ table td:first-child,
 .disclaimer-text {
     margin-top: 10px;
 }
+.section-image {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 !important;
+}
+
+.section-image img {
+    display: block;
+    margin: 0 auto;
+}
 /* =========================================================
    39. MOBILE
    ========================================================= */
