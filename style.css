@@ -2297,7 +2297,13 @@ table td:first-child,
 }
 .products-header {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0 !important;
+}
+.products-header h2 {
+    margin-bottom: 0 !important;
+}
+.products-grid {
+    margin-top: 0 !important;
 }
 /* =========================================================
    40. MOBILE
