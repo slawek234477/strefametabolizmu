@@ -2194,13 +2194,13 @@ table td:first-child,
     font-size: 1.8rem;
     color: var(--primary-dark);
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .payment-methods-image {
     text-align: center;
     width: 100%;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
 }
 
 .payment-methods-image img {
