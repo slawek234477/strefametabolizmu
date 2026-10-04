@@ -2691,7 +2691,7 @@ table td:first-child,
        Dzięki overflow:hidden zaokrąglenie działa również
        wtedy, gdy sama grafika ma prostokątne tło.
     */
-
+.img-sklad-ignyt,
     .for-who-image {
         width: 100% !important;
         max-width: 100% !important;
@@ -2702,7 +2702,7 @@ table td:first-child,
 
         text-align: center !important;
     }
-
+.img-sklad-ignyt,
     .for-who-image .img-for-who {
         width: 100% !important;
         max-width: 100% !important;
