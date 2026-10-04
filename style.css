@@ -2569,16 +2569,8 @@ table td:first-child,
         left: 50% !important;
         transform: translateX(-50%) !important;
     }
-
-    /*
-       Nagłówek:
-       „POTWIERDZONE POCHODZENIE PROGO®”
-       jest wyśrodkowany tylko na telefonie.
-    */
-
     .study-card .section-header,
     .study-card .section-header-left {
-        text-align: center !important;
     }
 
     .study-card .section-header h2,
