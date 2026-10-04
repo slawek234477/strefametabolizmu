@@ -3701,6 +3701,11 @@ table td:first-child,
         width: 100%;
         max-width: 520px;
     }
+   .content-with-image {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
 .disclaimer-text {
         margin-top: 10px;
     }
