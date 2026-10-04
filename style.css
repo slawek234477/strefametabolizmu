@@ -3652,14 +3652,12 @@ table td:first-child,
         height: auto !important;
         box-sizing: border-box !important;
         border-radius: 12px;
-    }
-   .img-for-who + * {
-        max-width: 100%;
+    .img-for-who {
+        max-width: 100vw !important;
     }
 
     .img-for-who {
-        margin-left: auto !important;
-        margin-right: auto !important;
+        object-fit: contain !important;
     }
 .disclaimer-text {
         margin-top: 10px;
