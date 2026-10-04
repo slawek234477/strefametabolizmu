@@ -1037,8 +1037,9 @@ a.btn-hero-outline:hover {
 .products-grid {
     display: grid;
     grid-template-columns:
-        repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+    repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 30px;
+    row-gap: 30px;
     margin-top: 40px;
 }
 
