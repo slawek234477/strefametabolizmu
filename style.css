@@ -3279,17 +3279,17 @@ table td:first-child,
        CONTENT WITH IMAGE
        ===================================================== */
 .content-with-image {
-        display: flex !important;
-        flex-direction: column !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
         gap: 20px !important; /* Ten sam odstęp co w sekcji "Dla kogo" */
         width: 100% !important;
     }
 
     /* Ustawiamy grafikę w składzie dokładnie tak samo jak w .for-who-image */
     .content-with-image .content-image-box {
+        grid-row: 1 !important;
         width: 100% !important;
         max-width: 100% !important;
-        order: 1 !important; /* Grafika na górze (zmień na 2, jeśli wolisz tekst wyżej) */
         margin: 0 auto !important;
         padding: 0 !important;
         text-align: center !important;
@@ -3297,7 +3297,7 @@ table td:first-child,
         border-radius: 12px !important;
     }
 .content-with-image > div[style*="text-align: left"] {
-        order: 2 !important;
+        grid-row: 2 !important;
         width: 100% !important;
         max-width: 100% !important;
     }
@@ -3309,6 +3309,7 @@ table td:first-child,
         height: auto !important;
         margin: 0 auto !important;
         border-radius: 12px !important;
+        object-fit: contain !important;
     }
 
     .content-with-image > div[style*="text-align: left"] {
