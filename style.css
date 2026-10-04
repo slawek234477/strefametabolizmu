@@ -3390,4 +3390,20 @@ table td:first-child,
 .section-header + p + .grid-2 {
     margin-top: 15px !important;
 }
-}
+ .safe-delivery-header {
+        margin-bottom: 10px;
+    }
+
+    .safe-delivery-header h2 {
+        margin-bottom: 0;
+    }
+
+    .safe-delivery-grid {
+        margin-top: 5px;
+        gap: 15px;
+    }
+
+    .safe-delivery-item {
+        padding: 5px 10px;
+    }
+ }
