@@ -2733,7 +2733,7 @@ table td:first-child,
     .orygn-main-img {
         display: block !important;
         width: 100% !important;
-        max-width: 100% !important;
+        max-width: 120% !important;
         height: auto !important;
         aspect-ratio: auto !important;
         object-fit: contain !important;
