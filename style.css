@@ -3293,24 +3293,16 @@ table td:first-child,
         border-radius: 12px !important;
         object-fit: contain !important;
     }
-
     .content-with-image > div[style*="text-align: left"] {
         grid-row: 2 !important;
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 !important;
     }
-
-    /* =====================================================
-       DISCLAIMER
-       ===================================================== */
-
     .disclaimer-text {
         margin-top: 10px;
     }
+.section-header + p + .grid-2 {
+    margin-top: 15px !important;
 }
-
-
-/* =========================================================
-   KONIEC STYLE.CSS
-   ========================================================= */
+}
