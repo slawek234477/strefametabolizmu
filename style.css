@@ -2213,7 +2213,7 @@ table td:first-child,
     filter: brightness(108%) contrast(120%);
 }
 .payment-info {
-    margin-top: 40px;
+    margin-top: 15px;
     background: #f8fafc;
     border-left: 4px solid var(--accent);
     padding: 16px 20px;
