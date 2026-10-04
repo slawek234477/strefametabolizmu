@@ -3646,14 +3646,28 @@ table td:first-child,
     .orygn-main-img-wrapper:last-child {
         margin-bottom: 0 !important;
     }
-.img-for-who {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        box-sizing: border-box !important;
-        border-radius: 12px;
+.container > div[style*="display: flex"] {
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    /* kontener grafiki */
+    .container > div[style*="display: flex"] > div[style*="flex: 0 0 auto"] {
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    /* sama grafika */
     .img-for-who {
-        min-width: 0 !important;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 12px;
     }
 .disclaimer-text {
         margin-top: 10px;
