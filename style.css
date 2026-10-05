@@ -685,8 +685,8 @@ a.btn-hero-outline:hover {
     margin: 0 auto;
 }
 .pillars-subtitle {
-    text-align: center;
-    margin: 0 auto 12px;
+    text-align: left;
+    margin: 0 auto 0;
     max-width: 750px;
 }
 
