@@ -967,7 +967,7 @@ a.btn-hero-outline:hover {
     grid-template-columns:
         repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    margin-top: 12px;
+    margin-top: 20px;
 }
 
 .pillar-card i {
