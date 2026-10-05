@@ -3544,7 +3544,7 @@ margin: 0;
         margin-top: 15px;
     }
 .quality-pillars-section {
-        padding-bottom: 10px;
+        padding-bottom: -10px;
     }
 }
 
