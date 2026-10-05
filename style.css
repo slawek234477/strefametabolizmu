@@ -2300,7 +2300,7 @@ table td:first-child,
 }
 .products-header {
     text-align: center;
-    margin-bottom: 15px !important;
+    margin-bottom: 20px !important;
 }
 .products-header h2 {
     margin-bottom: 0 !important;
@@ -3540,6 +3540,10 @@ margin: 0;
     }
     .cta-section {
         padding-top: 5px !important;
+    }
+       .products-header {
+    text-align: center;
+    margin-bottom: 15px !important;
     }
 }
 
