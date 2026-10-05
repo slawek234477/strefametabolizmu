@@ -684,7 +684,11 @@ a.btn-hero-outline:hover {
     max-width: 750px;
     margin: 0 auto;
 }
-
+.pillars-subtitle {
+    text-align: center;
+    margin: 0 auto 12px;
+    max-width: 750px;
+}
 
 /* =========================================================
    13. CARD BLOCK
