@@ -3534,4 +3534,12 @@ margin: 0;
       font-size: 0.88rem; 
       line-height: 1.5; 
    }
+.safe-delivery-section {
+        padding-bottom: 15px !important;
+        margin-bottom: 0 !important;
+    }
+    .cta-section {
+        padding-top: 15px !important;
+    }
 }
+
