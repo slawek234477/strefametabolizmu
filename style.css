@@ -519,7 +519,7 @@ a.btn-hero-outline:hover {
 }
 .orygn-order-cta {
     text-align: center;
-    margin: 40px 0;
+    margin: 40px 0 15px;
 }
 /* =========================================================
    10. OBRAZY
@@ -1306,7 +1306,7 @@ a.btn-hero-outline:hover {
    ========================================================= */
 
 .faq-section {
-    padding: 60px 0;
+    padding: 25px 0;
     background-color: transparent;
 }
 
@@ -3569,8 +3569,10 @@ margin: 0;
         margin-bottom: 15px;
     }
     .orygn-order-cta p {
-        margin-bottom: 20px;
+        margin-bottom: 20px 0 10px;
     }
+ .faq-section {
+        padding-top: 15px;
 }
-
+}
 
