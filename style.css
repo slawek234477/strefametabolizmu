@@ -3437,4 +3437,7 @@ table td:first-child,
     .safe-delivery-item {
         padding: 5px 10px;
     }
- }
+ .products-grid-ignyt {
+        grid-template-columns: 1fr;
+    }
+}
