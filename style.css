@@ -3535,11 +3535,11 @@ margin: 0;
       line-height: 1.5; 
    }
 .safe-delivery-section {
-        padding-bottom: 15px !important;
+        padding-bottom: 10px !important;
         margin-bottom: 0 !important;
     }
     .cta-section {
-        padding-top: 15px !important;
+        padding-top: 10px !important;
     }
 }
 
