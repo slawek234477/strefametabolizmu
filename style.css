@@ -519,7 +519,7 @@ a.btn-hero-outline:hover {
 }
 .orygn-order-cta {
     text-align: center;
-    margin: 40px 0 15px;
+    margin: 40px 0 -15px;
 }
 /* =========================================================
    10. OBRAZY
@@ -1306,7 +1306,7 @@ a.btn-hero-outline:hover {
    ========================================================= */
 
 .faq-section {
-    padding: 25px 0;
+    padding: 60px 0;
     background-color: transparent;
 }
 
@@ -3563,16 +3563,13 @@ margin: 0;
         padding-top: 25px;
     }
  .orygn-order-cta {
-        margin: 20px 0;
+        margin: 20px 0 -10px;
     }
 .orygn-order-cta h2 {
         margin-bottom: 15px;
     }
     .orygn-order-cta p {
-        margin-bottom: 20px 0 10px;
+        margin-bottom: 20px;
     }
- .faq-section {
-        padding-top: 15px;
-}
 }
 
