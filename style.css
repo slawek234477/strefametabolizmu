@@ -1033,17 +1033,10 @@ a.btn-hero-outline:hover {
 .products-showcase {
     padding: 60px 0;
 }
-
 .products-grid {
     display: grid;
-    grid-template-columns:
-    repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
-    margin-top: 40px;
-    margin-top: 40px;
-}
-}
-.products-grid {
     margin-top: 0 !important;
 }
 .products-grid + .products-grid {
