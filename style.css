@@ -1021,7 +1021,7 @@ a.btn-hero-outline:hover {
    ========================================================= */
 
 .products-showcase {
-    padding: 60px 0;
+    padding: 25px 0;
 }
 .products-grid {
     display: grid;
@@ -3548,5 +3548,9 @@ margin: 0;
 .quality-pillars-section {
         padding-top: 25px;
     }
+.products-showcase {
+        padding-top: 25px;
+    }
 }
+
 
