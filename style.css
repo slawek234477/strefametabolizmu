@@ -957,7 +957,7 @@ a.btn-hero-outline:hover {
    ========================================================= */
 
 .quality-pillars-section {
-    padding: 60px 0;
+    padding: 60px 0 20px;
     background-color: #f8fafc;
 }
 
@@ -3542,6 +3542,9 @@ margin: 0;
     }
 .pillars-grid {
         margin-top: 15px;
+    }
+.quality-pillars-section {
+        padding-bottom: 10px;
     }
 }
 
