@@ -517,7 +517,10 @@ a.btn-hero-outline:hover {
     text-align: center;
     margin: 20px 0;
 }
-
+.order-button-wrapper {
+    text-align: center;
+    margin: 20px 0 -15px;
+}
 /* =========================================================
    10. OBRAZY
    ========================================================= */
