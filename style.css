@@ -688,6 +688,9 @@ a.btn-hero-outline:hover {
     margin: 0 0 0;
     max-width: none;
 }
+.quality-pillars-section .section-header h2 {
+    margin-bottom: 25px !important;
+}
 /* =========================================================
    13. CARD BLOCK
    ========================================================= */
