@@ -515,10 +515,6 @@ a.btn-hero-outline:hover {
 }
 .order-button-wrapper {
     text-align: center;
-    margin: 20px 0;
-}
-.order-button-wrapper {
-    text-align: center;
     margin: 20px 0 20px;
 }
 /* =========================================================
@@ -3546,9 +3542,6 @@ margin: 0;
     }
 .pillars-grid {
         margin-top: 15px;
-    }
-.order-button-wrapper {
-        margin: 20px 0 -20px;
     }
 }
 
