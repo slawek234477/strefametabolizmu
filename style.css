@@ -695,6 +695,13 @@ a.btn-hero-outline:hover {
 .quality-pillars-section .section-header h2 {
     margin-bottom: 15px !important;
 }
+.orygn-order-cta h2 {
+    margin-bottom: 15px;
+}
+
+.orygn-order-cta p {
+    margin-bottom: 25px;
+}
 /* =========================================================
    13. CARD BLOCK
    ========================================================= */
@@ -3557,6 +3564,12 @@ margin: 0;
     }
  .orygn-order-cta {
         margin: 20px 0;
+    }
+.orygn-order-cta h2 {
+        margin-bottom: 15px;
+    }
+    .orygn-order-cta p {
+        margin-bottom: 20px;
     }
 }
 
