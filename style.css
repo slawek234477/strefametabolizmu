@@ -3503,9 +3503,6 @@ margin: 0;
     .safe-delivery-item {
         padding: 5px 10px;
     }
- .products-grid-ignyt {
-        grid-template-columns: 1fr;
-    }
 .steps-header { 
    margin-bottom: 15px; 
 } 
