@@ -1042,7 +1042,13 @@ a.btn-hero-outline:hover {
     margin-top: 40px;
     margin-top: 40px;
 }
-
+}
+.products-grid {
+    margin-top: 0 !important;
+}
+.products-grid + .products-grid {
+    margin-top: 30px !important;
+}
 .product-card > div:first-child {
     width: 100% !important;
     display: flex !important;
@@ -2302,12 +2308,6 @@ table td:first-child,
 }
 .products-header h2 {
     margin-bottom: 0 !important;
-}
-.products-grid {
-    margin-top: 0 !important;
-}
-#wybierz.products-grid {
-    row-gap: 50px !important;
 }
 /* =========================================================
    40. MOBILE
