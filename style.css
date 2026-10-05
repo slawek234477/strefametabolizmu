@@ -3585,11 +3585,12 @@ margin: 0;
     }
     .products-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
     .products-grid-ignyt {
         grid-template-columns: 1fr;
     }
     .products-grid + .products-grid {
-        margin-top: 20px !important;
+        margin-top: 0 !important;
     }
 }
