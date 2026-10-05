@@ -2305,6 +2305,71 @@ table td:first-child,
 .products-header h2 {
     margin-bottom: 0 !important;
 }
+.order-steps-section {
+background: transparent !important;
+box-shadow: none !important;
+}
+.order-steps-section > .container {
+background: transparent !important;
+}
+.steps-header {
+text-align: center;
+margin-bottom: 20px;
+}
+.steps-header h2 {
+font-size: 1.8rem;
+color: var(--primary-dark);
+font-weight: 700;
+margin-bottom: 15px;
+}
+.steps-header p {
+font-size: 0.98rem;
+color: var(--text-dark);
+line-height: 1.7;
+max-width: 750px;
+margin: 0 auto;
+}
+.steps-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+margin-top: 15px;
+}
+.step-item {
+flex: 1 1 220px;
+max-width: 260px;
+background: transparent !important;
+border: none !important;
+box-shadow: none !important;
+padding: 8px 10px;
+text-align: center;
+}
+.step-number {
+width: 42px;
+height: 42px;
+background: var(--accent);
+color: #fff;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+font-size: 1.1rem;
+margin: 0 auto 10px auto;
+}
+.step-item h4 {
+margin-bottom: 8px;
+color: var(--primary-dark);
+font-weight: 600;
+}
+.step-item p {
+font-size: 0.88rem;
+color: var(--text-dark);
+line-height: 1.5;
+margin: 0;
+}
 /* =========================================================
    40. MOBILE
    ========================================================= */
@@ -3439,19 +3504,34 @@ table td:first-child,
  .products-grid-ignyt {
         grid-template-columns: 1fr;
     }
- .steps-grid {
-        gap: 5px !important;
-        margin-top: 10px !important;
-    }
-
-    .steps-grid > div {
-        padding: 5px 10px !important;
-    }
-
-    .steps-grid > div > div {
-        margin-bottom: 8px !important;
-    }
-   .steps-header {
-        margin-bottom: 15px !important;
-    }
+.steps-header { 
+   margin-bottom: 15px; 
+} 
+   .steps-header h2 { 
+      font-size: 1.6rem; 
+      margin-bottom: 10px; 
+   } 
+   .steps-header p { 
+      font-size: 0.95rem; 
+      line-height: 1.6; 
+   } 
+   .steps-grid { 
+      gap: 5px; 
+      margin-top: 10px; 
+   } 
+   .step-item { 
+      flex: 1 1 100%; 
+      max-width: 100%; 
+      padding: 5px 10px; 
+   } 
+   .step-number { 
+      margin-bottom: 8px; 
+   } 
+   .step-item h4 { 
+      margin-bottom: 6px; 
+   } 
+   .step-item p { 
+      font-size: 0.88rem; 
+      line-height: 1.5; 
+   }
 }
