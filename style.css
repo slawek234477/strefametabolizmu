@@ -63,7 +63,7 @@ h6 {
     color: var(--text-dark);
 }
 .privacy-section {
-    margin-bottom: 10px !important;
+    margin-bottom: 5px !important;
 }
 
 /* =========================================================
@@ -652,7 +652,7 @@ a.btn-hero-outline:hover {
     margin-bottom: 20px;
 }
 .contact-section {
- padding-bottom: 20px !important;
+ padding-bottom: 25px !important;
 }
 /* =========================================================
    12. NAGŁÓWKI STRON
@@ -1280,7 +1280,7 @@ a.btn-hero-outline:hover {
    ========================================================= */
 
 .faq-section {
-    padding: 60px 0 25px;
+    padding: 60px 0 35px;
     background-color: transparent;
 }
 
