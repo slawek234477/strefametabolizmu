@@ -3564,6 +3564,17 @@ margin: 0;
     .products-grid-ignyt {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+.card:active,
+    .pricing-card:active,
+    .feature-box:active,
+    .pillar-card:active,
+    .product-card:active,
+    .price-card:active {
+        border-color: var(--accent) !important;
+        transform: translateY(-5px) !important;
+        box-shadow:
+            0 10px 25px rgba(46, 196, 182, 0.2) !important;
+    }
 }
 @media (min-width: 601px) and (max-width: 992px) {
     .content-with-image {
