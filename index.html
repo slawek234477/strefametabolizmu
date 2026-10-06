@@ -384,15 +384,25 @@
     function updateWhatsAppPosition() {
 
         const footerRect = footer.getBoundingClientRect();
-        const whatsappRect = whatsapp.getBoundingClientRect();
 
-        const overlap =
-            whatsappRect.bottom > footerRect.top;
+        const normalBottom =
+            window.innerWidth <= 992 ? 15 : 25;
 
-        if (overlap) {
-            whatsapp.classList.add('above-footer');
+        const safeGap = 20;
+
+        // Sprawdzamy, czy stopka weszła na ekran
+        if (footerRect.top < window.innerHeight) {
+
+            const newBottom =
+                window.innerHeight - footerRect.top + safeGap;
+
+            whatsapp.style.bottom =
+                Math.max(normalBottom, newBottom) + 'px';
+
         } else {
-            whatsapp.classList.remove('above-footer');
+
+            whatsapp.style.bottom =
+                normalBottom + 'px';
         }
     }
 
