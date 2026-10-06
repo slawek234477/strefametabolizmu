@@ -1635,41 +1635,32 @@ a.btn-hero-outline:hover {
     position: fixed;
     bottom: 25px;
     right: 25px;
-
     width: 60px;
     height: 60px;
-
     background-color: #25d366;
     color: #ffffff;
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 32px;
-
     box-shadow:
-        0 4px 15px rgba(0, 0, 0, 0.25);
-
+    0 4px 15px rgba(0, 0, 0, 0.25);
     z-index: 1000;
     text-decoration: none;
-
     transition:
-        transform 0.25s ease,
-        background-color 0.25s ease,
-        box-shadow 0.25s ease;
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    bottom 0.25s ease;
 }
-
 .whatsapp-float:hover {
     transform: scale(1.1);
     background-color: #20ba5a;
     color: #ffffff;
-
     box-shadow:
-        0 6px 20px rgba(0, 0, 0, 0.35);
+    0 6px 20px rgba(0, 0, 0, 0.35);
 }
-
 
 /* =========================================================
    30. SUPPORT
@@ -3193,7 +3184,9 @@ margin: 0;
 
         font-size: 26px;
     }
-
+.whatsapp-float.above-footer {
+        bottom: 100px;
+    }
 
     /* =====================================================
        GRID
