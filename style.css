@@ -62,7 +62,9 @@ h6 {
 .section p {
     color: var(--text-dark);
 }
-
+.privacy-section {
+    padding-bottom: 70px !important;
+}
 
 /* =========================================================
    3. GŁÓWNY KONTENER
