@@ -3421,24 +3421,22 @@ margin: 0;
         min-width: 0;
         box-sizing: border-box;
     }
-
     .for-who-layout {
+    display: flex !important;
     flex-direction: column !important;
     gap: 20px !important;
+    align-items: center !important;
 }
-    .for-who-image {
-        order: 1;
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-
-    .for-who-text {
-        order: 2;
-
-        width: 100%;
-        max-width: 520px;
-    }
-
+.for-who-image {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.for-who-text {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 520px !important;
+}
     .img-for-who {
         display: block;
 
@@ -3585,21 +3583,22 @@ margin: 0;
 }
 .for-who-text {
     order: 1 !important;
-    width: 50% !important;
-    max-width: 50% !important;
-    flex: 0 0 50% !important;
+    flex: 1 1 0 !important;
+    width: auto !important;
+    max-width: none !important;
 }
 .for-who-image {
     order: 2 !important;
-    width: 50% !important;
-    max-width: 50% !important;
-    flex: 0 0 50% !important;
+    flex: 1 1 0 !important;
+    width: auto !important;
+    max-width: none !important;
 }
 .for-who-image .img-for-who {
     display: block !important;
     width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
+    max-width: 380px !important;
+    height: auto !important;
+    margin: 0 auto !important;
 }
 }
 @media (max-width: 600px) {
