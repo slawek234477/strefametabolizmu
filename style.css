@@ -3564,12 +3564,29 @@ margin: 0;
     .products-grid-ignyt {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-.card:active,
-    .pricing-card:active,
-    .feature-box:active,
-    .pillar-card:active,
-    .product-card:active,
-    .price-card:active {
+.grid-4 .card {
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease,
+            border-color 0.25s ease !important;
+    }
+    .grid-4 .card:active,
+    .grid-4 .card:focus,
+    .grid-4 .card:focus-within {
+        border-color: var(--accent) !important;
+        transform: translateY(-5px) !important;
+        box-shadow:
+            0 10px 25px rgba(46, 196, 182, 0.2) !important;
+    }
+    .pillars-grid .pillar-card {
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease,
+            border-color 0.25s ease !important;
+    }
+    .pillars-grid .pillar-card:active,
+    .pillars-grid .pillar-card:focus,
+    .pillars-grid .pillar-card:focus-within {
         border-color: var(--accent) !important;
         transform: translateY(-5px) !important;
         box-shadow:
