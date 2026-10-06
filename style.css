@@ -3600,6 +3600,57 @@ margin: 0;
     height: auto !important;
     margin: 0 auto !important;
 }
+.grid-4 {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 20px !important;
+    }
+    .grid-4 .card {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+    .grid-4 .card:last-child {
+        grid-column: 2 !important;
+    }
+    .grid-4 .card-icon {
+        width: 100% !important;
+        height: 60px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-bottom: 8px !important;
+    }
+    .grid-4 .card-icon .cert-img {
+        width: auto !important;
+        max-width: 60px !important;
+        max-height: 50px !important;
+        height: auto !important;
+        object-fit: contain !important;
+        transform: none !important;
+    }
+    .pillars-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+    .pillars-grid .pillar-card {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+    .pillars-grid .card-icon {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 60px !important;
+        margin-bottom: 8px !important;
+    }
+    .pillars-grid .card-icon .cert-img {
+        width: auto !important;
+        max-width: 60px !important;
+        max-height: 50px !important;
+        height: auto !important;
+        object-fit: contain !important;
+        transform: none !important;
+    }
 }
 @media (max-width: 600px) {
   .content-with-image {
