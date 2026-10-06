@@ -3456,49 +3456,6 @@ margin: 0;
 
         overflow: hidden;
     }
-
-
-    /* =====================================================
-       CONTENT WITH IMAGE
-       ===================================================== */
-.content-with-image {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        gap: 20px !important; /* Ten sam odstęp co w sekcji "Dla kogo" */
-        width: 100% !important;
-    }
-
-    /* Ustawiamy grafikę w składzie dokładnie tak samo jak w .for-who-image */
-    .content-with-image .content-image-box {
-        grid-row: 1 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 auto !important;
-        padding: 0 !important;
-        text-align: center !important;
-        overflow: hidden !important;
-        border-radius: 12px !important;
-    }
-.content-with-image > div[style*="text-align: left"] {
-        grid-row: 2 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-    .content-with-image .content-image-box img.img-sklad-ignyt {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        margin: 0 auto !important;
-        border-radius: 12px !important;
-        object-fit: contain !important;
-    }
-    .content-with-image > div[style*="text-align: left"] {
-        grid-row: 2 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important;
-    }
     .disclaimer-text {
         margin-top: 10px;
     }
@@ -3595,7 +3552,65 @@ margin: 0;
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+@media (min-width: 601px) and (max-width: 992px) {
+    .content-with-image {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        align-items: center !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+    .content-with-image .content-image-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        text-align: center !important;
+        overflow: hidden !important;
+        border-radius: 12px !important;
+    }
+    .content-with-image .content-image-box img {
+        display: block !important;
+        width: 100% !important;
+        max-width: 380px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        border-radius: 12px !important;
+        object-fit: contain !important;
+    }
+}
 @media (max-width: 600px) {
+  .content-with-image {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+    .content-with-image .content-image-box {
+        grid-row: 1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        text-align: center !important;
+        overflow: hidden !important;
+        border-radius: 12px !important;
+    }
+    .content-with-image > div[style*="text-align: left"] {
+        grid-row: 2 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+    .content-with-image .content-image-box img.img-sklad-ignyt {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        border-radius: 12px !important;
+        object-fit: contain !important;
+    }
     .safe-delivery-header {
         margin-bottom: -15px;
     }
