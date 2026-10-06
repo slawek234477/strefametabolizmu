@@ -2388,7 +2388,23 @@ color: var(--text-dark);
 line-height: 1.5;
 margin: 0;
 }
-
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+.footer-bottom .footer-disclaimer {
+    font-size: 0.75rem;
+    color: #a0a0a0;
+    line-height: 1.4;
+    max-width: 900px;
+    margin: 0 auto;
+}
 /* =========================================================
    40. MOBILE
    ========================================================= */
@@ -3660,8 +3676,8 @@ margin: 0;
     .footer-grid {
         display: grid !important;
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 30px 25px !important;
-        margin-bottom: 30px !important;
+        column-gap: 50px !important;
+        row-gap: 30px !important;
         align-items: start !important;
     }
     .footer-col {
@@ -3672,7 +3688,7 @@ margin: 0;
         font-size: 0.95rem !important;
         margin-bottom: 12px !important;
     }
-    .footer-col p,
+   .footer-col p,
     .footer-col a {
         font-size: 0.85rem !important;
         line-height: 1.5 !important;
@@ -3680,28 +3696,24 @@ margin: 0;
     .footer-col p {
         margin-bottom: 8px !important;
     }
-    .footer-col a {
-        margin-bottom: 6px !important;
-    }
-    /* Obserwuj / TikTok */
     .footer-social-col {
         text-align: center !important;
     }
     .footer-tiktok-icon {
         width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
     }
-    /* Dolna część stopki */
-    footer > .container:last-child {
+    .footer-bottom {
         margin-top: 20px !important;
         padding-top: 20px !important;
     }
-    footer > .container:last-child p {
+    .footer-bottom p {
         font-size: 0.82rem !important;
-        line-height: 1.5 !important;
     }
-    footer > .container:last-child p:last-child {
+    .footer-bottom .footer-disclaimer {
         font-size: 0.72rem !important;
         line-height: 1.4 !important;
     }
@@ -3776,8 +3788,8 @@ footer {
         display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 25px !important;
-        margin-bottom: 25px !important;
         width: 100% !important;
+        margin-bottom: 25px !important;
     }
     .footer-col {
         width: 100% !important;
@@ -3821,22 +3833,19 @@ footer {
         height: auto !important;
         margin: 0 auto !important;
     }
-    footer > .container:last-child {
+    .footer-bottom {
         width: 100% !important;
         margin-top: 20px !important;
         padding: 20px 15px 0 !important;
-        text-align: center !important;
     }
-    footer > .container:last-child p {
+    .footer-bottom p {
         font-size: 0.78rem !important;
         line-height: 1.5 !important;
         margin-bottom: 10px !important;
     }
-    footer > .container:last-child p:last-child {
+    .footer-bottom .footer-disclaimer {
         font-size: 0.68rem !important;
         line-height: 1.45 !important;
         max-width: 100% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
     }
 }
