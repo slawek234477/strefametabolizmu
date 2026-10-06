@@ -3568,6 +3568,18 @@ margin: 0;
     }
 }
 @media (min-width: 601px) and (max-width: 992px) {
+   .cta-container {
+    margin-bottom: 25px;
+}
+.contact-section {
+    padding-bottom: 20px !important;
+}
+.faq-section {
+    padding: 50px 0 25px;
+}
+   .privacy-section {
+    margin-bottom: 15px !important;
+} 
     .content-with-image {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
