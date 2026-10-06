@@ -3423,9 +3423,9 @@ margin: 0;
     }
 
     .for-who-layout {
-        flex-direction: column;
-        gap: 20px;
-    }
+     flex-direction: column;
+     gap: 20px;
+}
 
     .for-who-image {
         order: 1;
@@ -3577,6 +3577,27 @@ margin: 0;
         margin: 0 auto !important;
         border-radius: 12px !important;
         object-fit: contain !important;
+    }
+ .for-who-layout {
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+    .for-who-text {
+        order: 1 !important;
+        flex: 1 1 50% !important;
+        max-width: 50% !important;
+    }
+    .for-who-image {
+        order: 2 !important;
+        flex: 1 1 50% !important;
+        width: 50% !important;
+        max-width: 50% !important;
+    }
+    .for-who-image .img-for-who {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
     }
 }
 @media (max-width: 600px) {
