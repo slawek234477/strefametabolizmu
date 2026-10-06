@@ -224,6 +224,36 @@
             }, 600);
         }, { passive: true });
     });
-</script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const whatsapp = document.querySelector('.whatsapp-float');
+    const footer = document.querySelector('footer');
+
+    if (!whatsapp || !footer) return;
+
+    function updateWhatsAppPosition() {
+
+        const footerRect = footer.getBoundingClientRect();
+        const whatsappRect = whatsapp.getBoundingClientRect();
+
+        const overlap =
+            whatsappRect.bottom > footerRect.top;
+
+        if (overlap) {
+            whatsapp.classList.add('above-footer');
+        } else {
+            whatsapp.classList.remove('above-footer');
+        }
+    }
+
+    window.addEventListener('scroll', updateWhatsAppPosition, {
+        passive: true
+    });
+
+    window.addEventListener('resize', updateWhatsAppPosition);
+
+    updateWhatsAppPosition();
+});
+	</script>
 </body>
 </html>
