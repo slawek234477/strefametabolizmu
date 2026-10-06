@@ -690,6 +690,13 @@ a.btn-hero-outline:hover {
 .orygn-order-cta p {
     margin-bottom: 30px;
 }
+.privacy-section h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.privacy-section h2:first-child {
+    margin-top: 0;
+}
 /* =========================================================
    13. CARD BLOCK
    ========================================================= */
