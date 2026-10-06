@@ -3475,16 +3475,7 @@ margin: 0;
         margin-bottom: 20px;
     }
 .faq-section {
-    padding: 50px 0 20px;
-}
-    .privacy-section {
-    margin-bottom: 10px !important;
-}
-    .cta-container {
-        margin-bottom: 20px;
-}
-    .contact-section {
-    padding-bottom: 20px !important;
+    padding: 50px 0;
 }
      .products-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3756,7 +3747,19 @@ margin: 0;
     }
 }
 @media (max-width: 600px) {
-  .content-with-image {
+  .faq-section {
+    padding: 50px 0 20px;
+}
+    .privacy-section {
+    margin-bottom: 10px !important;
+}
+    .cta-container {
+        margin-bottom: 20px;
+}
+    .contact-section {
+    padding-bottom: 20px !important;
+}
+    .content-with-image {
         display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 20px !important;
