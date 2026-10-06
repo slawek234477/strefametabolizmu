@@ -529,39 +529,27 @@ a.btn-hero-outline:hover {
     text-align: center;
     position: relative;
 }
-
 .img-container img {
     width: 100%;
     max-width: 380px;
-
     border-radius: 0 !important;
     box-shadow: none !important;
-
     filter:
         drop-shadow(0 15px 25px rgba(0, 0, 0, 0.45))
         drop-shadow(0 0 25px rgba(46, 196, 182, 0.3));
-
-    transition: transform 0.3s ease;
 }
-
-.img-container img:hover {
-    transform: translateY(-5px);
-}
-
 .image-caption {
     font-size: 0.82rem;
     color: var(--text-muted);
     margin-top: 10px;
     font-style: italic;
 }
-
 .content-image-box {
     text-align: center;
     background: transparent;
     padding: 0;
     border: none;
 }
-
 .content-image-box img {
     max-width: 350px !important;
     width: 100%;
