@@ -3608,9 +3608,12 @@ margin: 0;
         width: 100% !important;
         min-width: 0 !important;
     }
-    .grid-4 .card:last-child {
-        grid-column: 2 !important;
-    }
+    .grid-4 .card:nth-child(7) {
+    grid-column: 1 !important;
+}
+.grid-4 .card:nth-child(8) {
+    grid-column: 3 !important;
+}
     .grid-4 .card-icon {
         width: 100% !important;
         height: 60px !important;
