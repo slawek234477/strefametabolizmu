@@ -3657,37 +3657,53 @@ margin: 0;
  footer {
         padding: 30px 0 25px !important;
     }
-
     .footer-grid {
+        display: grid !important;
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         gap: 30px 25px !important;
         margin-bottom: 30px !important;
         align-items: start !important;
     }
-
     .footer-col {
         width: 100% !important;
         min-width: 0 !important;
     }
-
     .footer-col h4 {
         font-size: 0.95rem !important;
         margin-bottom: 12px !important;
     }
-
     .footer-col p,
     .footer-col a {
         font-size: 0.85rem !important;
         line-height: 1.5 !important;
     }
-
+    .footer-col p {
+        margin-bottom: 8px !important;
+    }
+    .footer-col a {
+        margin-bottom: 6px !important;
+    }
+    /* Obserwuj / TikTok */
     .footer-social-col {
         text-align: center !important;
     }
-
     .footer-tiktok-icon {
+        width: 100% !important;
         align-items: center !important;
         justify-content: center !important;
+    }
+    /* Dolna część stopki */
+    footer > .container:last-child {
+        margin-top: 20px !important;
+        padding-top: 20px !important;
+    }
+    footer > .container:last-child p {
+        font-size: 0.82rem !important;
+        line-height: 1.5 !important;
+    }
+    footer > .container:last-child p:last-child {
+        font-size: 0.72rem !important;
+        line-height: 1.4 !important;
     }
 }
 @media (max-width: 600px) {
@@ -3772,33 +3788,55 @@ footer {
         font-size: 0.95rem !important;
         margin-bottom: 10px !important;
     }
+    .footer-col ul {
+        text-align: center !important;
+    }
     .footer-col p {
         font-size: 0.82rem !important;
         line-height: 1.5 !important;
-        margin-bottom: 8px !important;
+        margin-bottom: 7px !important;
     }
     .footer-col a {
         font-size: 0.82rem !important;
         line-height: 1.5 !important;
-        margin-bottom: 6px !important;
+        margin-bottom: 5px !important;
     }
-    .footer-col ul {
-        text-align: center !important;
+    .footer-col p .footer-inline-link {
+        display: inline !important;
+        margin: 0 !important;
     }
     .footer-social-col {
         text-align: center !important;
     }
     .footer-tiktok-icon {
         width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-    }
-    div.footer-tiktok-icon span.tiktok-text {
-        font-size: 13px !important;
-        margin-bottom: 7px !important;
     }
     div.footer-tiktok-icon img.footer-logo-img {
         width: 42px !important;
         max-width: 42px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+    footer > .container:last-child {
+        width: 100% !important;
+        margin-top: 20px !important;
+        padding: 20px 15px 0 !important;
+        text-align: center !important;
+    }
+    footer > .container:last-child p {
+        font-size: 0.78rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 10px !important;
+    }
+    footer > .container:last-child p:last-child {
+        font-size: 0.68rem !important;
+        line-height: 1.45 !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
