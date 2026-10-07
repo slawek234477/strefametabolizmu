@@ -474,7 +474,7 @@ nav a.active::after {
 
 a.btn-hero-outline {
     background: rgba(46, 196, 182, 0.15) !important;
-    color: var(--primary-dark) !important;
+    color: #ffffff !important;
     padding: 14px 28px !important;
     border-radius: 8px !important;
     text-decoration: none !important;
@@ -487,7 +487,9 @@ a.btn-hero-outline {
     transition: all 0.3s ease !important;
     box-shadow: none !important;
 }
-
+.btn-hero-outline i {
+     color: #ffffff;
+}
 a.btn-hero-outline:hover {
     background: rgba(46, 196, 182, 0.28) !important;
     color: var(--primary-dark) !important;
