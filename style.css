@@ -3578,40 +3578,44 @@ margin: 0;
         align-items: center !important;
         text-align: left !important;
     }
-    .hero-grid > div:first-child {
-        display: flex !important;
-        flex-direction: column !important;
-        width: 100% !important;
-        text-align: left !important;
-    }
     .hero-text-content {
         grid-column: 1 !important;
         grid-row: 1 !important;
-    }
-    .hero .img-container {
-        grid-column: 2 !important;
-        grid-row: 1 !important;
-        order: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
         width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        text-align: center !important;
+        text-align: left !important;
     }
-    .hero-grid .hero-btns {
-        order: 0 !important;
-        width: 100% !important;
+    .hero-text-content h1,
+    .hero-text-content p,
+    .hero-text-content .hero-btns {
+        order: initial !important;
+    }
+    .hero-text-content .hero-btns {
         display: flex !important;
         flex-direction: row !important;
         justify-content: flex-start !important;
         align-items: center !important;
+        width: 100% !important;
         gap: 15px !important;
         margin-top: 10px !important;
         margin-bottom: 25px !important;
     }
-    .hero-grid .hero-btns a {
+    .hero-text-content .hero-btns a {
         flex: 0 0 auto !important;
         padding: 14px 20px !important;
         font-size: 1rem !important;
+    }
+    .hero .img-container {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center !important;
+        align-self: center !important;
     }
     .cta-container {
     margin: 30px 0 25px;
