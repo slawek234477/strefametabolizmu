@@ -3932,3 +3932,8 @@ footer {
         transform: scale(1.12) !important;
     }
 }
+@media (min-width: 993px) {
+    .hero-btns {
+        margin-top: 5px !important;
+    }
+}
