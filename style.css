@@ -3595,18 +3595,18 @@ margin: 0;
     }
     .hero-text-content .hero-btns {
         display: flex !important;
-        flex-direction: row !important;
-        justify-content: flex-start !important;
-        align-items: center !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+        gap: 10px !important;
         width: 100% !important;
-        gap: 15px !important;
         margin-top: 10px !important;
         margin-bottom: 25px !important;
     }
     .hero-text-content .hero-btns a {
-        flex: 0 0 auto !important;
-        padding: 14px 20px !important;
-        font-size: 1rem !important;
+        width: auto !important;
+        padding: 12px 20px !important;
+        font-size: 0.95rem !important;
     }
     .hero .img-container {
         grid-column: 2 !important;
