@@ -919,14 +919,14 @@ a.btn-hero-outline:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
+    height: 100px;
     width: 100%;
     margin-bottom: 15px;
     overflow: hidden;
 }
 .card-icon .cert-img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
     display: block;
 }
