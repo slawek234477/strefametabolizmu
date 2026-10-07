@@ -2972,7 +2972,7 @@ margin: 0;
         width: 100% !important;
         max-width: 100% !important;
 
-        height: 60px !important;
+        height: 70px !important;
 
         margin-bottom: 8px !important;
 
@@ -2984,8 +2984,8 @@ margin: 0;
     .pillar-card .card-icon .cert-img {
         transform: none !important;
 
-        max-width: 60px !important;
-        max-height: 50px !important;
+        max-width: 70px !important;
+        max-height: 70px !important;
 
         width: auto !important;
         height: auto !important;
