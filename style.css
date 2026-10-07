@@ -855,7 +855,7 @@ a.btn-hero-outline:hover {
 .product-card .card-icon i,
 .price-card .card-icon img,
 .price-card .card-icon i {
-    transition: transform 0.25s ease !important;
+    transition: transform 0.3s ease !important;
 }
 .card h3,
 .pricing-card h3,
@@ -3489,7 +3489,7 @@ margin: 0;
 .pillars-grid .pillar-card .card-icon img,
 .grid-4 .card .card-icon i,
 .pillars-grid .pillar-card .card-icon i {
-    transition: transform 0.25s ease !important;
+    transition: transform 0.3s ease !important;
 }
 .grid-4 .card:active .card-icon img,
 .grid-4 .card:focus .card-icon img,
