@@ -3960,4 +3960,7 @@ footer {
         grid-row: 1 / span 2 !important;
         align-self: center !important;
     }
+        .hero-text-content {
+        padding-top: 25px;
+    }
 }
