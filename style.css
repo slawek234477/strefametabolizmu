@@ -925,10 +925,12 @@ a.btn-hero-outline:hover {
     overflow: hidden;
 }
 .card-icon .cert-img {
-    width: 85px;
-    height: 85px;
+    width: auto;
+    height: 130px;
+    max-width: 150px;
     object-fit: contain;
     display: block;
+    margin: 0 auto;
 }
 .pillar-card .card-icon i {
     font-size: 2.5rem;
@@ -3812,14 +3814,15 @@ margin: 0;
     }
 }
 @media (max-width: 600px) {
-     .card-icon,
+    .card-icon,
     .pillar-card .card-icon {
-        height: 120px;
+        height: 130px;
         margin-bottom: 12px;
     }
     .card-icon .cert-img {
-        width: 110px;
         height: 110px;
+        max-width: 130px;
+        margin: 0 auto;
     }
     .hero {
     padding: 35px 0 45px;
