@@ -3933,6 +3933,9 @@ footer {
     }
 }
 @media (min-width: 993px) {
+     .hero-grid {
+        row-gap: 0 !important;
+    }
     .hero-grid p {
         margin-bottom: 0 !important;
     }
