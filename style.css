@@ -3936,31 +3936,19 @@ footer {
     .hero-grid {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
-        grid-template-rows: auto auto !important;
-        column-gap: 40px !important;
-        row-gap: 0 !important;
-        align-items: start !important;
+        gap: 40px !important;
+        align-items: center !important;
     }
     .hero-text-content {
         grid-column: 1 !important;
         grid-row: 1 !important;
     }
-    .hero-btns {
-        grid-column: 1 !important;
-        grid-row: 2 !important;
-        margin-top: 0 !important;
-        margin-bottom: 25px !important;
-        align-self: start !important;
-    }
-    .hero-grid p {
-        margin-bottom: 0 !important;
-    }
     .hero .img-container {
         grid-column: 2 !important;
-        grid-row: 1 / span 2 !important;
-        align-self: center !important;
+        grid-row: 1 !important;
     }
-        .hero-text-content {
-        padding-top: 25px;
+    .hero-btns {
+        margin-top: 10px !important;
+        margin-bottom: 25px !important;
     }
 }
