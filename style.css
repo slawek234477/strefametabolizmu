@@ -3806,7 +3806,26 @@ margin: 0;
     }
 }
 @media (max-width: 600px) {
-  .faq-section {
+   .hero-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-text-content {
+        display: contents;
+    }
+    .hero-text-content h1 {
+        order: 1;
+    }
+    .hero-text-content p {
+        order: 2;
+    }
+    .img-container {
+        order: 3;
+    }
+    .hero-btns {
+        order: 4;
+    }
+    .faq-section {
     padding: 50px 0 20px;
 }
     .privacy-section {
