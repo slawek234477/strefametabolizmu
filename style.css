@@ -926,8 +926,8 @@ a.btn-hero-outline:hover {
 }
 .card-icon .cert-img {
     width: auto;
-    height: 130px;
-    max-width: 150px;
+    height: 75px;
+    max-width: 95px;
     object-fit: contain;
     display: block;
     margin: 0 auto;
