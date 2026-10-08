@@ -3751,20 +3751,11 @@ margin: 0;
     }
 }
 @media (max-width: 600px) {
-     .hero-centered img.hero-privacy-img,
-    .hero-centered img[src*="klodka"] {
-        width: 45px !important;
-        max-width: 45px !important;
-    }
-    .hero-centered img.hero-cart-img,
-    .hero-centered img[src*="koszyk"] {
-        width: 55px !important;
-        max-width: 55px !important;
-    }
-    .hero-centered img.hero-contact-img,
-    .hero-centered img[src*="kontakt"] {
-        width: 65px !important;
-        max-width: 65px !important;
+     .hero-cart-img,
+    .hero-contact-img {
+        width: 100px !important;
+        max-width: 100px !important;
+        height: auto !important;
     }
     .grid-4 .card-icon,
     .pillars-grid .card-icon {
