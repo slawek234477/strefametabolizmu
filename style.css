@@ -2374,45 +2374,21 @@ margin: 0;
     /* =====================================================
        GLOBAL
        ===================================================== */
-.hero-centered,
-.hero-centered .hero-center-wrapper,
-.hero-centered .img-container,
-.hero-centered .hero-cart-container,
-.hero-centered .hero-contact-container,
-.hero-centered .hero-privacy-container {
-    transform: none !important;
-    scale: 1 !important;
-    zoom: 1 !important;
-}
-.hero-centered .hero-cart-img,
-.hero-centered .hero-contact-img,
-.hero-centered .hero-privacy-img {
-    width: 50px !important;
-    max-width: 50px !important;
-    min-width: 50px !important;
-    height: 50px !important;
-    max-height: 50px !important;
-    min-height: 50px !important;
-    object-fit: contain !important;
-}
     body {
         width: 100% !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
         overflow-x: hidden !important;
     }
-
     .container {
         width: 100% !important;
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
-
     h1 {
         font-size: 1.75rem !important;
         line-height: 1.2;
     }
-
     h2 {
         font-size: 1.35rem !important;
         line-height: 1.3;
@@ -2654,25 +2630,27 @@ margin: 0;
         justify-content: center !important;
         margin-top: 5px !important;
     }
-.hero-cart-container,
-.hero-contact-container,
-.hero-privacy-container {
-    width: auto !important;
-    max-width: none !important;
-    padding: 0 !important;
-    margin: 10px auto !important;
+ .hero-centered,
+.hero-centered .hero-center-wrapper,
+.hero-centered .img-container,
+.hero-centered .hero-cart-container,
+.hero-centered .hero-contact-container,
+.hero-centered .hero-privacy-container {
+    transform: none !important;
+    scale: 1 !important;
+    zoom: 1 !important;
 }
-.hero-cart-img {
-    width: 100px !important;
-    max-width: 100px !important;
+.hero-centered .hero-cart-img {
+    width: 110px !important;
+    max-width: 110px !important;
     height: auto !important;
 }
-.hero-contact-img {
-    width: 100px !important;
-    max-width: 100px !important;
+.hero-centered .hero-contact-img {
+    width: 160px !important;
+    max-width: 160px !important;
     height: auto !important;
 }
-.hero-privacy-img {
+.hero-centered .hero-privacy-img {
     width: 65px !important;
     max-width: 65px !important;
     height: auto !important;
