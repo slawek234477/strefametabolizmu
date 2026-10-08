@@ -976,14 +976,6 @@ a.btn-hero-outline:hover {
     object-fit: contain;
     flex-shrink: 0;
 }
-.triglp-ingredient-icon {
-    width: 50px !important;
-    max-width: 50px !important;
-    height: 50px !important;
-    max-height: 50px !important;
-    object-fit: contain !important;
-    flex: 0 0 50px !important;
-}
 /* =========================================================
    21. DOSAGE
    ========================================================= */
