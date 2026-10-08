@@ -3760,6 +3760,14 @@ margin: 0;
         max-width: 95px;
         margin: 0 auto;
     }
+    .cert-food, {
+    height: 90px;
+    max-width: 105px;
+    }
+    .cert-haccp {
+    height: 85px;
+    max-width: 100px;
+    }
     .hero {
     padding: 35px 0 45px;
 }
