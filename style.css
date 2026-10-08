@@ -2915,6 +2915,10 @@ margin: 0;
     /* =====================================================
        IKONY W LISTACH
        ===================================================== */
+    .ingredient-icon {
+    width: 32px !important;
+    height: 32px !important;
+}
     .highlight-list {
         width: 100% !important;
         max-width: 100% !important;
@@ -2934,20 +2938,6 @@ margin: 0;
         padding: 0 !important;
         min-height: 34px !important;
         box-sizing: border-box !important;
-    }
-    .highlight-list li img.cert-img {
-        flex: 0 0 50px !important;
-        width: 50px !important;
-        height: 50px !important;
-        min-width: 50px !important;
-        max-width: 50px !important;
-        min-height: 50px !important;
-        max-height: 50px !important;
-        object-fit: contain !important;
-        transform: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        border-radius: 0 !important;
     }
     .highlight-list li span,
     .highlight-list li strong {
