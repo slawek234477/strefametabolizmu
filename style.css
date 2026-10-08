@@ -2655,15 +2655,15 @@ margin: 0;
 
 
 .hero-centered .hero-contact-container {
-    width: 120px !important;
-    max-width: 120px !important;
+    width: 150px !important;
+    max-width: 150px !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
 .hero-centered .hero-contact-container img {
-    width: 120px !important;
-    max-width: 120px !important;
+    width: 150px !important;
+    max-width: 150px !important;
     height: auto !important;
 }
 
