@@ -977,12 +977,12 @@ a.btn-hero-outline:hover {
     flex-shrink: 0;
 }
 .triglp-ingredient-icon {
-    width: 28px !important;
-    max-width: 28px !important;
-    height: 28px !important;
-    max-height: 28px !important;
+    width: 50px !important;
+    max-width: 50px !important;
+    height: 50px !important;
+    max-height: 50px !important;
     object-fit: contain !important;
-    flex: 0 0 28px !important;
+    flex: 0 0 50px !important;
 }
 /* =========================================================
    21. DOSAGE
