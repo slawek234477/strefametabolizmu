@@ -3745,12 +3745,6 @@ margin: 0;
     }
 }
 @media (max-width: 600px) {
-     .hero-cart-img,
-    .hero-contact-img {
-        width: 100px !important;
-        max-width: 100px !important;
-        height: auto !important;
-    }
     .grid-4 .card-icon,
     .pillars-grid .card-icon {
         height: 95px;
