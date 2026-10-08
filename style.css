@@ -984,37 +984,6 @@ a.btn-hero-outline:hover {
     object-fit: contain !important;
     flex: 0 0 28px !important;
 }
-.triglp-ingredient-icon.icon-salmon {
-    width: 50px !important;
-    max-width: 50px !important;
-    height: 58px !important;
-    max-height: 58px !important;
-    flex-basis: 53px !important;
-}
-
-.triglp-ingredient-icon.icon-water {
-    width: 50px !important;
-    max-width: 50px !important;
-    height: 47px !important;
-    max-height: 47px !important;
-    flex-basis: 47px !important;
-}
-
-.triglp-ingredient-icon.icon-lemon {
-    width: 50px !important;
-    max-width: 50px !important;
-    height: 47px !important;
-    max-height: 47px !important;
-    flex-basis: 47px !important;
-}
-
-.triglp-ingredient-icon.icon-ginger {
-    width: 48px !important;
-    max-width: 48px !important;
-    height: 48px !important;
-    max-height: 48px !important;
-    flex-basis: 48px !important;
-}
 /* =========================================================
    21. DOSAGE
    ========================================================= */
