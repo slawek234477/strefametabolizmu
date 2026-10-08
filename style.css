@@ -3518,7 +3518,11 @@ margin: 0;
     }
 }
 @media (min-width: 601px) and (max-width: 992px) {
- .hero-grid {
+.cert-food, {
+    height: 90px;
+    max-width: 110px;
+    }
+    .hero-grid {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
         grid-template-rows: auto !important;
@@ -3766,7 +3770,7 @@ margin: 0;
     }
     .cert-food, {
     height: 95px;
-    max-width: 110px;
+    max-width: 115px;
     }
     .cert-haccp {
     height: 80px;
