@@ -971,8 +971,8 @@ a.btn-hero-outline:hover {
     line-height: 1.6;
 }
    .ingredient-icon {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     object-fit: contain;
     flex-shrink: 0;
 }
