@@ -2916,10 +2916,10 @@ margin: 0;
        IKONY W LISTACH
        ===================================================== */
     .content-with-image .ingredient-icon {
-    width: 40px !important;
-    max-width: 40px !important;
-    height: 40px !important;
-    max-height: 40px !important;
+    width: 45px !important;
+    max-width: 45px !important;
+    height: 45px !important;
+    max-height: 45px !important;
     object-fit: contain !important;
     flex: 0 0 32px !important;
 }
