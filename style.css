@@ -2634,30 +2634,28 @@ margin: 0;
         justify-content: center !important;
         margin-top: 5px !important;
     }
-.hero-centered img.hero-privacy-img,
-.hero-centered img[src*="klodka"] {
-    width: 65px !important;
-    max-width: 65px !important;
-    height: auto !important;
-    margin: 10px auto !important;
-    display: block !important;
-}
 .hero-cart-container,
-.hero-contact-container {
+.hero-contact-container,
+.hero-privacy-container {
     width: auto !important;
     max-width: none !important;
     padding: 0 !important;
     margin: 10px auto !important;
 }
-.hero-cart-img,
-.hero-contact-img {
-    display: block !important;
+.hero-cart-img {
     width: 100px !important;
     max-width: 100px !important;
     height: auto !important;
-    min-width: 0 !important;
-    margin: 0 auto !important;
-    transform: none !important;
+}
+.hero-contact-img {
+    width: 100px !important;
+    max-width: 100px !important;
+    height: auto !important;
+}
+.hero-privacy-img {
+    width: 65px !important;
+    max-width: 65px !important;
+    height: auto !important;
 }
     /* =====================================================
        MOBILE BUTTONS
