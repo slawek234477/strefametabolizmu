@@ -3752,12 +3752,12 @@ margin: 0;
 @media (max-width: 600px) {
     .card-icon,
     .pillar-card .card-icon {
-        height: 75px;
+        height: 95px;
         margin-bottom: 12px;
     }
     .card-icon .cert-img {
-        height: 55px;
-        max-width: 75px;
+        height: 75px;
+        max-width: 95px;
         margin: 0 auto;
     }
     .hero {
