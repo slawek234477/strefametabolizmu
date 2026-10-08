@@ -2642,27 +2642,22 @@ margin: 0;
     margin: 10px auto !important;
     display: block !important;
 }
-.hero-centered img.hero-cart-img,
-.hero-centered img[src*="koszyk"] {
-    width: 100px !important;
-    max-width: 100px !important;
-    min-width: 0 !important;
-    height: auto !important;
-    transform: none !important;
-    scale: none !important;
+.hero-cart-container,
+.hero-contact-container {
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
     margin: 10px auto !important;
-    display: block !important;
 }
-.hero-centered img.hero-contact-img,
-.hero-centered img[src*="kontakt"] {
+.hero-cart-img,
+.hero-contact-img {
+    display: block !important;
     width: 100px !important;
     max-width: 100px !important;
-    min-width: 0 !important;
     height: auto !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
     transform: none !important;
-    scale: none !important;
-    margin: 10px auto !important;
-    display: block !important;
 }
     /* =====================================================
        MOBILE BUTTONS
