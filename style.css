@@ -924,7 +924,8 @@ a.btn-hero-outline:hover {
     margin-bottom: 15px;
     overflow: hidden;
 }
-.card-icon .cert-img {
+.grid-4 .card-icon .cert-img,
+.pillars-grid .card-icon .cert-img {
     width: auto;
     height: 75px;
     max-width: 95px;
@@ -3762,7 +3763,8 @@ margin: 0;
         height: 95px;
         margin-bottom: 12px;
     }
-    .card-icon .cert-img {
+     .grid-4 .card-icon .cert-img,
+    .pillars-grid .card-icon .cert-img {
         height: 75px;
         max-width: 95px;
         margin: 0 auto;
