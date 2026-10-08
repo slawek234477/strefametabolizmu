@@ -914,8 +914,8 @@ a.btn-hero-outline:hover {
     color: var(--accent);
     margin-bottom: 15px;
 }
-.card-icon,
-.pillar-card .card-icon {
+.grid-4 .card-icon,
+.pillars-grid .card-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -933,7 +933,7 @@ a.btn-hero-outline:hover {
     display: block;
     margin: 0 auto;
 }
-.cert-food {
+.grid-4 .card-icon .cert-food {
     height: 115px;
     max-width: 135px;
     }
@@ -3758,22 +3758,22 @@ margin: 0;
     }
 }
 @media (max-width: 600px) {
-    .card-icon,
-    .pillar-card .card-icon {
+    .grid-4 .card-icon,
+    .pillars-grid .card-icon {
         height: 95px;
         margin-bottom: 12px;
     }
-     .grid-4 .card-icon .cert-img,
+      .grid-4 .card-icon .cert-img,
     .pillars-grid .card-icon .cert-img {
         height: 75px;
         max-width: 95px;
         margin: 0 auto;
     }
-    .cert-food {
+    .grid-4 .card-icon .cert-food {
     height: 105px;
     max-width: 125px;
     }
-    .cert-haccp {
+    .grid-4 .card-icon .cert-haccp {
     height: 80px;
     max-width: 100px;
     }
