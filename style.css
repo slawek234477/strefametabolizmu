@@ -3816,12 +3816,12 @@ margin: 0;
 @media (max-width: 600px) {
     .card-icon,
     .pillar-card .card-icon {
-        height: 85px;
+        height: 75px;
         margin-bottom: 12px;
     }
     .card-icon .cert-img {
-        height: 65px;
-        max-width: 85px;
+        height: 55px;
+        max-width: 75px;
         margin: 0 auto;
     }
     .hero {
