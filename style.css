@@ -985,11 +985,11 @@ a.btn-hero-outline:hover {
     flex: 0 0 28px !important;
 }
 .triglp-ingredient-icon.icon-salmon {
-    width: 58px !important;
-    max-width: 58px !important;
+    width: 53px !important;
+    max-width: 53px !important;
     height: 58px !important;
     max-height: 58px !important;
-    flex-basis: 58px !important;
+    flex-basis: 53px !important;
 }
 
 .triglp-ingredient-icon.icon-water {
@@ -1001,8 +1001,8 @@ a.btn-hero-outline:hover {
 }
 
 .triglp-ingredient-icon.icon-lemon {
-    width: 47px !important;
-    max-width: 47px !important;
+    width: 50px !important;
+    max-width: 50px !important;
     height: 47px !important;
     max-height: 47px !important;
     flex-basis: 47px !important;
