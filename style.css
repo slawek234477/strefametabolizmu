@@ -2641,29 +2641,29 @@ margin: 0;
     zoom: 1 !important;
 }
 .hero-centered .hero-cart-container {
-    width: 70px !important;
-    max-width: 70px !important;
+    width: 90px !important;
+    max-width: 90px !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
 .hero-centered .hero-cart-container img {
-    width: 70px !important;
-    max-width: 70px !important;
+    width: 90px !important;
+    max-width: 90px !important;
     height: auto !important;
 }
 
 
 .hero-centered .hero-contact-container {
-    width: 90px !important;
-    max-width: 90px !important;
+    width: 120px !important;
+    max-width: 120px !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
 .hero-centered .hero-contact-container img {
-    width: 90px !important;
-    max-width: 90px !important;
+    width: 120px !important;
+    max-width: 120px !important;
     height: auto !important;
 }
 
