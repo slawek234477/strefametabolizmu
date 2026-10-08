@@ -3636,8 +3636,11 @@ margin: 0;
     width: 100% !important;
     min-width: 0 !important;
 }
-.grid-4 .card:nth-child(4) {
-    grid-column: 2 !important;
+.grid-4 .card:nth-child(7) {
+    grid-column: 1 !important;
+}
+.grid-4 .card:nth-child(8) {
+    grid-column: 3 !important;
 }
     .grid-4 .card-icon {
         width: 100% !important;
