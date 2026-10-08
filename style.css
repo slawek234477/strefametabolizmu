@@ -365,7 +365,6 @@ nav a.active::after {
     height: auto !important;
     margin-top: 10px !important;
 }
-
 .hero-centered img,
 .hero-cart-img,
 .hero-contact-img,
@@ -3758,6 +3757,15 @@ margin: 0;
     }
 }
 @media (max-width: 600px) {
+     .hero-cart-img {
+        max-width: 65px !important;
+    }
+    .hero-contact-img {
+        max-width: 65px !important;
+    }
+    .hero-privacy-img {
+        max-width: 65px !important;
+    }
     .grid-4 .card-icon,
     .pillars-grid .card-icon {
         height: 95px;
