@@ -932,6 +932,10 @@ a.btn-hero-outline:hover {
     display: block;
     margin: 0 auto;
 }
+.cert-food, {
+    height: 85px;
+    max-width: 105px;
+    }
 .pillar-card .card-icon i {
     font-size: 2.5rem;
     color: var(--accent);
