@@ -912,9 +912,9 @@ a.btn-hero-outline:hover {
     object-fit: contain;
 }
 .safe-delivery-section .feature-icon-img.icon-wide {
-    width: 95px;
+    width: 105px;
     height: 60px;
-    max-width: 95px;
+    max-width: 105px;
     max-height: 60px;
     object-fit: contain;
     transform: translateY(11px);
