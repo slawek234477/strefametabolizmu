@@ -970,7 +970,12 @@ a.btn-hero-outline:hover {
     font-size: 0.95rem;
     line-height: 1.6;
 }
-
+   .ingredient-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
 
 /* =========================================================
    21. DOSAGE
