@@ -2644,9 +2644,12 @@ margin: 0;
 }
 .hero-centered img.hero-cart-img,
 .hero-centered img[src*="koszyk"] {
-    width: 40px !important;
-    max-width: 40px !important;
+    width: 100px !important;
+    max-width: 100px !important;
+    min-width: 0 !important;
     height: auto !important;
+    transform: none !important;
+    scale: none !important;
     margin: 10px auto !important;
     display: block !important;
 }
@@ -2654,7 +2657,10 @@ margin: 0;
 .hero-centered img[src*="kontakt"] {
     width: 100px !important;
     max-width: 100px !important;
+    min-width: 0 !important;
     height: auto !important;
+    transform: none !important;
+    scale: none !important;
     margin: 10px auto !important;
     display: block !important;
 }
