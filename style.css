@@ -2641,15 +2641,15 @@ margin: 0;
     zoom: 1 !important;
 }
 .hero-centered .hero-cart-container {
-    width: 90px !important;
-    max-width: 90px !important;
+    width: 95px !important;
+    max-width: 95px !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
 .hero-centered .hero-cart-container img {
-    width: 90px !important;
-    max-width: 90px !important;
+    width: 95px !important;
+    max-width: 95px !important;
     height: auto !important;
 }
 
