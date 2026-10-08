@@ -2644,8 +2644,8 @@ margin: 0;
 }
 .hero-centered img.hero-cart-img,
 .hero-centered img[src*="koszyk"] {
-    width: 100px !important;
-    max-width: 100px !important;
+    width: 40px !important;
+    max-width: 40px !important;
     height: auto !important;
     margin: 10px auto !important;
     display: block !important;
