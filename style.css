@@ -933,7 +933,7 @@ a.btn-hero-outline:hover {
     display: block;
     margin: 0 auto;
 }
-.cert-food, {
+.cert-food {
     height: 115px;
     max-width: 135px;
     }
@@ -3769,7 +3769,7 @@ margin: 0;
         max-width: 95px;
         margin: 0 auto;
     }
-    .cert-food, {
+    .cert-food {
     height: 105px;
     max-width: 125px;
     }
