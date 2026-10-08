@@ -2893,122 +2893,58 @@ margin: 0;
     /* =====================================================
        IKONY W LISTACH
        ===================================================== */
-
     .highlight-list {
         width: 100% !important;
         max-width: 100% !important;
-
         padding: 0 !important;
         margin: 10px 0 !important;
-
-        overflow: visible !important;
+    overflow: visible !important;
     }
-
     .highlight-list li {
         display: flex !important;
         flex-direction: row !important;
-
         align-items: center !important;
         justify-content: flex-start !important;
-
         text-align: left !important;
-
         gap: 10px !important;
-
         width: 100% !important;
-
         margin: 10px 0 !important;
         padding: 0 !important;
-
         min-height: 34px !important;
-
         box-sizing: border-box !important;
     }
-
     .highlight-list li img.cert-img {
         flex: 0 0 50px !important;
-
         width: 50px !important;
         height: 50px !important;
-
         min-width: 50px !important;
         max-width: 50px !important;
-
         min-height: 50px !important;
         max-height: 50px !important;
-
         object-fit: contain !important;
-
         transform: none !important;
-
         margin: 0 !important;
         padding: 0 !important;
-
         border-radius: 0 !important;
     }
-
     .highlight-list li span,
     .highlight-list li strong {
         flex: 1 1 auto !important;
         min-width: 0 !important;
-
         display: block !important;
-
         text-align: left !important;
-
         line-height: 1.4 !important;
-
         margin: 0 !important;
         padding: 0 !important;
-
         overflow-wrap: break-word !important;
     }
-
-
-    /* =====================================================
-       IKONY W KARTACH
-       ===================================================== */
-
-    .card-icon,
-    .pillar-card .card-icon {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        height: 85px !important;
-
-        margin-bottom: 8px !important;
-
-        overflow: hidden !important;
-        box-sizing: border-box !important;
-    }
-
-    .card-icon .cert-img,
-    .pillar-card .card-icon .cert-img {
-        transform: none !important;
-
-        max-width: 65px !important;
-        max-height: 85px !important;
-
-        width: auto !important;
-        height: auto !important;
-
-        object-fit: contain !important;
-    }
-
-
-    /* =====================================================
-       PRICE CARD
-       ===================================================== */
-
     .price-card {
         padding: 20px 15px !important;
-
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
     }
-
-    .price-card .price,
+   .price-card .price,
     .price-card .pln-price {
         margin-bottom: 5px !important;
     }
