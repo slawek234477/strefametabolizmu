@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przekierowanie — Strefa Metabolizmu</title>
+    <script>
+        const path = window.location.pathname.replace(/\/+$/, "");
+        const pages = [
+            "orygn-ignyt",
+            "kontakt",
+            "jak-kupic",
+            "polityka-prywatnosci",
+            "triglp-bioaktywny-peptyd-o-potrojnym-dzialaniu"
+        ];
+
+        const page = path.split("/").pop();
+
+        if (pages.includes(page)) {
+            window.location.replace(path + ".html" + window.location.search + window.location.hash);
+        }
+    </script>
+</head>
+<body>
+    <p>Nie znaleziono strony. Sprawdź adres lub wróć na <a href="/">stronę główną</a>.</p>
+</body>
+</html>
