@@ -1920,7 +1920,11 @@ div.footer-tiktok-icon img.footer-logo-img {
 div.footer-tiktok-icon a.tiktok-link-wrapper:hover img.footer-logo-img {
     transform: scale(1.1);
 }
-
+.footer-col p .footer-inline-link {
+    display: inline !important;
+    margin-bottom: 0 !important;
+    overflow-wrap: anywhere;
+}
 
 /* =========================================================
    35. STUDY / BADANIA
