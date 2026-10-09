@@ -1555,98 +1555,77 @@ a.btn-hero-outline:hover {
 /* =========================================================
    28. CONTACT
    ========================================================= */
-
 .contact-wrapper {
     max-width: 580px;
     margin: 0 auto;
 }
-
 .contact-header {
     margin-bottom: 30px;
 }
-
 .channel-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 25px;
 }
-
 .channel-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 16px 20px;
     border-radius: 10px;
     border: 1px solid var(--border);
     border-left: 5px solid transparent;
-
     text-decoration: none;
     transition: all 0.3s ease;
     background: #ffffff;
 }
-
 .channel-item.phone {
     border-left-color: var(--primary);
 }
-
 .channel-item.whatsapp {
     border-left-color: var(--cta-green);
 }
-
-.channel-item.telegram {
-    border-left-color: var(--telegram-blue);
+.channel-item.email {
+    border-left-color: #2563eb;
 }
-
 .channel-item:hover {
     transform: translateY(-3px);
-
     box-shadow:
         0 8px 20px rgba(15, 76, 92, 0.12);
 }
-
 .channel-item.phone:hover .action-arrow {
     color: var(--primary);
 }
-
 .channel-item.whatsapp:hover .action-arrow {
     color: var(--cta-green);
 }
-
-.channel-item.telegram:hover .action-arrow {
-    color: var(--telegram-blue);
+.channel-item.email:hover .action-arrow {
+    color: #2563eb;
 }
-
 .channel-left {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
 .channel-icon {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 1.3rem;
     color: white;
 }
-
 .channel-icon.phone {
     background: var(--primary);
 }
-
 .channel-icon.whatsapp {
     background: var(--cta-green);
 }
-
-.channel-icon.telegram {
-    background: var(--telegram-blue);
+.channel-icon.email {
+    background: #2563eb;
 }
 
 .channel-info strong {
@@ -1654,17 +1633,14 @@ a.btn-hero-outline:hover {
     color: var(--text-dark);
     font-size: 0.95rem;
 }
-
 .channel-info span {
     font-size: 0.85rem;
     color: var(--text-muted);
 }
-
 .action-arrow {
     color: var(--text-muted);
     font-size: 0.9rem;
 }
-
 
 /* =========================================================
    29. WHATSAPP FLOAT
