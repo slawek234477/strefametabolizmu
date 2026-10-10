@@ -1071,13 +1071,12 @@ a.btn-hero-outline:hover {
     box-sizing: border-box !important;
 }
 
-.products-grid .product-card > div:first-child > .product-img img {
+.product-card .product-img img {
     display: block !important;
-    width: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     max-width: 100% !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    flex: 0 0 auto !important;
+    width: auto !important;
 }
 
 .product-card h3 {
