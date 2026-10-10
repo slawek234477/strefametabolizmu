@@ -1048,13 +1048,6 @@ a.btn-hero-outline:hover {
     align-items: center !important;
     flex: 1 1 auto;
 }
-.product-card > .product-img-container img.product-img {
-    display: block !important;
-    width: auto !important;
-    max-width: 100% !important;
-    max-height: 240px !important;
-    object-fit: contain !important;
-}
 .product-card > div:last-child {
     margin-top: auto !important;
 }
