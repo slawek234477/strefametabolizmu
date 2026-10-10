@@ -1100,6 +1100,7 @@ a.btn-hero-outline:hover {
     color: #475569;
     margin-bottom: 20px;
     line-height: 1.6;
+    min-height: 4.8em;
 }
 
 .product-features {
