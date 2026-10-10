@@ -1041,12 +1041,22 @@ a.btn-hero-outline:hover {
     display: flex !important;
     flex-direction: column !important;
 }
-.product-card > div:first-child {
+.product-card > .product-img-container {
     width: 100% !important;
+    height: 270px !important;
+    flex: 0 0 270px !important;
     display: flex !important;
-    flex-direction: column !important;
     align-items: center !important;
-    flex: 1 1 auto;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+}
+
+.product-card > .product-img-container img.product-img {
+    display: block !important;
+    width: auto !important;
+    max-width: 100% !important;
+    max-height: 240px !important;
+    object-fit: contain !important;
 }
 .product-card > div:last-child {
     margin-top: auto !important;
