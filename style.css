@@ -1061,22 +1061,22 @@ a.btn-hero-outline:hover {
 .product-card > div:last-child {
     margin-top: auto !important;
 }
-.product-card .product-img {
+.product-card .product-image-wrap {
     width: 100% !important;
+    max-width: none !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    text-align: center !important;
-    align-self: stretch !important;
     box-sizing: border-box !important;
 }
 
-.product-card .product-img img {
+.product-card .product-image-wrap img {
     display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    max-width: 100% !important;
     width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
 }
 
 .product-card h3 {
