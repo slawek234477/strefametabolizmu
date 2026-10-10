@@ -1061,12 +1061,14 @@ a.btn-hero-outline:hover {
     margin-top: auto !important;
 }
 #wybierz .product-card .product-img,
-#wybierz ~ .products-grid .product-card .product-img,
-#wybierz ~ .products-grid.products-grid-ignyt .product-card .product-img {
+#wybierz ~ .products-grid .product-card .product-img {
     width: 100% !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    text-align: center !important;
+    align-self: stretch !important;
+    box-sizing: border-box !important;
 }
 
 .product-card .product-img img {
