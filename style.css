@@ -1020,6 +1020,24 @@ a.btn-hero-outline:hover {
 .products-showcase {
     padding: 30px 0;
 }
+.products-showcase .product-img-container {
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px !important;
+}
+.products-showcase .product-img {
+    max-height: 240px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.products-showcase .product-card > h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
