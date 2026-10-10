@@ -1060,7 +1060,7 @@ a.btn-hero-outline:hover {
 .product-card > div:last-child {
     margin-top: auto !important;
 }
-.product-card .product-img {
+.products-grid:not(.products-showcase .products-grid) .product-card .product-img {
     width: 100% !important;
     display: flex !important;
     justify-content: center !important;
