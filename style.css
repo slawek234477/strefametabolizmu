@@ -607,7 +607,7 @@ a.btn-hero-outline:hover {
     margin: 0 !important;
 }
 
-.product-card:hover .product-img {
+.product-card:hover .product-image-wrap {
     transform: scale(1.05);
 }
 
